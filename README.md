@@ -5,5 +5,5 @@ Related paper [HOUSE: Marco de trabajo modular de arquitectura escalable y desac
 
 # Supported Fuzzers
 The framework supports the following tools.
-## AFL++ [code and documentation](https://github.com/b0rh/HOUSE/tree/main/0.TLB/AFL%2B%2B)
-## RoboFuzz [code and documentation](https://github.com/b0rh/HOUSE/tree/main/0.TLB/ROS2_foxy-robofuzz), [Experiment results](https://github.com/b0rh/HOUSE/tree/main/B.OR/TB3-MI2_Robofuzz) and [Download Singulary container](https://ss3.scayle.es:443/HOUSE/ROS2_foxy-robofuzz.sif)
+## AFL++ [code and documentation](https://github.com/b0rh/HOUSE/tree/master/0.TLB/AFL%2B%2B)
+## RoboFuzz [code and documentation](https://github.com/b0rh/HOUSE/tree/master/0.TLB/ROS2_foxy-robofuzz), [Experiment results](https://github.com/b0rh/HOUSE/tree/master/B.OR/TB3-MI2_Robofuzz) and [Download Singulary container](https://ss3.scayle.es:443/HOUSE/ROS2_foxy-robofuzz.sif)
