@@ -1,0 +1,5 @@
+--date='TZ="Europe/Madrid" 09:00 next Fri'
+--date='@2147483647'
+-s "11/20/2003 12:48:00"
+"+DATE: %m/%d/%y%nTIME: %H:%M:%S"
+

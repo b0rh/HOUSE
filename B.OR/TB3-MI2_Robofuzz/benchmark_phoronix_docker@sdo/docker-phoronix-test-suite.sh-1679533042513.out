@@ -1,0 +1,1406 @@
+0% [Working]            Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+0% [1 InRelease 14.2 kB/114 kB 12%] [Connecting to packages.osrfoundation.org (                                                                               0% [Connecting to archive.ubuntu.com (91.189.91.39)] [Waiting for headers]                                                                          Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+                                                                          0% [Waiting for headers]                        Get:3 http://packages.osrfoundation.org/gazebo/ubuntu-stable focal InRelease [4279 B]
+0% [Waiting for headers] [3 InRelease 4279 B/4279 B 100%]                                                         0% [Waiting for headers]0% [Waiting for headers]                        Get:4 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+0% [4 InRelease 15.6 kB/114 kB 14%] [Connecting to packages.ros.org]                                                                    Get:5 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [1998 kB]
+0% [4 InRelease 15.6 kB/114 kB 14%] [5 Packages 4133 B/1998 kB 0%] [Connecting                                                                                0% [4 InRelease 70.7 kB/114 kB 62%] [Waiting for headers]0% [5 Packages store 0 B] [4 InRelease 72.1 kB/114 kB 63%] [Waiting for headers0% [5 Packages store 0 B] [4 InRelease 80.8 kB/114 kB 71%] [Waiting for headers                                                                               Get:6 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [1019 kB]
+0% [5 Packages store 0 B] [4 InRelease 86.6 kB/114 kB 76%] [6 Packages 49.9 kB/0% [5 Packages store 0 B] [4 InRelease 95.3 kB/114 kB 84%] [Waiting for headers                                                                               Get:7 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [28.5 kB]
+0% [5 Packages store 0 B] [4 InRelease 95.3 kB/114 kB 84%] [7 Packages 28.5 kB/0% [5 Packages store 0 B] [4 InRelease 98.2 kB/114 kB 86%] [Waiting for headers                                                                               Get:8 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [2545 kB]
+0% [5 Packages store 0 B] [4 InRelease 98.2 kB/114 kB 86%] [8 Packages 20.5 kB/0% [5 Packages store 0 B] [Waiting for headers] [8 Packages 2279 kB/2545 kB 90%                                                                               0% [5 Packages store 0 B] [Waiting for headers] [Waiting for headers]                                                                     Get:9 http://packages.ros.org/ros2/ubuntu focal InRelease [4685 B]
+0% [5 Packages store 0 B] [Waiting for headers] [9 InRelease 4685 B/4685 B 100%                                                                               0% [5 Packages store 0 B] [Waiting for headers]                                               0% [Waiting for headers]0% [6 Packages store 0 B] [Waiting for headers]                                               Get:10 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+0% [6 Packages store 0 B] [10 InRelease 2601 B/108 kB 2%]0% [6 Packages store 0 B] [10 InRelease 20.0 kB/108 kB 18%]                                                           0% [10 InRelease 22.9 kB/108 kB 21%] [Waiting for headers]0% [7 Packages store 0 B] [10 InRelease 22.9 kB/108 kB 21%] [Waiting for header                                                                               0% [10 InRelease 28.7 kB/108 kB 26%] [Waiting for headers]0% [8 Packages store 0 B] [10 InRelease 28.7 kB/108 kB 26%] [Waiting for header                                                                               0% [8 Packages store 0 B] [Waiting for headers]                                               0% [Waiting for headers]0% [Waiting for headers]                        Get:11 http://packages.osrfoundation.org/gazebo/ubuntu-stable focal/main amd64 Packages [134 kB]
+0% [Waiting for headers] [11 Packages 5534 B/134 kB 4%]                                                       Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3026 kB]
+0% [12 Packages 2685 B/3026 kB 0%] [11 Packages 14.2 kB/134 kB 11%]0% [12 Packages 76.5 kB/3026 kB 3%] [11 Packages 14.2 kB/134 kB 11%]                                                                    Get:13 http://packages.ros.org/ros2/ubuntu focal/main amd64 Packages [1176 kB]
+0% [12 Packages 311 kB/3026 kB 10%] [11 Packages 43.2 kB/134 kB 32%] [13 Packag53% [12 Packages 356 kB/3026 kB 12%] [11 Packages 43.2 kB/134 kB 32%] [13 Packa                                                                               62% [12 Packages 1823 kB/3026 kB 60%] [13 Packages 43.6 kB/1176 kB 4%]62% [11 Packages store 0 B] [12 Packages 1823 kB/3026 kB 60%] [13 Packages 43.6                                                                               63% [12 Packages 1940 kB/3026 kB 64%] [13 Packages 43.6 kB/1176 kB 4%]                                                                      70% [13 Packages 102 kB/1176 kB 9%]70% [12 Packages store 0 B] [13 Packages 102 kB/1176 kB 9%]                                                           Get:14 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1314 kB]
+71% [12 Packages store 0 B] [14 Packages 80.9 kB/1314 kB 6%] [13 Packages 210 k78% [12 Packages store 0 B] [Waiting for headers] [13 Packages 210 kB/1176 kB 1                                                                               Get:15 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [2141 kB]
+78% [12 Packages store 0 B] [15 Packages 32.8 kB/2141 kB 2%] [13 Packages 210 k                                                                               89% [15 Packages 1780 kB/2141 kB 83%] [13 Packages 210 kB/1176 kB 18%]89% [14 Packages store 0 B] [15 Packages 1780 kB/2141 kB 83%] [13 Packages 210 92% [14 Packages store 0 B] [Waiting for headers] [13 Packages 347 kB/1176 kB 3                                                                               Get:16 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [31.2 kB]
+92% [14 Packages store 0 B] [16 Packages 23.6 kB/31.2 kB 76%] [13 Packages 347                                                                                92% [14 Packages store 0 B] [13 Packages 347 kB/1176 kB 30%]                                                            Get:17 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [28.6 kB]
+92% [14 Packages store 0 B] [17 Packages 0 B/28.6 kB 0%] [13 Packages 347 kB/11                                                                               92% [14 Packages store 0 B] [13 Packages 347 kB/1176 kB 30%]                                                            Get:18 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [55.2 kB]
+92% [14 Packages store 0 B] [18 Packages 0 B/55.2 kB 0%] [13 Packages 347 kB/11                                                                               92% [14 Packages store 0 B] [13 Packages 347 kB/1176 kB 30%]                                                            93% [13 Packages 347 kB/1176 kB 30%]93% [15 Packages store 0 B] [13 Packages 347 kB/1176 kB 30%]                                                            95% [13 Packages 613 kB/1176 kB 52%]95% [16 Packages store 0 B] [13 Packages 613 kB/1176 kB 52%]                                                            95% [13 Packages 613 kB/1176 kB 52%]95% [17 Packages store 0 B] [13 Packages 613 kB/1176 kB 52%]                                                            96% [13 Packages 613 kB/1176 kB 52%]96% [18 Packages store 0 B] [13 Packages 613 kB/1176 kB 52%]                                                            96% [13 Packages 613 kB/1176 kB 52%]                                    100% [Working]100% [13 Packages store 0 B]                            100% [Working]              Fetched 13.8 MB in 2s (6104 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 4%Reading package lists... 4%Reading package lists... 5%Reading package lists... 5%Reading package lists... 46%Reading package lists... 46%Reading package lists... 47%Reading package lists... 47%Reading package lists... 58%Reading package lists... 58%Reading package lists... 59%Reading package lists... 67%Reading package lists... 67%Reading package lists... 71%Reading package lists... 71%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 81%Reading package lists... 81%Reading package lists... 89%Reading package lists... 89%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 94%Reading package lists... 94%Reading package lists... 98%Reading package lists... 98%Reading package lists... Done
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 4%Reading package lists... 4%Reading package lists... 5%Reading package lists... 5%Reading package lists... 46%Reading package lists... 46%Reading package lists... 47%Reading package lists... 47%Reading package lists... 58%Reading package lists... 58%Reading package lists... 60%Reading package lists... 67%Reading package lists... 67%Reading package lists... 71%Reading package lists... 71%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 81%Reading package lists... 81%Reading package lists... 89%Reading package lists... 89%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 94%Reading package lists... 94%Reading package lists... 98%Reading package lists... 98%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  fonts-dejavu php-font-lib php7.4-bz2 php7.4-cli php7.4-common php7.4-curl
+  php7.4-gd php7.4-json php7.4-opcache php7.4-readline php7.4-sqlite3
+  php7.4-xml php7.4-zip sdop
+Suggested packages:
+  php-tcpdf php-apcu ttf2pt1 php-pear
+The following NEW packages will be installed:
+  fonts-dejavu php-bz2 php-cli php-common php-curl php-dompdf php-fdomdocument
+  php-font-lib php-fpdf php-gd php-json php-sqlite3 php-xml php-zip php7.4-bz2
+  php7.4-cli php7.4-common php7.4-curl php7.4-gd php7.4-json php7.4-opcache
+  php7.4-readline php7.4-sqlite3 php7.4-xml php7.4-zip sdop
+The following packages will be upgraded:
+  xz-utils
+1 upgraded, 26 newly installed, 0 to remove and 685 not upgraded.
+Need to get 4429 kB of archives.
+After this operation, 21.0 MB of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 php-common all 2:75 [11.9 kB]
+0% [1 php-common 11.9 kB/11.9 kB 100%]                                      1% [Working]            Get:2 http://archive.ubuntu.com/ubuntu focal/universe amd64 php-font-lib all 0.3.1+dfsg-3 [50.1 kB]
+1% [2 php-font-lib 2615 B/50.1 kB 5%]                                     3% [Waiting for headers]                        Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 xz-utils amd64 5.2.4-1ubuntu1.1 [82.6 kB]
+3% [3 xz-utils 1451 B/82.6 kB 2%]                                 5% [Waiting for headers]                        Get:4 http://archive.ubuntu.com/ubuntu focal/universe amd64 fonts-dejavu all 2.37-1 [3130 B]
+5% [4 fonts-dejavu 2516 B/3130 B 80%]                                     6% [Waiting for headers]                        Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 php7.4-common amd64 7.4.3-4ubuntu2.18 [982 kB]
+6% [5 php7.4-common 1999 B/982 kB 0%]                                     24% [Waiting for headers]                         Get:6 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 php7.4-bz2 amd64 7.4.3-4ubuntu2.18 [10.4 kB]
+24% [6 php7.4-bz2 1030 B/10.4 kB 10%]                                     25% [Waiting for headers]                         Get:7 http://archive.ubuntu.com/ubuntu focal/universe amd64 php-bz2 all 2:7.4+75 [2004 B]
+25% [7 php-bz2 2004 B/2004 B 100%]                                  26% [Waiting for headers]                         Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 php7.4-json amd64 7.4.3-4ubuntu2.18 [19.2 kB]
+26% [8 php7.4-json 2518 B/19.2 kB 13%]                                      27% [Waiting for headers]                         Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 php7.4-opcache amd64 7.4.3-4ubuntu2.18 [198 kB]
+27% [9 php7.4-opcache 4759 B/198 kB 2%]                                       31% [Waiting for headers]                         Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 php7.4-readline amd64 7.4.3-4ubuntu2.18 [12.6 kB]
+31% [10 php7.4-readline 6222 B/12.6 kB 49%]                                           32% [Waiting for headers]                         Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 php7.4-cli amd64 7.4.3-4ubuntu2.18 [1427 kB]
+32% [11 php7.4-cli 1994 B/1427 kB 0%]                                     59% [Working]             Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 php-cli all 2:7.4+75 [2792 B]
+59% [12 php-cli 2792 B/2792 B 100%]                                   60% [Working]             Get:13 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 php7.4-curl amd64 7.4.3-4ubuntu2.18 [30.9 kB]
+60% [13 php7.4-curl 11.3 kB/30.9 kB 37%]                                        61% [Waiting for headers]                         Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 php-curl all 2:7.4+75 [2000 B]
+61% [14 php-curl 1844 B/2000 B 92%]                                   62% [Waiting for headers]                         Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 php7.4-gd amd64 7.4.3-4ubuntu2.18 [27.9 kB]
+62% [15 php7.4-gd 2459 B/27.9 kB 9%]                                    63% [Waiting for headers]                         Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 php-gd all 2:7.4+75 [2000 B]
+63% [16 php-gd 376 B/2000 B 19%]                                64% [Waiting for headers]                         Get:17 http://archive.ubuntu.com/ubuntu focal/universe amd64 sdop amd64 0.81-1 [549 kB]
+64% [17 sdop 989 B/549 kB 0%]                             74% [Working]             Get:18 http://archive.ubuntu.com/ubuntu focal/universe amd64 php-dompdf all 0.6.2+dfsg-3 [782 kB]
+74% [18 php-dompdf 0 B/782 kB 0%]                                 89% [Working]             Get:19 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 php7.4-xml amd64 7.4.3-4ubuntu2.18 [97.5 kB]
+89% [19 php7.4-xml 0 B/97.5 kB 0%]                                  92% [Working]             Get:20 http://archive.ubuntu.com/ubuntu focal/main amd64 php-xml all 2:7.4+75 [2028 B]
+92% [20 php-xml 0 B/2028 B 0%]                              92% [Working]             Get:21 http://archive.ubuntu.com/ubuntu focal/universe amd64 php-fdomdocument all 1.6.6-2 [12.9 kB]
+92% [21 php-fdomdocument 0 B/12.9 kB 0%]                                        93% [Working]             Get:22 http://archive.ubuntu.com/ubuntu focal/universe amd64 php-fpdf all 3:1.8.1.dfsg-2 [66.3 kB]
+93% [22 php-fpdf 0 B/66.3 kB 0%]                                95% [Working]             Get:23 http://archive.ubuntu.com/ubuntu focal/universe amd64 php-json all 2:7.4+75 [2000 B]
+95% [23 php-json 0 B/2000 B 0%]                               96% [Working]             Get:24 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 php7.4-sqlite3 amd64 7.4.3-4ubuntu2.18 [27.1 kB]
+96% [24 php7.4-sqlite3 0 B/27.1 kB 0%]                                      97% [Working]             Get:25 http://archive.ubuntu.com/ubuntu focal/main amd64 php-sqlite3 all 2:7.4+75 [2004 B]
+97% [25 php-sqlite3 0 B/2004 B 0%]                                  98% [Working]             Get:26 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 php7.4-zip amd64 7.4.3-4ubuntu2.18 [21.5 kB]
+98% [26 php7.4-zip 0 B/21.5 kB 0%]                                  99% [Working]             Get:27 http://archive.ubuntu.com/ubuntu focal/universe amd64 php-zip all 2:7.4+75 [1996 B]
+99% [27 php-zip 0 B/1996 B 0%]                              100% [Working]              Fetched 4429 kB in 3s (1748 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package php-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 159997 files and directories currently installed.)
+Preparing to unpack .../00-php-common_2%3a75_all.deb ...
+Unpacking php-common (2:75) ...
+Selecting previously unselected package php-font-lib.
+Preparing to unpack .../01-php-font-lib_0.3.1+dfsg-3_all.deb ...
+Unpacking php-font-lib (0.3.1+dfsg-3) ...
+Preparing to unpack .../02-xz-utils_5.2.4-1ubuntu1.1_amd64.deb ...
+Unpacking xz-utils (5.2.4-1ubuntu1.1) over (5.2.4-1ubuntu1) ...
+Selecting previously unselected package fonts-dejavu.
+Preparing to unpack .../03-fonts-dejavu_2.37-1_all.deb ...
+Unpacking fonts-dejavu (2.37-1) ...
+Selecting previously unselected package php7.4-common.
+Preparing to unpack .../04-php7.4-common_7.4.3-4ubuntu2.18_amd64.deb ...
+Unpacking php7.4-common (7.4.3-4ubuntu2.18) ...
+Selecting previously unselected package php7.4-bz2.
+Preparing to unpack .../05-php7.4-bz2_7.4.3-4ubuntu2.18_amd64.deb ...
+Unpacking php7.4-bz2 (7.4.3-4ubuntu2.18) ...
+Selecting previously unselected package php-bz2.
+Preparing to unpack .../06-php-bz2_2%3a7.4+75_all.deb ...
+Unpacking php-bz2 (2:7.4+75) ...
+Selecting previously unselected package php7.4-json.
+Preparing to unpack .../07-php7.4-json_7.4.3-4ubuntu2.18_amd64.deb ...
+Unpacking php7.4-json (7.4.3-4ubuntu2.18) ...
+Selecting previously unselected package php7.4-opcache.
+Preparing to unpack .../08-php7.4-opcache_7.4.3-4ubuntu2.18_amd64.deb ...
+Unpacking php7.4-opcache (7.4.3-4ubuntu2.18) ...
+Selecting previously unselected package php7.4-readline.
+Preparing to unpack .../09-php7.4-readline_7.4.3-4ubuntu2.18_amd64.deb ...
+Unpacking php7.4-readline (7.4.3-4ubuntu2.18) ...
+Selecting previously unselected package php7.4-cli.
+Preparing to unpack .../10-php7.4-cli_7.4.3-4ubuntu2.18_amd64.deb ...
+Unpacking php7.4-cli (7.4.3-4ubuntu2.18) ...
+Selecting previously unselected package php-cli.
+Preparing to unpack .../11-php-cli_2%3a7.4+75_all.deb ...
+Unpacking php-cli (2:7.4+75) ...
+Selecting previously unselected package php7.4-curl.
+Preparing to unpack .../12-php7.4-curl_7.4.3-4ubuntu2.18_amd64.deb ...
+Unpacking php7.4-curl (7.4.3-4ubuntu2.18) ...
+Selecting previously unselected package php-curl.
+Preparing to unpack .../13-php-curl_2%3a7.4+75_all.deb ...
+Unpacking php-curl (2:7.4+75) ...
+Selecting previously unselected package php7.4-gd.
+Preparing to unpack .../14-php7.4-gd_7.4.3-4ubuntu2.18_amd64.deb ...
+Unpacking php7.4-gd (7.4.3-4ubuntu2.18) ...
+Selecting previously unselected package php-gd.
+Preparing to unpack .../15-php-gd_2%3a7.4+75_all.deb ...
+Unpacking php-gd (2:7.4+75) ...
+Selecting previously unselected package sdop.
+Preparing to unpack .../16-sdop_0.81-1_amd64.deb ...
+Unpacking sdop (0.81-1) ...
+Selecting previously unselected package php-dompdf.
+Preparing to unpack .../17-php-dompdf_0.6.2+dfsg-3_all.deb ...
+Unpacking php-dompdf (0.6.2+dfsg-3) ...
+Selecting previously unselected package php7.4-xml.
+Preparing to unpack .../18-php7.4-xml_7.4.3-4ubuntu2.18_amd64.deb ...
+Unpacking php7.4-xml (7.4.3-4ubuntu2.18) ...
+Selecting previously unselected package php-xml.
+Preparing to unpack .../19-php-xml_2%3a7.4+75_all.deb ...
+Unpacking php-xml (2:7.4+75) ...
+Selecting previously unselected package php-fdomdocument.
+Preparing to unpack .../20-php-fdomdocument_1.6.6-2_all.deb ...
+Unpacking php-fdomdocument (1.6.6-2) ...
+Selecting previously unselected package php-fpdf.
+Preparing to unpack .../21-php-fpdf_3%3a1.8.1.dfsg-2_all.deb ...
+Unpacking php-fpdf (3:1.8.1.dfsg-2) ...
+Selecting previously unselected package php-json.
+Preparing to unpack .../22-php-json_2%3a7.4+75_all.deb ...
+Unpacking php-json (2:7.4+75) ...
+Selecting previously unselected package php7.4-sqlite3.
+Preparing to unpack .../23-php7.4-sqlite3_7.4.3-4ubuntu2.18_amd64.deb ...
+Unpacking php7.4-sqlite3 (7.4.3-4ubuntu2.18) ...
+Selecting previously unselected package php-sqlite3.
+Preparing to unpack .../24-php-sqlite3_2%3a7.4+75_all.deb ...
+Unpacking php-sqlite3 (2:7.4+75) ...
+Selecting previously unselected package php7.4-zip.
+Preparing to unpack .../25-php7.4-zip_7.4.3-4ubuntu2.18_amd64.deb ...
+Unpacking php7.4-zip (7.4.3-4ubuntu2.18) ...
+Selecting previously unselected package php-zip.
+Preparing to unpack .../26-php-zip_2%3a7.4+75_all.deb ...
+Unpacking php-zip (2:7.4+75) ...
+Setting up php-common (2:75) ...
+Created symlink /etc/systemd/system/timers.target.wants/phpsessionclean.timer → /lib/systemd/system/phpsessionclean.timer.
+Setting up fonts-dejavu (2.37-1) ...
+Setting up php-font-lib (0.3.1+dfsg-3) ...
+Setting up php7.4-common (7.4.3-4ubuntu2.18) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/calendar.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/ctype.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/exif.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/fileinfo.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/ffi.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/ftp.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/gettext.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/iconv.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/pdo.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/phar.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/posix.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/shmop.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/sockets.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/sysvmsg.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/sysvsem.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/sysvshm.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/tokenizer.ini with new version
+Setting up php7.4-curl (7.4.3-4ubuntu2.18) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/curl.ini with new version
+Setting up sdop (0.81-1) ...
+Setting up php7.4-readline (7.4.3-4ubuntu2.18) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/readline.ini with new version
+Setting up php7.4-bz2 (7.4.3-4ubuntu2.18) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/bz2.ini with new version
+Setting up php7.4-zip (7.4.3-4ubuntu2.18) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/zip.ini with new version
+Setting up xz-utils (5.2.4-1ubuntu1.1) ...
+Setting up php-zip (2:7.4+75) ...
+Setting up php7.4-opcache (7.4.3-4ubuntu2.18) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/opcache.ini with new version
+Setting up php7.4-sqlite3 (7.4.3-4ubuntu2.18) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/sqlite3.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/pdo_sqlite.ini with new version
+Setting up php7.4-gd (7.4.3-4ubuntu2.18) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/gd.ini with new version
+Setting up php-curl (2:7.4+75) ...
+Setting up php7.4-json (7.4.3-4ubuntu2.18) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/json.ini with new version
+Setting up php7.4-xml (7.4.3-4ubuntu2.18) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/dom.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/simplexml.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/xml.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/xmlreader.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/xmlwriter.ini with new version
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/mods-available/xsl.ini with new version
+Setting up php-json (2:7.4+75) ...
+Setting up php-bz2 (2:7.4+75) ...
+Setting up php-fdomdocument (1.6.6-2) ...
+Setting up php7.4-cli (7.4.3-4ubuntu2.18) ...
+update-alternatives: using /usr/bin/php7.4 to provide /usr/bin/php (php) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/php.1.gz because associated file /usr/share/man/man1/php7.4.1.gz (of link group php) doesn't exist
+update-alternatives: using /usr/bin/phar7.4 to provide /usr/bin/phar (phar) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/phar.1.gz because associated file /usr/share/man/man1/phar7.4.1.gz (of link group phar) doesn't exist
+update-alternatives: using /usr/bin/phar.phar7.4 to provide /usr/bin/phar.phar (phar.phar) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/phar.phar.1.gz because associated file /usr/share/man/man1/phar.phar7.4.1.gz (of link group phar.phar) doesn't exist
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/php/7.4/cli/php.ini with new version
+Setting up php-sqlite3 (2:7.4+75) ...
+Setting up php-cli (2:7.4+75) ...
+Setting up php-gd (2:7.4+75) ...
+Setting up php-fpdf (3:1.8.1.dfsg-2) ...
+Setting up php-xml (2:7.4+75) ...
+Setting up php-dompdf (0.6.2+dfsg-3) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for php7.4-cli (7.4.3-4ubuntu2.18) ...
+--2023-03-23 00:58:19--  https://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_10.8.4_all.deb
+Resolving phoronix-test-suite.com (phoronix-test-suite.com)... 192.211.48.82
+Connecting to phoronix-test-suite.com (phoronix-test-suite.com)|192.211.48.82|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2352160 (2.2M) [application/x-debian-package]
+Saving to: ‘phoronix-test-suite_10.8.4_all.deb’
+
+          phoronix-   0%[                    ]       0  --.-KB/s                        phoronix-t   2%[                    ]  46.76K   186KB/s                       phoronix-te   9%[>                   ] 218.64K   435KB/s                      phoronix-tes  38%[======>             ] 890.51K  1.15MB/s               phoronix-test-suite 100%[===================>]   2.24M  2.54MB/s    in 0.9s    
+
+2023-03-23 00:58:21 (2.54 MB/s) - ‘phoronix-test-suite_10.8.4_all.deb’ saved [2352160/2352160]
+
+Selecting previously unselected package phoronix-test-suite.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 160885 files and directories currently installed.)
+Preparing to unpack phoronix-test-suite_10.8.4_all.deb ...
+Unpacking phoronix-test-suite (10.8.4) ...
+Setting up phoronix-test-suite (10.8.4) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu1) ...
+Processing triggers for desktop-file-utils (0.24-1ubuntu3) ...
+Processing triggers for mime-support (3.64ubuntu1) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for man-db (2.9.1-1) ...
+
+[1;32mUpdated OpenBenchmarking.org Repository Index[0m
+[1;32mpts: 513 Distinct Tests, 2219 Test Versions, 56 Suites[0m
+[3mAvailable Changes From 3 July 2022 To 23 March[0m
+[1mUpdated Test: [0m  pts/ai-benchmark        [1;30mv1.0.2[0m  AI Benchmark Alpha                                
+[1mUpdated Test: [0m  pts/aircrack-ng         [1;30mv1.3.0[0m  Aircrack-ng                                       
+[1mUpdated Test: [0m  pts/aom-av1             [1;30mv3.6.0[0m  AOM AV1                                           
+[1mUpdated Test: [0m  pts/astcenc             [1;30mv1.4.0[0m  ASTC Encoder                                      
+[1mUpdated Test: [0m  pts/avifenc             [1;30mv1.3.0[0m  libavif avifenc                                   
+[1mUpdated Test: [0m  pts/batman-knight       [1;30mv1.0.1[0m  Batman: Arkham Knight                             
+[1mUpdated Test: [0m  pts/blender             [1;30mv3.4.0[0m  Blender                                           
+[1mUpdated Test: [0m  pts/blosc               [1;30mv1.2.0[0m  C-Blosc                                           
+[1mUpdated Test: [0m  pts/brl-cad             [1;30mv1.4.0[0m  BRL-CAD                                           
+[1mUpdated Test: [0m  pts/build-erlang        [1;30mv1.2.0[0m  Timed Erlang/OTP Compilation                      
+[1mUpdated Test: [0m  pts/build-ffmpeg        [1;30mv6.0.0[0m  Timed FFmpeg Compilation                          
+[1mUpdated Test: [0m  pts/build-godot         [1;30mv4.0.0[0m  Timed Godot Game Engine Compilation               
+[1mUpdated Test: [0m  pts/build-linux-kernel  [1;30mv1.15.0[0m Timed Linux Kernel Compilation                    
+[1mUpdated Test: [0m  pts/build-llvm          [1;30mv1.5.0[0m  Timed LLVM Compilation                            
+[1mUpdated Test: [0m  pts/build-nodejs        [1;30mv1.3.0[0m  Timed Node.js Compilation                         
+[1mUpdated Test: [0m  pts/build-php           [1;30mv1.6.0[0m  Timed PHP Compilation                             
+[1mNew Test: [0m      pts/build-python        [1;30mv1.0.0[0m  Timed CPython Compilation                         
+[1mUpdated Test: [0m  pts/build-wasmer        [1;30mv1.2.0[0m  Timed Wasmer Compilation                          
+[1mUpdated Test: [0m  pts/build2              [1;30mv1.2.0[0m  Build2                                            
+[1mUpdated Test: [0m  pts/clickhouse          [1;30mv1.2.0[0m  ClickHouse                                        
+[1mUpdated Test: [0m  pts/cloudsuite-da       [1;30mv1.2.0[0m  CloudSuite Data Analytics                         
+[1mUpdated Test: [0m  pts/cloudsuite-ga       [1;30mv1.1.0[0m  CloudSuite Graph Analytics                        
+[1mUpdated Test: [0m  pts/cloudsuite-ma       [1;30mv1.1.0[0m  CloudSuite In-Memory Analytics                    
+[1mUpdated Test: [0m  pts/cloudsuite-ms       [1;30mv1.0.1[0m  CloudSuite Media Streaming                        
+[1mUpdated Test: [0m  pts/cloudsuite-ws       [1;30mv1.1.0[0m  CloudSuite Web Serving                            
+[1mUpdated Test: [0m  pts/clpeak              [1;30mv1.1.0[0m  clpeak                                            
+[1mNew Test: [0m      pts/cockroach           [1;30mv1.0.2[0m  CockroachDB                                       
+[1mUpdated Test: [0m  pts/compress-7zip       [1;30mv1.10.0[0m 7-Zip Compression                                 
+[1mUpdated Test: [0m  pts/compress-zstd       [1;30mv1.6.0[0m  Zstd Compression                                  
+[1mUpdated Test: [0m  pts/couchdb             [1;30mv1.2.0[0m  Apache CouchDB                                    
+[1mUpdated Test: [0m  pts/cpuminer-opt        [1;30mv1.6.0[0m  Cpuminer-Opt                                      
+[1mUpdated Test: [0m  pts/csgo                [1;30mv1.7.2[0m  Counter-Strike: Global Offensive                  
+[1mNew Test: [0m      pts/cyberpunk2077       [1;30mv1.0.1[0m  Cyberpunk 2077                                    
+[1mUpdated Test: [0m  pts/daphne              [1;30mv1.1.0[0m  Darmstadt Automotive Parallel Heterogeneous Suite 
+[1mUpdated Test: [0m  pts/dav1d               [1;30mv1.13.0[0m dav1d                                             
+[1mUpdated Test: [0m  pts/ddnet               [1;30mv1.3.0[0m  DDraceNetwork                                     
+[1mNew Test: [0m      pts/deepsparse          [1;30mv1.3.2[0m  Neural Magic DeepSparse                           
+[1mUpdated Test: [0m  pts/draco               [1;30mv1.6.0[0m  Google Draco                                      
+[1mNew Test: [0m      pts/dragonflydb         [1;30mv1.0.0[0m  Dragonflydb                                       
+[1mUpdated Test: [0m  pts/embree              [1;30mv1.4.0[0m  Embree                                            
+[1mUpdated Test: [0m  pts/encode-flac         [1;30mv1.8.1[0m  FLAC Audio Encoding                               
+[1mNew Test: [0m      pts/encodec             [1;30mv1.0.1[0m  EnCodec                                           
+[1mNew Test: [0m      pts/etcd                [1;30mv1.0.0[0m  etcd                                              
+[1mUpdated Test: [0m  pts/etlegacy            [1;30mv1.3.0[0m  ET: Legacy                                        
+[1mUpdated Test: [0m  pts/f12021              [1;30mv1.0.1[0m  F1 2021                                           
+[1mNew Test: [0m      pts/f122                [1;30mv1.0.3[0m  F1 22                                             
+[1mUpdated Test: [0m  pts/ffmpeg              [1;30mv6.0.0[0m  FFmpeg                                            
+[1mNew Test: [0m      pts/fluidx3d            [1;30mv1.1.0[0m  FluidX3D                                          
+[1mUpdated Test: [0m  pts/glibc-bench         [1;30mv1.8.0[0m  Glibc Benchmarks                                  
+[1mUpdated Test: [0m  pts/glmark2             [1;30mv1.4.0[0m  GLmark2                                           
+[1mUpdated Test: [0m  pts/graphics-magick     [1;30mv2.1.0[0m  GraphicsMagick                                    
+[1mUpdated Test: [0m  pts/gravitymark         [1;30mv1.8.0[0m  GravityMark                                       
+[1mUpdated Test: [0m  pts/gromacs             [1;30mv1.8.0[0m  GROMACS                                           
+[1mNew Test: [0m      pts/gta5                [1;30mv1.0.0[0m  Grand Theft Auto V                                
+[1mUpdated Test: [0m  pts/hammerdb-mariadb    [1;30mv1.1.0[0m  HammerDB - MariaDB                                
+[1mUpdated Test: [0m  pts/hammerdb-postgresql [1;30mv1.1.1[0m  HammerDB - PostgreSQL                             
+[1mUpdated Test: [0m  pts/hbase               [1;30mv1.1.0[0m  Apache HBase                                      
+[1mUpdated Test: [0m  pts/hitman              [1;30mv1.0.2[0m  HITMAN                                            
+[1mUpdated Test: [0m  pts/hitman3             [1;30mv1.0.1[0m  HITMAN 3                                          
+[1mUpdated Test: [0m  pts/intel-mlc           [1;30mv1.1.0[0m  Intel Memory Latency Checker                      
+[1mUpdated Test: [0m  pts/john-the-ripper     [1;30mv1.8.0[0m  John The Ripper                                   
+[1mUpdated Test: [0m  pts/jpegxl              [1;30mv1.5.0[0m  JPEG XL libjxl                                    
+[1mUpdated Test: [0m  pts/jpegxl-decode       [1;30mv1.5.0[0m  JPEG XL Decoding libjxl                           
+[1mUpdated Test: [0m  pts/keydb               [1;30mv1.4.0[0m  KeyDB                                             
+[1mUpdated Test: [0m  pts/kvazaar             [1;30mv1.2.0[0m  Kvazaar                                           
+[1mUpdated Test: [0m  pts/l4d2                [1;30mv1.0.1[0m  Left 4 Dead 2                                     
+[1mUpdated Test: [0m  pts/lammps              [1;30mv1.4.0[0m  LAMMPS Molecular Dynamics Simulator               
+[1mUpdated Test: [0m  pts/libplacebo          [1;30mv1.1.0[0m  Libplacebo                                        
+[1mNew Test: [0m      pts/memcached           [1;30mv1.1.0[0m  Memcached                                         
+[1mUpdated Test: [0m  pts/memtier-benchmark   [1;30mv1.4.1[0m  memtier_benchmark                                 
+[1mNew Test: [0m      pts/minibude            [1;30mv1.0.0[0m  miniBUDE                                          
+[1mUpdated Test: [0m  pts/mnn                 [1;30mv2.1.0[0m  Mobile Neural Network                             
+[1mUpdated Test: [0m  pts/mysqlslap           [1;30mv1.4.0[0m  MariaDB                                           
+[1mUpdated Test: [0m  pts/natron              [1;30mv1.1.0[0m  Natron                                            
+[1mUpdated Test: [0m  pts/ncnn                [1;30mv1.4.0[0m  NCNN                                              
+[1mNew Test: [0m      pts/nekrs               [1;30mv1.0.0[0m  nekRS                                             
+[1mUpdated Test: [0m  pts/nginx               [1;30mv3.0.0[0m  nginx                                             
+[1mUpdated Test: [0m  pts/node-web-tooling    [1;30mv1.0.1[0m  Node.js V8 Web Tooling Benchmark                  
+[1mUpdated Test: [0m  pts/numenta-nab         [1;30mv1.1.1[0m  Numenta Anomaly Benchmark                         
+[1mUpdated Test: [0m  pts/onednn              [1;30mv3.0.0[0m  oneDNN                                            
+[1mUpdated Test: [0m  pts/onnx                [1;30mv1.6.0[0m  ONNX Runtime                                      
+[1mUpdated Test: [0m  pts/opencv              [1;30mv1.3.0[0m  OpenCV                                            
+[1mNew Test: [0m      pts/openems             [1;30mv1.0.0[0m  OpenEMS                                           
+[1mUpdated Test: [0m  pts/openfoam            [1;30mv1.2.0[0m  OpenFOAM                                          
+[1mNew Test: [0m      pts/openradioss         [1;30mv1.0.0[0m  OpenRadioss                                       
+[1mUpdated Test: [0m  pts/openssl             [1;30mv3.1.0[0m  OpenSSL                                           
+[1mUpdated Test: [0m  pts/openvino            [1;30mv1.2.0[0m  OpenVINO                                          
+[1mUpdated Test: [0m  pts/openvkl             [1;30mv1.3.0[0m  OpenVKL                                           
+[1mUpdated Test: [0m  pts/perf-bench          [1;30mv1.0.5[0m  perf-bench                                        
+[1mUpdated Test: [0m  pts/pgbench             [1;30mv1.13.0[0m PostgreSQL                                        
+[1mUpdated Test: [0m  pts/portal2             [1;30mv1.1.2[0m  Portal 2                                          
+[1mUpdated Test: [0m  pts/primesieve          [1;30mv1.9.0[0m  Primesieve                                        
+[1mNew Test: [0m      pts/quadray             [1;30mv1.0.0[0m  QuadRay                                           
+[1mUpdated Test: [0m  pts/rav1e               [1;30mv1.7.0[0m  rav1e                                             
+[1mUpdated Test: [0m  pts/redis               [1;30mv1.4.0[0m  Redis                                             
+[1mUpdated Test: [0m  pts/rocksdb             [1;30mv1.5.0[0m  RocksDB                                           
+[1mUpdated Test: [0m  pts/schbench            [1;30mv1.1.0[0m  Schbench                                          
+[1mUpdated Test: [0m  pts/scikit-learn        [1;30mv1.2.0[0m  Scikit-Learn                                      
+[1mUpdated Test: [0m  pts/smhasher            [1;30mv1.1.0[0m  SMHasher                                          
+[1mNew Test: [0m      pts/spacy               [1;30mv1.0.0[0m  spaCy                                             
+[1mNew Test: [0m      pts/spark               [1;30mv1.0.1[0m  Apache Spark                                      
+[1mUpdated Test: [0m  pts/spec-jbb2015        [1;30mv1.1.0[0m  SPECjbb 2015                                      
+[1mNew Test: [0m      pts/specfem3d           [1;30mv1.0.0[0m  SPECFEM3D                                         
+[1mUpdated Test: [0m  pts/srsran              [1;30mv1.2.0[0m  srsRAN                                            
+[1mUpdated Test: [0m  pts/stargate            [1;30mv1.1.0[0m  Stargate Digital Audio Workstation                
+[1mUpdated Test: [0m  pts/strange-brigade     [1;30mv1.0.1[0m  Strange Brigade                                   
+[1mUpdated Test: [0m  pts/stream              [1;30mv1.3.4[0m  Stream                                            
+[1mUpdated Test: [0m  pts/stress-ng           [1;30mv1.8.0[0m  Stress-NG                                         
+[1mUpdated Test: [0m  pts/svt-av1             [1;30mv2.7.2[0m  SVT-AV1                                           
+[1mUpdated Test: [0m  pts/tensorflow          [1;30mv2.0.0[0m  TensorFlow                                        
+[1mUpdated Test: [0m  pts/tf2                 [1;30mv1.2.4[0m  Team Fortress 2                                   
+[1mUpdated Test: [0m  pts/tww3                [1;30mv1.0.1[0m  Total War: WARHAMMER III                          
+[1mUpdated Test: [0m  pts/unigine-super       [1;30mv1.0.8[0m  Unigine Superposition                             
+[1mUpdated Test: [0m  pts/unpack-linux        [1;30mv1.2.0[0m  Unpacking The Linux Kernel                        
+[1mUpdated Test: [0m  pts/unvanquished        [1;30mv1.8.0[0m  Unvanquished                                      
+[1mNew Test: [0m      pts/uvg266              [1;30mv1.0.0[0m  uvg266                                            
+[1mUpdated Test: [0m  pts/vkmark              [1;30mv1.3.2[0m  VKMark                                            
+[1mUpdated Test: [0m  pts/vpxenc              [1;30mv3.2.0[0m  VP9 libvpx Encoding                               
+[1mNew Test: [0m      pts/vvenc               [1;30mv1.1.0[0m  VVenC                                             
+[1mUpdated Test: [0m  pts/webp                [1;30mv1.2.0[0m  WebP Image Encode                                 
+[1mUpdated Test: [0m  pts/webp2               [1;30mv1.2.0[0m  WebP2 Image Encode                                
+[1mNew Test: [0m      pts/will-it-scale       [1;30mv1.0.0[0m  will-it-scale                                     
+[1mUpdated Test: [0m  pts/xmrig               [1;30mv1.1.0[0m  Xmrig                                             
+[1mNew Test: [0m      pts/xplane12            [1;30mv1.0.1[0m  X-Plane                                           
+[1mUpdated Test: [0m  pts/y-cruncher          [1;30mv1.2.0[0m  Y-Cruncher                                        
+[1mUpdated Suite: [0m pts/compilation         [1;30mv1.2.8[0m  Timed Code Compilation                            
+[1mUpdated Suite: [0m pts/database            [1;30mv1.3.7[0m  Database Test Suite                               
+[1mUpdated Suite: [0m pts/electronic-design   [1;30mv1.0.1[0m  Electronic Design                                 
+[1mUpdated Suite: [0m pts/hpc                 [1;30mv1.1.7[0m  HPC - High Performance Computing                  
+[1mUpdated Suite: [0m pts/machine-learning    [1;30mv1.3.5[0m  Machine Learning                                  
+[1mUpdated Suite: [0m pts/opencl              [1;30mv1.1.1[0m  OpenCL                                            
+[1mUpdated Suite: [0m pts/raytracing          [1;30mv1.0.3[0m  Raytracing                                        
+[1mUpdated Suite: [0m pts/steam               [1;30mv1.0.9[0m  Steam                                             
+[1mUpdated Suite: [0m pts/video-encoding      [1;30mv1.3.4[0m  Video Encoding                                    
+[1;32mUpdated OpenBenchmarking.org Repository Index[0m
+[1;32msystem: 41 Distinct Tests, 128 Test Versions[0m
+[3mAvailable Changes From 3 July 2022 To 23 March[0m
+[1mUpdated Test: [0m system/inkscape [1;30mv1.0.1[0m  Inkscape 
+[1mUpdated Test: [0m system/selenium [1;30mv1.0.34[0m Selenium 
+[1;32mUpdated OpenBenchmarking.org Repository Index[0m
+[1;32mgit: 9 Distinct Tests, 12 Test Versions[0m
+[3mAvailable Changes From 3 July 2022 To 23 March[0m
+[1mNew Test: [0m git/clickhouse [1;30mv1.0.0[0m ClickHouse 
+    Evaluating External Test Dependencies ..................................
+
+The following dependencies are needed and will be installed: 
+
+- libaio-dev
+- mesa-utils
+- vulkan-tools
+- unzip
+- apt-file
+
+This process may take several minutes.
+debconf: delaying package configuration, since apt-utils is not installed
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libaio1 libapt-pkg-perl libexporter-tiny-perl liblist-moreutils-perl
+  libregexp-assemble-perl
+The following NEW packages will be installed:
+  apt-file libaio-dev libaio1 libapt-pkg-perl libexporter-tiny-perl
+  liblist-moreutils-perl libregexp-assemble-perl mesa-utils vulkan-tools
+The following packages will be upgraded:
+  unzip
+1 upgraded, 9 newly installed, 0 to remove and 684 not upgraded.
+Need to get 662 kB of archives.
+After this operation, 2074 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libapt-pkg-perl amd64 0.1.36build3 [68.5 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libexporter-tiny-perl all 1.002001-1 [35.5 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 liblist-moreutils-perl amd64 0.416-1build5 [55.5 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal/universe amd64 libregexp-assemble-perl all 0.36-1 [77.5 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/universe amd64 apt-file all 3.2.2 [27.6 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 libaio1 amd64 0.3.112-5 [7184 B]
+Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 libaio-dev amd64 0.3.112-5 [13.7 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 unzip amd64 6.0-25ubuntu1.1 [168 kB]
+Get:9 http://archive.ubuntu.com/ubuntu focal/universe amd64 vulkan-tools amd64 1.2.131.1+dfsg1-1 [174 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal/universe amd64 mesa-utils amd64 8.4.0-1build1 [34.2 kB]
+Fetched 662 kB in 1s (676 kB/s)
+Selecting previously unselected package libapt-pkg-perl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 169920 files and directories currently installed.)
+Preparing to unpack .../0-libapt-pkg-perl_0.1.36build3_amd64.deb ...
+Unpacking libapt-pkg-perl (0.1.36build3) ...
+Selecting previously unselected package libexporter-tiny-perl.
+Preparing to unpack .../1-libexporter-tiny-perl_1.002001-1_all.deb ...
+Unpacking libexporter-tiny-perl (1.002001-1) ...
+Selecting previously unselected package liblist-moreutils-perl.
+Preparing to unpack .../2-liblist-moreutils-perl_0.416-1build5_amd64.deb ...
+Unpacking liblist-moreutils-perl (0.416-1build5) ...
+Selecting previously unselected package libregexp-assemble-perl.
+Preparing to unpack .../3-libregexp-assemble-perl_0.36-1_all.deb ...
+Unpacking libregexp-assemble-perl (0.36-1) ...
+Selecting previously unselected package apt-file.
+Preparing to unpack .../4-apt-file_3.2.2_all.deb ...
+Unpacking apt-file (3.2.2) ...
+Selecting previously unselected package libaio1:amd64.
+Preparing to unpack .../5-libaio1_0.3.112-5_amd64.deb ...
+Unpacking libaio1:amd64 (0.3.112-5) ...
+Selecting previously unselected package libaio-dev:amd64.
+Preparing to unpack .../6-libaio-dev_0.3.112-5_amd64.deb ...
+Unpacking libaio-dev:amd64 (0.3.112-5) ...
+Preparing to unpack .../7-unzip_6.0-25ubuntu1.1_amd64.deb ...
+Unpacking unzip (6.0-25ubuntu1.1) over (6.0-25ubuntu1) ...
+Selecting previously unselected package vulkan-tools.
+Preparing to unpack .../8-vulkan-tools_1.2.131.1+dfsg1-1_amd64.deb ...
+Unpacking vulkan-tools (1.2.131.1+dfsg1-1) ...
+Selecting previously unselected package mesa-utils.
+Preparing to unpack .../9-mesa-utils_8.4.0-1build1_amd64.deb ...
+Unpacking mesa-utils (8.4.0-1build1) ...
+Setting up libapt-pkg-perl (0.1.36build3) ...
+Setting up unzip (6.0-25ubuntu1.1) ...
+Setting up vulkan-tools (1.2.131.1+dfsg1-1) ...
+Setting up mesa-utils (8.4.0-1build1) ...
+Setting up libexporter-tiny-perl (1.002001-1) ...
+Setting up libaio1:amd64 (0.3.112-5) ...
+Setting up libregexp-assemble-perl (0.36-1) ...
+Setting up liblist-moreutils-perl (0.416-1build5) ...
+Setting up apt-file (3.2.2) ...
+The system-wide cache is empty. You may want to run 'apt-file update'
+as root to update the cache.
+Setting up libaio-dev:amd64 (0.3.112-5) ...
+Processing triggers for mime-support (3.64ubuntu1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.7) ...
+Processing triggers for man-db (2.9.1-1) ...
+
+[1;32mPhoronix Test Suite v10.8.4[0m
+[1;32m[0m
+    [1mTo Install:[0m    pts/sysbench-1.1.0
+
+    Determining File Requirements ..........................................
+    Searching Download Caches ..............................................
+
+    1 Test To Install
+        1 File To Download [1.44MB]
+        30MB Of Disk Space Is Needed
+        35 Seconds Estimated Install Time
+
+    [1;36mpts/sysbench-1.1.0[0m:
+        Test Installation 1 of 1
+        1 File Needed [1.44 MB]
+        [1mDownloading[0m: sysbench-1.0.20.tar.gz                         [1.44MB]
+        Downloading ........................................................
+        [1mApproximate Install Size: [0m30 MB
+        [1mEstimated Install Time: [0m35 Seconds
+        Installing Test @ 00:58:42
+
+
+
+    Evaluating External Test Dependencies ..................................
+
+[1;32mPhoronix Test Suite v10.8.4[0m
+[1;32m[0m
+    [1mTo Install:[0m    pts/fs-mark-1.0.3
+
+    Determining File Requirements ..........................................
+    Searching Download Caches ..............................................
+
+    1 Test To Install
+        1 File To Download [0.01MB]
+        1MB Of Disk Space Is Needed
+        2 Seconds Estimated Install Time
+
+    [1;36mpts/fs-mark-1.0.3[0m:
+        Test Installation 1 of 1
+        1 File Needed [0.01 MB / 1 Minute]
+        [1mDownloading[0m: fs_mark-3.3.tar.gz                             [0.01MB]
+        Estimated Download Time: 1m ........................................
+        [1mApproximate Install Size: [0m1 MB
+        [1mEstimated Install Time: [0m2 Seconds
+        Installing Test @ 00:59:13
+
+
+
+    Evaluating External Test Dependencies ..................................
+
+[1;32mPhoronix Test Suite v10.8.4[0m
+[1;32m[0m
+    [1mTo Install:[0m    pts/ramspeed-1.4.3
+    [1mTo Install:[0m    pts/stream-1.3.4
+    [1mTo Install:[0m    pts/t-test1-1.0.1
+    [1mTo Install:[0m    pts/cachebench-1.1.2
+    [1mTo Install:[0m    pts/tinymembench-1.0.2
+    [1mTo Install:[0m    pts/mbw-1.0.0
+
+    Determining File Requirements ..........................................
+    Searching Download Caches ..............................................
+
+    6 Tests To Install
+        6 Files To Download [0.26MB]
+        4MB Of Disk Space Is Needed
+        17 Seconds Estimated Install Time
+
+    [1;36mpts/ramspeed-1.4.3[0m:
+        Test Installation 1 of 6
+        1 File Needed [0.08 MB / 1 Minute]
+        [1mDownloading[0m: ramsmp-3.5.0.tar.gz                            [0.08MB]
+        Estimated Download Time: 1m ........................................
+        [1mApproximate Install Size: [0m0.72 MB
+        [1mEstimated Install Time: [0m4 Seconds
+        Installing Test @ 00:59:16
+
+    [1;36mpts/stream-1.3.4[0m:
+        Test Installation 2 of 6
+        1 File Needed [0.01 MB / 1 Minute]
+        [1mDownloading[0m: stream-2013-01-17.tar.bz2                      [0.01MB]
+        Estimated Download Time: 1m ........................................
+        [1mApproximate Install Size: [0m0.1 MB
+        [1mEstimated Install Time: [0m3 Seconds
+        Installing Test @ 00:59:18
+
+    [1;36mpts/t-test1-1.0.1[0m:
+        Test Installation 3 of 6
+        1 File Needed
+        [1mDownloading[0m: t-test1c-20171.zip                             [0.00MB]
+        Estimated Download Time: 1m ........................................
+        [1mApproximate Install Size: [0m1.0 MB
+        [1mEstimated Install Time: [0m3 Seconds
+        Installing Test @ 00:59:19
+
+    [1;36mpts/cachebench-1.1.2[0m:
+        Test Installation 4 of 6
+        1 File Needed [0.08 MB / 1 Minute]
+        [1mDownloading[0m: llcbench-20170104.tar.gz                       [0.08MB]
+        Estimated Download Time: 1m ........................................
+        [1mApproximate Install Size: [0m0.5 MB
+        [1mEstimated Install Time: [0m3 Seconds
+        Installing Test @ 00:59:20
+
+    [1;36mpts/tinymembench-1.0.2[0m:
+        Test Installation 5 of 6
+        1 File Needed [0.03 MB / 1 Minute]
+        [1mDownloading[0m: tinymembench-20180528.zip                      [0.03MB]
+        Estimated Download Time: 1m ........................................
+        [1mApproximate Install Size: [0m0.3 MB
+        [1mEstimated Install Time: [0m2 Seconds
+        Installing Test @ 00:59:21
+
+    [1;36mpts/mbw-1.0.0[0m:
+        Test Installation 6 of 6
+        1 File Needed [0.06 MB / 1 Minute]
+        [1mDownloading[0m: mbw-20180908.tar.xz                            [0.06MB]
+        Estimated Download Time: 1m ........................................
+        [1mApproximate Install Size: [0m1 MB
+        [1mEstimated Install Time: [0m2 Seconds
+        Installing Test @ 00:59:22
+
+
+
+    Evaluating External Test Dependencies ..................................
+
+[1;32mPhoronix Test Suite v10.8.4[0m
+[1;32m[0m
+    [1mTo Install:[0m    pts/coremark-1.0.1
+
+    Determining File Requirements ..........................................
+    Searching Download Caches ..............................................
+
+    1 Test To Install
+        1 File To Download [0.47MB]
+        2MB Of Disk Space Is Needed
+        4 Seconds Estimated Install Time
+
+    [1;36mpts/coremark-1.0.1[0m:
+        Test Installation 1 of 1
+        1 File Needed [0.47 MB / 1 Minute]
+        [1mDownloading[0m: coremark-20190727.zip                          [0.47MB]
+        Estimated Download Time: 1m ........................................
+        [1mApproximate Install Size: [0m2.0 MB
+        [1mEstimated Install Time: [0m4 Seconds
+        Installing Test @ 00:59:25
+
+
+
+    Evaluating External Test Dependencies ..................................
+
+The following dependencies are needed and will be installed: 
+
+- golang
+
+This process may take several minutes.
+debconf: delaying package configuration, since apt-utils is not installed
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  golang-1.13 golang-1.13-doc golang-1.13-go golang-1.13-race-detector-runtime
+  golang-1.13-src golang-doc golang-go golang-race-detector-runtime golang-src
+Suggested packages:
+  bzr | brz mercurial subversion
+The following NEW packages will be installed:
+  golang golang-1.13 golang-1.13-doc golang-1.13-go
+  golang-1.13-race-detector-runtime golang-1.13-src golang-doc golang-go
+  golang-race-detector-runtime golang-src
+0 upgraded, 10 newly installed, 0 to remove and 684 not upgraded.
+Need to get 63.5 MB of archives.
+After this operation, 329 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 golang-1.13-src amd64 1.13.8-1ubuntu1.1 [12.6 MB]
+Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 golang-1.13-go amd64 1.13.8-1ubuntu1.1 [47.6 MB]
+Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 golang-1.13-doc all 1.13.8-1ubuntu1.1 [2525 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 golang-1.13 all 1.13.8-1ubuntu1.1 [11.3 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 golang-src amd64 2:1.13~1ubuntu2 [4044 B]
+Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 golang-go amd64 2:1.13~1ubuntu2 [22.0 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 golang-doc all 2:1.13~1ubuntu2 [2948 B]
+Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 golang amd64 2:1.13~1ubuntu2 [2900 B]
+Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 golang-1.13-race-detector-runtime amd64 0.0+svn332029-0ubuntu2 [713 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 golang-race-detector-runtime amd64 2:1.13~1ubuntu2 [3836 B]
+Fetched 63.5 MB in 3s (20.3 MB/s)
+Selecting previously unselected package golang-1.13-src.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 170081 files and directories currently installed.)
+Preparing to unpack .../0-golang-1.13-src_1.13.8-1ubuntu1.1_amd64.deb ...
+Unpacking golang-1.13-src (1.13.8-1ubuntu1.1) ...
+Selecting previously unselected package golang-1.13-go.
+Preparing to unpack .../1-golang-1.13-go_1.13.8-1ubuntu1.1_amd64.deb ...
+Unpacking golang-1.13-go (1.13.8-1ubuntu1.1) ...
+Selecting previously unselected package golang-1.13-doc.
+Preparing to unpack .../2-golang-1.13-doc_1.13.8-1ubuntu1.1_all.deb ...
+Unpacking golang-1.13-doc (1.13.8-1ubuntu1.1) ...
+Selecting previously unselected package golang-1.13.
+Preparing to unpack .../3-golang-1.13_1.13.8-1ubuntu1.1_all.deb ...
+Unpacking golang-1.13 (1.13.8-1ubuntu1.1) ...
+Selecting previously unselected package golang-src.
+Preparing to unpack .../4-golang-src_2%3a1.13~1ubuntu2_amd64.deb ...
+Unpacking golang-src (2:1.13~1ubuntu2) ...
+Selecting previously unselected package golang-go.
+Preparing to unpack .../5-golang-go_2%3a1.13~1ubuntu2_amd64.deb ...
+Unpacking golang-go (2:1.13~1ubuntu2) ...
+Selecting previously unselected package golang-doc.
+Preparing to unpack .../6-golang-doc_2%3a1.13~1ubuntu2_all.deb ...
+Unpacking golang-doc (2:1.13~1ubuntu2) ...
+Selecting previously unselected package golang.
+Preparing to unpack .../7-golang_2%3a1.13~1ubuntu2_amd64.deb ...
+Unpacking golang (2:1.13~1ubuntu2) ...
+Selecting previously unselected package golang-1.13-race-detector-runtime.
+Preparing to unpack .../8-golang-1.13-race-detector-runtime_0.0+svn332029-0ubuntu2_amd64.deb ...
+Unpacking golang-1.13-race-detector-runtime (0.0+svn332029-0ubuntu2) ...
+Selecting previously unselected package golang-race-detector-runtime.
+Preparing to unpack .../9-golang-race-detector-runtime_2%3a1.13~1ubuntu2_amd64.deb ...
+Unpacking golang-race-detector-runtime (2:1.13~1ubuntu2) ...
+Setting up golang-1.13-src (1.13.8-1ubuntu1.1) ...
+Setting up golang-1.13-race-detector-runtime (0.0+svn332029-0ubuntu2) ...
+Setting up golang-1.13-go (1.13.8-1ubuntu1.1) ...
+Setting up golang-src (2:1.13~1ubuntu2) ...
+Setting up golang-race-detector-runtime (2:1.13~1ubuntu2) ...
+Setting up golang-go (2:1.13~1ubuntu2) ...
+Setting up golang-1.13-doc (1.13.8-1ubuntu1.1) ...
+Setting up golang-1.13 (1.13.8-1ubuntu1.1) ...
+Setting up golang-doc (2:1.13~1ubuntu2) ...
+Setting up golang (2:1.13~1ubuntu2) ...
+Processing triggers for man-db (2.9.1-1) ...
+
+[1;32mPhoronix Test Suite v10.8.4[0m
+[1;32m[0m
+    [1mTo Install:[0m    pts/sockperf-1.0.0
+    [1mTo Install:[0m    pts/ethr-1.0.4
+    [1mTo Install:[0m    pts/netperf-1.0.3
+    [1mTo Install:[0m    pts/iperf-1.0.2
+
+    Determining File Requirements ..........................................
+    Searching Download Caches ..............................................
+
+    4 Tests To Install
+        4 Files To Download [1.75MB]
+        145MB Of Disk Space Is Needed
+        4 Minutes, 7 Seconds Estimated Install Time
+
+    [1;36mpts/sockperf-1.0.0[0m:
+        Test Installation 1 of 4
+        1 File Needed [0.22 MB / 1 Minute]
+        [1mDownloading[0m: sockperf-3.4.zip                               [0.22MB]
+        Estimated Download Time: 1m ........................................
+        [1mApproximate Install Size: [0m125 MB
+        [1mEstimated Install Time: [0m3 Minutes, 26 Seconds
+        Installing Test @ 00:59:50
+
+    [1;36mpts/ethr-1.0.4[0m:
+        Test Installation 2 of 4
+        1 File Needed [0.03 MB / 1 Minute]
+        [1mDownloading[0m: ethr-20190102.zip                              [0.03MB]
+        Estimated Download Time: 1m ........................................
+        [1mApproximate Install Size: [0m8 MB
+        [1mEstimated Install Time: [0m8 Seconds
+        Installing Test @ 01:03:25
+
+        [1;30m[NOTICE] This test profile automates the testing of a Microsoft Ethr
+        client. Ensure you have a suitable Ethr server
+        [https://github.com/microsoft/ethr] running on your network prior to
+        running this test profile.[0m
+
+    [1;36mpts/netperf-1.0.3[0m:
+        Test Installation 3 of 4
+        1 File Needed [0.98 MB / 1 Minute]
+        [1mDownloading[0m: netperf-2.7.0.tar.bz2                          [0.98MB]
+        Estimated Download Time: 1m ........................................
+        [1mApproximate Install Size: [0m6 MB
+        [1mEstimated Install Time: [0m18 Seconds
+        Installing Test @ 01:03:29
+
+        [1;30m[NOTICE] This test profile automates the testing of a Netperf
+        client. Ensure you have a suitable Netperf server running on your
+        network prior to running this test.[0m
+
+    [1;36mpts/iperf-1.0.2[0m:
+        Test Installation 4 of 4
+        1 File Needed [0.52 MB / 1 Minute]
+        [1mDownloading[0m: iperf-3.1.3-source.tar.gz                      [0.52MB]
+        Estimated Download Time: 1m ........................................
+        [1mApproximate Install Size: [0m6 MB
+        [1mEstimated Install Time: [0m15 Seconds
+        Installing Test @ 01:03:40
+
+        [1;30m[NOTICE] This test profile automates the testing of a iperf3 client.
+        Ensure you have a suitable iPerf server running on your network
+        prior to running this test.[0m
+
+
+
+    Evaluating External Test Dependencies ..................................
+
+[1;32mPhoronix Test Suite v10.8.4[0m
+[1;32m[0m
+    [1mTo Install:[0m    pts/iperf-1.1.1
+
+    Determining File Requirements ..........................................
+    Searching Download Caches ..............................................
+
+    1 Test To Install
+        1 File To Download [0.58MB]
+        6MB Of Disk Space Is Needed
+        15 Seconds Estimated Install Time
+
+    [1;36mpts/iperf-1.1.1[0m:
+        Test Installation 1 of 1
+        1 File Needed [0.58 MB / 1 Minute]
+        [1mDownloading[0m: iperf-3.7.tar.gz                               [0.58MB]
+        Estimated Download Time: 1m ........................................
+        [1mApproximate Install Size: [0m6 MB
+        [1mEstimated Install Time: [0m15 Seconds
+        Installing Test @ 01:03:50
+
+        [1;30m[NOTICE] This test profile automates the testing of a iperf3 client.
+        Ensure you have a suitable iPerf server running on your network
+        prior to running this test.[0m
+
+
+
+    Evaluating External Test Dependencies ..................................
+
+[1;32mPhoronix Test Suite v10.8.4[0m
+[1;32m[0m
+    [1mTo Install:[0m    pts/byte-1.2.2
+
+    Determining File Requirements ..........................................
+    Searching Download Caches ..............................................
+
+    1 Test To Install
+        1 File To Download [0.17MB]
+        1MB Of Disk Space Is Needed
+        3 Seconds Estimated Install Time
+
+    [1;36mpts/byte-1.2.2[0m:
+        Test Installation 1 of 1
+        1 File Needed [0.17 MB / 1 Minute]
+        [1mDownloading[0m: byte-benchmark-2.tar.gz                        [0.17MB]
+        Estimated Download Time: 1m ........................................
+        [1mApproximate Install Size: [0m1.0 MB
+        [1mEstimated Install Time: [0m3 Seconds
+        Installing Test @ 01:04:04
+
+
+
+    Evaluating External Test Dependencies ..................................
+
+[1;32mPhoronix Test Suite v10.8.4[0m
+[1;32m[0m
+    [1mTo Install:[0m    pts/scimark2-1.3.2
+
+    Determining File Requirements ..........................................
+    Searching Download Caches ..............................................
+
+    1 Test To Install
+        1 File To Download [0.01MB]
+        1MB Of Disk Space Is Needed
+        4 Seconds Estimated Install Time
+
+    [1;36mpts/scimark2-1.3.2[0m:
+        Test Installation 1 of 1
+        1 File Needed [0.01 MB / 1 Minute]
+        [1mDownloading[0m: scimark2_1c.zip                                [0.01MB]
+        Estimated Download Time: 1m ........................................
+        [1mApproximate Install Size: [0m1 MB
+        [1mEstimated Install Time: [0m4 Seconds
+        Installing Test @ 01:04:09
+
+
+
+
+[1;32mPhoronix Test Suite v10.8.4[0m
+[1;32m16 Tests Installed[0m
+
+pts/byte-1.2.2                       - BYTE Unix Benchmark           
+pts/cachebench-1.1.2                 - CacheBench                    
+pts/coremark-1.0.1                   - Coremark                      
+pts/ethr-1.0.4                       - Ethr                          
+pts/fs-mark-1.0.3                    - FS-Mark                       
+pts/iperf-1.0.2                      - iPerf                         
+pts/iperf-1.1.1                      - iPerf                         
+pts/mbw-1.0.0                        - MBW                           
+pts/netperf-1.0.3                    - Netperf                       
+pts/ramspeed-1.4.3                   - RAMspeed SMP                  
+pts/scimark2-1.3.2                   - SciMark                       
+pts/sockperf-1.0.0                   - Sockperf                      
+pts/stream-1.3.4                     - Stream                        
+pts/sysbench-1.1.0                   - Sysbench                      
+pts/t-test1-1.0.1                    - t-test1                       
+pts/tinymembench-1.0.2               - Tinymembench                  
+
+
+[1mpts/byte-1.2.2                       [0;32mINSTALLED[0m
+[0mInstalled: 2023-03-23                                    
+[1mpts/cachebench-1.1.2                 [0;32mINSTALLED[0m
+[0mInstalled: 2023-03-23                                    
+[1mpts/coremark-1.0.1                   [0;32mINSTALLED[0m
+[0mInstalled: 2023-03-23                                    
+[1mpts/ethr-1.0.4                       [0;32mINSTALLED[0m
+[0mInstalled: 2023-03-23                                    
+[1mpts/fs-mark-1.0.3                    [0;32mINSTALLED[0m
+[0mInstalled: 2023-03-23                                    
+[1mpts/iperf-1.0.2                      [0;32mINSTALLED[0m
+[0mInstalled: 2023-03-23                                    
+[1mpts/iperf-1.1.1                      [0;32mINSTALLED[0m
+[0mInstalled: 2023-03-23                                    
+[1mpts/mbw-1.0.0                        [0;32mINSTALLED[0m
+[0mInstalled: 2023-03-23                                    
+[1mpts/netperf-1.0.3                    [0;32mINSTALLED[0m
+[0mInstalled: 2023-03-23                                    
+[1mpts/ramspeed-1.4.3                   [0;32mINSTALLED[0m
+[0mInstalled: 2023-03-23                                    
+[1mpts/scimark2-1.3.2                   [0;32mINSTALLED[0m
+[0mInstalled: 2023-03-23                                    
+[1mpts/sockperf-1.0.0                   [0;32mINSTALLED[0m
+[0mInstalled: 2023-03-23                                    
+[1mpts/stream-1.3.4                     [0;32mINSTALLED[0m
+[0mInstalled: 2023-03-23                                    
+[1mpts/sysbench-1.1.0                   [0;32mINSTALLED[0m
+[0mInstalled: 2023-03-23                                    
+[1mpts/t-test1-1.0.1                    [0;32mINSTALLED[0m
+[0mInstalled: 2023-03-23                                    
+[1mpts/tinymembench-1.0.2               [0;32mINSTALLED[0m
+[0mInstalled: 2023-03-23                                    
+
+
+
+[1;32mPhoronix Test Suite v10.8.4[0m
+[1;32mSystem Information[0m
+
+
+  [1;30mPROCESSOR[0m:              [1;32m6 x Intel Xeon E3-12xx v2[0m
+    [1mCore Count[0m:           6                                 
+    [1mExtensions[0m:           SSE 4.2 + AVX + RDRAND + FSGSBASE 
+    [1mCache Size[0m:           96 MB                             
+    [1mMicrocode[0m:            0x1                               
+    [1mCore Family[0m:          Ivy Bridge                        
+
+  [1;30mGRAPHICS[0m:               [1;32mvirtio_gpudrmfb[0m
+    [1mVulkan[0m:               1.1.182          
+    [1mScreen[0m:               1024x768         
+
+  [1;30mMOTHERBOARD[0m:            [1;32mRed Hat KVM[0m
+    [1mBIOS Version[0m:         1.11.0-2.el7     
+    [1mAudio[0m:                QEMU Generic     
+
+  [1;30mMEMORY[0m:                 [1;32m8GB[0m
+
+  [1;30mDISK[0m:                   [1;32m192GB[0m
+    [1mFile-System[0m:          overlayfs        
+
+  [1;30mOPERATING SYSTEM[0m:       [1;32mUbuntu 20.04[0m
+    [1mKernel[0m:               5.3.11-100.fc29.x86_64 (x86_64)                                                                          
+    [1mDisplay Server[0m:       X Server                                                                                                 
+    [1mCompiler[0m:             GCC 9.4.0                                                                                                
+    [1mSystem Layer[0m:         docker                                                                                                   
+    [1mSecurity[0m:             itlb_multihit: KVM: Mitigation of Split huge pages                                                       
+    [1m [0m                     + l1tf: Mitigation of PTE Inversion; VMX: conditional cache flushes SMT disabled                         
+    [1m [0m                     + mds: Mitigation of Clear buffers; SMT Host state unknown                                               
+    [1m [0m                     + meltdown: Mitigation of PTI                                                                            
+    [1m [0m                     + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp                                    
+    [1m [0m                     + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization                     
+    [1m [0m                     + spectre_v2: Mitigation of Full generic retpoline IBPB: conditional IBRS_FW STIBP: disabled RSB filling 
+    [1m [0m                     + tsx_async_abort: Not affected                                                                          
+
+
+
+[1;32mPhoronix Test Suite v10.8.4[0m
+[1;32mSupported Sensors For This System[0m
+
+[3mcpu.freq[0m         [1mCPU Frequency (CPU0): [0m                       3400.00 [1;30mMegahertz[0m 
+[3mcpu.freq[0m         [1mCPU Frequency (CPU1): [0m                       3400.00 [1;30mMegahertz[0m 
+[3mcpu.freq[0m         [1mCPU Frequency (CPU2): [0m                       3400.00 [1;30mMegahertz[0m 
+[3mcpu.freq[0m         [1mCPU Frequency (CPU3): [0m                       3400.00 [1;30mMegahertz[0m 
+[3mcpu.freq[0m         [1mCPU Frequency (CPU4): [0m                       3400.00 [1;30mMegahertz[0m 
+[3mcpu.freq[0m         [1mCPU Frequency (CPU5): [0m                       3400.00 [1;30mMegahertz[0m 
+[3mcpu.peak-freq[0m    [1mCPU Peak Freq (Highest CPU Core Frequency): [0m -1      [1;30mMegahertz[0m 
+[3mcpu.usage[0m        [1mCPU Usage (CPU0): [0m                           10.00   [1;30mPercent[0m   
+[3mcpu.usage[0m        [1mCPU Usage (CPU1): [0m                           0.00    [1;30mPercent[0m   
+[3mcpu.usage[0m        [1mCPU Usage (CPU2): [0m                           8.16    [1;30mPercent[0m   
+[3mcpu.usage[0m        [1mCPU Usage (CPU3): [0m                           0.00    [1;30mPercent[0m   
+[3mcpu.usage[0m        [1mCPU Usage (CPU4): [0m                           2.00    [1;30mPercent[0m   
+[3mcpu.usage[0m        [1mCPU Usage (CPU5): [0m                           0.00    [1;30mPercent[0m   
+[3mcpu.usage[0m        [1mCPU Usage (Summary): [0m                        4.67    [1;30mPercent[0m   
+[3mgpu.fan-speed[0m    [1mGPU Fan Speed: [0m                              100     [1;30mPercent[0m   
+[3mhdd.read-speed[0m   [1mDrive Read Speed (vda): [0m                     0.00    [1;30mMB/s[0m      
+[3mhdd.write-speed[0m  [1mDrive Write Speed (vda): [0m                    0.00    [1;30mMB/s[0m      
+[3mmemory.usage[0m     [1mMemory Usage: [0m                               2353    [1;30mMegabytes[0m 
+[3mswap.usage[0m       [1mSwap Usage: [0m                                 1248    [1;30mMegabytes[0m 
+[3msys.iowait[0m       [1mSystem Iowait: [0m                              0.00    [1;30mPercent[0m   
+
+[1;32mUnsupported Sensors For This System[0m
+
+- Ambient Temperature
+- CPU Fan Speed
+- CPU Power Consumption
+- CPU Temperature
+- CPU Voltage
+- GPU Frequency
+- GPU Memory Usage
+- GPU Power Consumption
+- GPU Temperature
+- GPU Usage
+- GPU Voltage
+- Drive Temperature
+- Memory Temperature
+- System Fan Speed
+- System Power Consumption
+- System Temperature
+- System Voltage
+
+
+
+bash: line 70: Container_name: No such file or directory
+ * Recomend: YNnnnnY
+echo  binarydeb end_ts gazebo-nobody-rtshaderlibcache hsperfdata_root launch_params_i0auc2x9 px4_lock-0 runtime-root shmid start_ts tmp.0zxD0DaoBT tmp.2KFHNwMxfr tmp.61e8ZanXm8 tmp.7916xgLXgt tmp.DSwDHDukZY tmp.HkP8rBGQqO tmp.NUjAXX3sby tmp.SWZM7Yfe84 tmp.fbAo3KpX11 tmp.gPeqkC8T7a tmp.tsI9fjtN3Y tmp.wNri89DteY
+
+
+
+These are the default configuration options for when running the Phoronix Test Suite in a batch mode (i.e. running phoronix-test-suite batch-benchmark universe). Running in a batch mode is designed to be as autonomous as possible, except for where you'd like any end-user interaction.
+
+    [1mSave test results when in batch mode (Y/n): [0my Y
+    [1mOpen the web browser automatically when in batch mode (y/N): [0mN
+    [1mAuto upload the results to OpenBenchmarking.org (Y/n): [0mn
+    [1mPrompt for test identifier (Y/n): [0mn
+    [1mPrompt for test description (Y/n): [0mn
+    [1mPrompt for saved results file-name (Y/n): [0mn
+    [1mRun all test options (Y/n): [0mY
+
+Batch settings saved.
+
+
+
+
+[1;32mPhoronix Test Suite v10.8.4[0m
+[1;32mSystem Information[0m
+
+
+  [1;30mPROCESSOR[0m:              [1;32m6 x Intel Xeon E3-12xx v2[0m
+    [1mCore Count[0m:           6                                 
+    [1mExtensions[0m:           SSE 4.2 + AVX + RDRAND + FSGSBASE 
+    [1mCache Size[0m:           96 MB                             
+    [1mMicrocode[0m:            0x1                               
+    [1mCore Family[0m:          Ivy Bridge                        
+
+  [1;30mGRAPHICS[0m:               [1;32mvirtio_gpudrmfb[0m
+    [1mVulkan[0m:               1.1.182          
+    [1mScreen[0m:               1024x768         
+
+  [1;30mMOTHERBOARD[0m:            [1;32mRed Hat KVM[0m
+    [1mBIOS Version[0m:         1.11.0-2.el7     
+    [1mAudio[0m:                QEMU Generic     
+
+  [1;30mMEMORY[0m:                 [1;32m8GB[0m
+
+  [1;30mDISK[0m:                   [1;32m192GB[0m
+    [1mFile-System[0m:          overlayfs        
+
+  [1;30mOPERATING SYSTEM[0m:       [1;32mUbuntu 20.04[0m
+    [1mKernel[0m:               5.3.11-100.fc29.x86_64 (x86_64)                                                                          
+    [1mDisplay Server[0m:       X Server                                                                                                 
+    [1mCompiler[0m:             GCC 9.4.0                                                                                                
+    [1mSystem Layer[0m:         docker                                                                                                   
+    [1mSecurity[0m:             itlb_multihit: KVM: Mitigation of Split huge pages                                                       
+    [1m [0m                     + l1tf: Mitigation of PTE Inversion; VMX: conditional cache flushes SMT disabled                         
+    [1m [0m                     + mds: Mitigation of Clear buffers; SMT Host state unknown                                               
+    [1m [0m                     + meltdown: Mitigation of PTI                                                                            
+    [1m [0m                     + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp                                    
+    [1m [0m                     + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization                     
+    [1m [0m                     + spectre_v2: Mitigation of Full generic retpoline IBPB: conditional IBRS_FW STIBP: disabled RSB filling 
+    [1m [0m                     + tsx_async_abort: Not affected                                                                          
+
+
+[1;36mSysbench 1.0.20:
+    pts/sysbench-1.1.0 [Test: RAM / Memory][0m
+    Test 1 of 2
+    Estimated Trial Run Count:    3                     
+    Estimated Test Run-Time:      3 Minutes             
+    Estimated Time To Completion: 5 Minutes [02:23 UTC] 
+        Started Run 1 @ 02:19:32
+        Started Run 2 @ 02:19:43
+        Started Run 3 @ 02:19:54
+
+    Test: RAM / Memory:
+        [1;31m14465.3[0m
+        [1;32m14728.51[0m
+        14570.15
+
+    Average: [1;34m14587.99 MiB/sec[0m
+    Deviation: 0.91%
+
+[1;36mSysbench 1.0.20:
+    pts/sysbench-1.1.0 [Test: CPU][0m
+    Test 2 of 2
+    Estimated Trial Run Count:    3                    
+    Estimated Time To Completion: 1 Minute [02:20 UTC] 
+        Started Run 1 @ 02:20:12
+        Started Run 2 @ 02:21:46
+        Started Run 3 @ 02:23:20
+
+    Test: CPU:
+        [1;31m4965.06[0m
+        [1;32m5103.45[0m
+        5047.95
+
+    Average: [1;34m5038.82 Events Per Second[0m
+    Deviation: 1.38%
+
+
+
+
+[1;32mPhoronix Test Suite v10.8.4[0m
+[1;32mSystem Information[0m
+
+
+  [1;30mPROCESSOR[0m:              [1;32m6 x Intel Xeon E3-12xx v2[0m
+    [1mCore Count[0m:           6                                 
+    [1mExtensions[0m:           SSE 4.2 + AVX + RDRAND + FSGSBASE 
+    [1mCache Size[0m:           96 MB                             
+    [1mMicrocode[0m:            0x1                               
+    [1mCore Family[0m:          Ivy Bridge                        
+
+  [1;30mGRAPHICS[0m:               [1;32mvirtio_gpudrmfb[0m
+    [1mVulkan[0m:               1.1.182          
+    [1mScreen[0m:               1024x768         
+
+  [1;30mMOTHERBOARD[0m:            [1;32mRed Hat KVM[0m
+    [1mBIOS Version[0m:         1.11.0-2.el7     
+    [1mAudio[0m:                QEMU Generic     
+
+  [1;30mMEMORY[0m:                 [1;32m8GB[0m
+
+  [1;30mDISK[0m:                   [1;32m192GB[0m
+    [1mFile-System[0m:          overlayfs        
+
+  [1;30mOPERATING SYSTEM[0m:       [1;32mUbuntu 20.04[0m
+    [1mKernel[0m:               5.3.11-100.fc29.x86_64 (x86_64)                                                                          
+    [1mDisplay Server[0m:       X Server                                                                                                 
+    [1mCompiler[0m:             GCC 9.4.0                                                                                                
+    [1mSystem Layer[0m:         docker                                                                                                   
+    [1mSecurity[0m:             itlb_multihit: KVM: Mitigation of Split huge pages                                                       
+    [1m [0m                     + l1tf: Mitigation of PTE Inversion; VMX: conditional cache flushes SMT disabled                         
+    [1m [0m                     + mds: Mitigation of Clear buffers; SMT Host state unknown                                               
+    [1m [0m                     + meltdown: Mitigation of PTI                                                                            
+    [1m [0m                     + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp                                    
+    [1m [0m                     + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization                     
+    [1m [0m                     + spectre_v2: Mitigation of Full generic retpoline IBPB: conditional IBRS_FW STIBP: disabled RSB filling 
+    [1m [0m                     + tsx_async_abort: Not affected                                                                          
+
+
+[1;36mBYTE Unix Benchmark 3.6:
+    pts/byte-1.2.2 [Computational Test: Dhrystone 2][0m
+    Test 1 of 1
+    Estimated Trial Run Count:    3                     
+    Estimated Time To Completion: 7 Minutes [02:31 UTC] 
+        Started Run 1 @ 02:24:56
+        Started Run 2 @ 02:27:02
+        Started Run 3 @ 02:29:07
+
+    Computational Test: Dhrystone 2:
+        [1;32m31963991.3[0m
+        31954312
+        [1;31m31859803.8[0m
+
+    Average: [1;34m31926035.7 LPS[0m
+    Deviation: 0.18%
+
+
+
+
+[1;32mPhoronix Test Suite v10.8.4[0m
+[1;32mSystem Information[0m
+
+
+  [1;30mPROCESSOR[0m:              [1;32m6 x Intel Xeon E3-12xx v2[0m
+    [1mCore Count[0m:           6                                 
+    [1mExtensions[0m:           SSE 4.2 + AVX + RDRAND + FSGSBASE 
+    [1mCache Size[0m:           96 MB                             
+    [1mMicrocode[0m:            0x1                               
+    [1mCore Family[0m:          Ivy Bridge                        
+
+  [1;30mGRAPHICS[0m:               [1;32mvirtio_gpudrmfb[0m
+    [1mVulkan[0m:               1.1.182          
+    [1mScreen[0m:               1024x768         
+
+  [1;30mMOTHERBOARD[0m:            [1;32mRed Hat KVM[0m
+    [1mBIOS Version[0m:         1.11.0-2.el7     
+    [1mAudio[0m:                QEMU Generic     
+
+  [1;30mMEMORY[0m:                 [1;32m8GB[0m
+
+  [1;30mDISK[0m:                   [1;32m192GB[0m
+    [1mFile-System[0m:          overlayfs        
+
+  [1;30mOPERATING SYSTEM[0m:       [1;32mUbuntu 20.04[0m
+    [1mKernel[0m:               5.3.11-100.fc29.x86_64 (x86_64)                                                                          
+    [1mDisplay Server[0m:       X Server                                                                                                 
+    [1mCompiler[0m:             GCC 9.4.0                                                                                                
+    [1mSystem Layer[0m:         docker                                                                                                   
+    [1mSecurity[0m:             itlb_multihit: KVM: Mitigation of Split huge pages                                                       
+    [1m [0m                     + l1tf: Mitigation of PTE Inversion; VMX: conditional cache flushes SMT disabled                         
+    [1m [0m                     + mds: Mitigation of Clear buffers; SMT Host state unknown                                               
+    [1m [0m                     + meltdown: Mitigation of PTI                                                                            
+    [1m [0m                     + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp                                    
+    [1m [0m                     + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization                     
+    [1m [0m                     + spectre_v2: Mitigation of Full generic retpoline IBPB: conditional IBRS_FW STIBP: disabled RSB filling 
+    [1m [0m                     + tsx_async_abort: Not affected                                                                          
+
+
+[1;36mFS-Mark 3.3:
+    pts/fs-mark-1.0.3 [Test: 1000 Files, 1MB Size][0m
+    Test 1 of 4
+    Estimated Trial Run Count:    3                              
+    Estimated Test Run-Time:      25 Minutes                     
+    Estimated Time To Completion: 1 Hour, 40 Minutes [04:11 UTC] 
+        Started Run 1 @ 02:31:15
+        Started Run 2 @ 02:49:32
+        Started Run 3 @ 03:04:44
+        Started Run 4 @ 03:18:47 *
+        Started Run 5 @ 03:36:05 *
+        Started Run 6 @ 03:53:21 *
+        Started Run 7 @ 04:08:04 *
+        Started Run 8 @ 04:23:22 *
+        Started Run 9 @ 04:42:07 *
+
+    Test: 1000 Files, 1MB Size:
+        17.6
+        24.4
+        24.1
+        [1;32m25.5[0m
+        18
+        20.9
+        24.3
+        [1;31m16.7[0m
+        17.8
+
+    Average: [1;34m21.0 Files/s[0m
+    Deviation: 16.94%
+    Samples: 9
+
+[1;36mFS-Mark 3.3:
+    pts/fs-mark-1.0.3 [Test: 5000 Files, 1MB Size, 4 Threads][0m
+    Test 2 of 4
+    Estimated Trial Run Count:    3                               
+    Estimated Test Run-Time:      49 Minutes                      
+    Estimated Time To Completion: 2 Hours, 27 Minutes [07:25 UTC] 
+        Started Run 1 @ 04:58:46
+        [1;31mThe test quit with a non-zero exit status.[0m
+        Started Run 2 @ 05:42:19
+        [1;31mThe test quit with a non-zero exit status.[0m
+        Started Run 3 @ 06:25:53
+        [1;31mThe test quit with a non-zero exit status.[0m
+[1;36mFS-Mark 3.3:
+    pts/fs-mark-1.0.3 [Test: 4000 Files, 32 Sub Dirs, 1MB Size][0m
+    Test 3 of 4
+    Estimated Trial Run Count:    3                              
+    Estimated Test Run-Time:      49 Minutes                     
+    Estimated Time To Completion: 1 Hour, 38 Minutes [08:48 UTC] 
+        Started Run 1 @ 07:10:18
+        Started Run 2 @ 07:45:17
+        Started Run 3 @ 08:15:24
+        Started Run 4 @ 08:50:11 *
+        Started Run 5 @ 09:20:49 *
+        Started Run 6 @ 09:54:55 *
+        Started Run 7 @ 10:26:46 *
+        Started Run 8 @ 10:58:44 *
+        Started Run 9 @ 11:31:10 *
+
+    Test: 4000 Files, 32 Sub Dirs, 1MB Size:
+        21.7
+        21.5
+        18.5
+        21.7
+        18.6
+        21.3
+        18.2
+        [1;32m23.4[0m
+        [1;31m18[0m
+
+    Average: [1;34m20.3 Files/s[0m
+    Deviation: 9.81%
+    Samples: 9
+
+[1;36mFS-Mark 3.3:
+    pts/fs-mark-1.0.3 [Test: 1000 Files, 1MB Size, No Sync/FSync][0m
+    Test 4 of 4
+    Estimated Trial Run Count:    3                              
+    Estimated Time To Completion: 1 Hour, 13 Minutes [13:14 UTC] 
+        Started Run 1 @ 12:01:51
+        [1;31mThe test quit with a non-zero exit status.[0m
+        Started Run 2 @ 12:15:46
+        [1;31mThe test quit with a non-zero exit status.[0m
+        Started Run 3 @ 12:29:43
+        [1;31mThe test quit with a non-zero exit status.[0m
+
+The following tests failed to properly run:
+
+    - pts/fs-mark-1.0.3: Test: 5000 Files, 1MB Size, 4 Threads
+    - pts/fs-mark-1.0.3: Test: 1000 Files, 1MB Size, No Sync/FSync
+
+
+
+RAW resuls in test-results/
+Last test:
+find: ‘/test-results/’: No such file or directory

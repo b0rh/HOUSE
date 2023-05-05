@@ -1,0 +1,1547 @@
+INIT: 0x2b4aee7b3348 0x2b4aee7b625c
+COVFILE_PATH envvar is not set. Defaulting to /tmp/cov
+[-] could not remove /tmp/cov
+[warning] ros_pkg or ros_node not provided.
+          Using exec_cmd instead.
+                          ____
+   _________  _____      / __/_  __________
+  / ___/ __ \/ ___/_____/ /_/ / / /_  /_  /
+ / /  / /_/ (__  )_____/ __/ /_/ / / /_/ /_
+/_/   \____/____/     /_/  \__,_/ /___/___/
+
+[*] Initializing shm for coverage tracking
+[*] Initializing test case queue
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 17898
+
+----- TARGET INFO -----
+  - TOPIC: /cmd_vel
+  - message type: <class 'geometry_msgs.msg._twist.Twist'>
+
+----- BEGIN FUZZING -----
+
+[92mCYCLE: 0 ROUND: 0 EXEC: 0 [0m 1679532490.2552636
+NEW CYCLE
+Current field: angular (z)
+STAGE: GEN
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 18137
+[executor] could not remove previous bag dir
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 1 [0m 1679532523.0331328
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 0 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 0
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 18591
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 2 [0m 1679532666.3403258
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 1 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 1
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 18880
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 3 [0m 1679532726.7225506
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 2 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 2
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 19098
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 4 [0m 1679532780.8687327
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 3 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 3
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 19324
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 5 [0m 1679532850.9469886
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 4 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 4
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 19564
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 6 [0m 1679532903.9066846
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 5 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 5
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 19784
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 7 [0m 1679532981.2831635
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 6 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 6
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 20172
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 8 [0m 1679533136.9507306
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 7 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 7
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 20543
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 9 [0m 1679533180.819991
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 8 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 8
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 20753
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 10 [0m 1679533233.6185076
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 9 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 9
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 20983
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 11 [0m 1679533302.5612135
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 10 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 10
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 21267
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 12 [0m 1679533417.8992555
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 11 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 11
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 21754
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 13 [0m 1679533468.3252933
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 12 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 12
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 21951
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 14 [0m 1679533565.4966202
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 13 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 13
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 22238
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 15 [0m 1679533629.4128156
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 14 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 14
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 22499
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 16 [0m 1679533705.7895408
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 15 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 15
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 22869
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 17 [0m 1679533752.9152553
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 16 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 16
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 23042
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 18 [0m 1679533821.2596192
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 17 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 17
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 23350
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 19 [0m 1679533998.3226442
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 18 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 18
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 23846
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 20 [0m 1679534078.3166478
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 19 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 19
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 24209
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 21 [0m 1679534178.4734561
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 20 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 20
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 24592
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 22 [0m 1679534279.920236
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 21 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 21
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 24899
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 23 [0m 1679534350.9820318
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 22 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 22
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 25148
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 24 [0m 1679534448.9085007
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 23 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 23
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 25455
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 25 [0m 1679534564.2920356
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 24 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 24
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 25744
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 26 [0m 1679534630.8804367
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 25 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 25
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 25974
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 27 [0m 1679534715.6616402
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 26 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 26
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 26256
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 28 [0m 1679534820.7633626
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 27 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 27
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 26677
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 29 [0m 1679534944.271826
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 28 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 28
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 27019
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 30 [0m 1679535121.6602943
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 29 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 29
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 27596
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 31 [0m 1679535233.0360842
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 30 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 30
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 27896
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 32 [0m 1679535300.7326398
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 31 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 31
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 28283
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 33 [0m 1679535391.6473145
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 32 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 32
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 28583
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 34 [0m 1679535439.8288918
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 33 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 33
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 28804
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 35 [0m 1679535523.6638856
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 34 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 34
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 29227
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 36 [0m 1679535629.7532218
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 35 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 35
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 29566
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 37 [0m 1679535731.4944344
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 36 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 36
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 29853
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 38 [0m 1679535782.0123749
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 37 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 37
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 30215
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 39 [0m 1679535873.2743785
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 38 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 38
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 30526
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 40 [0m 1679535956.3042262
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 39 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 39
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 30808
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 41 [0m 1679536053.980407
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 40 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 40
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 31358
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 42 [0m 1679536200.8633015
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 41 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 41
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 31687
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 43 [0m 1679536263.9190338
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 42 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 42
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 31948
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 44 [0m 1679536336.1744409
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 43 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 43
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 32506
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 45 [0m 1679536468.7541587
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 44 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 44
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 310
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 46 [0m 1679536538.4297006
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 45 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 45
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 550
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 47 [0m 1679536615.7069373
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 46 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 46
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 815
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 48 [0m 1679536695.5800478
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 47 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 47
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 1076
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 49 [0m 1679536774.1675062
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 48 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 48
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 1371
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 50 [0m 1679536833.9491026
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 49 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 49
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 1614
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 51 [0m 1679536910.2668724
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 50 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 50
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 1890
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 52 [0m 1679536980.552982
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 51 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 51
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 2131
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 53 [0m 1679537049.5510619
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 52 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 52
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 2381
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 54 [0m 1679537104.7320004
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 53 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 53
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 2647
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 55 [0m 1679537152.178834
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 54 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 54
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 2872
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 56 [0m 1679537205.8380125
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 55 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 55
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 3195
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 57 [0m 1679537296.9290946
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 56 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 56
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 3486
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 58 [0m 1679537366.514821
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 57 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 57
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 3864
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 59 [0m 1679537506.7298954
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 58 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 58
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 4238
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 60 [0m 1679537557.9195228
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 59 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 59
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 4473
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 61 [0m 1679537650.7578466
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 60 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 60
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 4735
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 62 [0m 1679537712.8209631
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 61 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 61
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 5021
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 63 [0m 1679537828.6883264
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 62 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 62
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 5406
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 64 [0m 1679537926.447174
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 63 ( 64 )
+[*] mutate flip 1/1 on float64 1.1041011934756523e-157 at 63
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 5717
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 65 [0m 1679538011.6688285
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: 1.1041011934756523e-157
+end of one determ stage of an operation
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 66 [0m 1679538011.8618484
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 0 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 0
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 5986
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 67 [0m 1679538112.6861515
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 1 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 1
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 6263
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 68 [0m 1679538201.810113
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 2 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 2
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 6754
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 69 [0m 1679538323.2316115
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 3 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 3
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 7029
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 70 [0m 1679538384.619887
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 4 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 4
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 7297
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 71 [0m 1679538476.3231056
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 5 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 5
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 7855
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 72 [0m 1679538643.5643344
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 6 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 6
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 8125
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 73 [0m 1679538715.9207032
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 7 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 7
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 8526
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 74 [0m 1679538826.5953145
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 8 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 8
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 8878
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 75 [0m 1679538895.4747472
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 9 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 9
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 9212
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 76 [0m 1679539009.2218404
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 10 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 10
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 9566
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 77 [0m 1679539111.7436607
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 11 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 11
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 9854
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 78 [0m 1679539188.764503
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 12 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 12
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 10270
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 79 [0m 1679539278.9345038
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 13 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 13
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 10595
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 80 [0m 1679539358.8434281
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 14 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 14
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 10881
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 81 [0m 1679539458.8973658
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 15 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 15
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 11390
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 82 [0m 1679539565.4093683
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 16 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 16
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 11653
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 83 [0m 1679539629.4207647
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: 1.1041011934756523e-157
+bit_pos 17 ( 64 )
+[*] mutate flip 2/1 on float64 1.1041011934756523e-157 at 17
+[executor] len(msg_list): 1
+repeating 0-th sequence

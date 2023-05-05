@@ -1,0 +1,22 @@
+  File "./fuzzer.py", line 1252, in main
+    fuzz_targets = inspect_target(fuzzer)
+  File "./fuzzer.py", line 415, in inspect_target
+    subscriptions = ros_utils.get_subscriptions(fuzzer.node_ptr)
+  File "/robofuzz/src/ros_utils.py", line 104, in get_subscriptions
+    ) in node.get_subscriber_names_and_types_by_node(name, namespace):
+  File "/robofuzz/ros2_foxy/install/rclpy/lib/python3.8/site-packages/rclpy/node.py", line 1577, in get_subscriber_names_and_types_by_node
+    return _rclpy.rclpy_get_subscriber_names_and_types_by_node(
+Traceback (most recent call last):
+  File "./fuzzer.py", line 1715, in <module>
+    main(config)
+  File "./fuzzer.py", line 1269, in main
+    fuzzer.destroy()
+  File "./fuzzer.py", line 388, in destroy
+    self.executor.kill_rosbag()
+AttributeError: 'Fuzzer' object has no attribute 'executor'
+
+real	1m10.253s
+user	0m3.566s
+sys	0m5.622s
+srun: error: cn3016: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=1798812.0

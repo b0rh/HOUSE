@@ -1,0 +1,2191 @@
+INIT: 0x7f2163cea348 0x7f2163ced25c
+COVFILE_PATH envvar is not set. Defaulting to /tmp/cov
+[-] could not remove /tmp/cov
+[warning] ros_pkg or ros_node not provided.
+          Using exec_cmd instead.
+                          ____
+   _________  _____      / __/_  __________
+  / ___/ __ \/ ___/_____/ /_/ / / /_  /_  /
+ / /  / /_/ (__  )_____/ __/ /_/ / / /_/ /_
+/_/   \____/____/     /_/  \__,_/ /___/___/
+
+[*] Initializing shm for coverage tracking
+[*] Initializing test case queue
+[*] Starting moveit2 harness
+
+----- TARGET INFO -----
+  - TOPIC: /metatopic
+  - message type: <class 'geometry_msgs.msg._pose.Pose'>
+
+----- BEGIN FUZZING -----
+
+[92mCYCLE: 0 ROUND: 0 [0m 1679758126.7618845
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] could not remove previous bag dir
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000073
+[+] no error found
+check is_interesting - end_point_deviation False (7.265922819987463e-05)
+check is_interesting - mean_joint_pos_error False (0.0025929703360790517)
+check is_interesting - max_joint_pos_error False (0.01831980143898093)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 1 [0m 1679758153.3608294
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (7.265922819987463e-05)
+check is_interesting - mean_joint_pos_error False (0.0025929703360790517)
+check is_interesting - max_joint_pos_error False (0.01831980143898093)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 2 [0m 1679758180.56808
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (7.265922819987463e-05)
+check is_interesting - mean_joint_pos_error False (0.0025929703360790517)
+check is_interesting - max_joint_pos_error False (0.01831980143898093)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 3 [0m 1679758208.9953165
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000095
+[+] no error found
+check is_interesting - end_point_deviation True (9.534939403261319e-05)
+check is_interesting - mean_joint_pos_error True (0.003136915663374009)
+check is_interesting - max_joint_pos_error True (0.02012918653828155)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+[feedback] INTERESTING!
+
+[92mCYCLE: 0 ROUND: 4 [0m 1679758234.4821713
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (9.534939403261319e-05)
+check is_interesting - mean_joint_pos_error False (0.003136915663374009)
+check is_interesting - max_joint_pos_error False (0.02012918653828155)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 5 [0m 1679758262.8184893
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000093
+[+] no error found
+check is_interesting - end_point_deviation False (9.308967794498501e-05)
+check is_interesting - mean_joint_pos_error False (0.0025995096548698973)
+check is_interesting - max_joint_pos_error False (0.01814096710900781)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 6 [0m 1679758289.003384
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000091
+[+] no error found
+check is_interesting - end_point_deviation False (9.111462960439237e-05)
+check is_interesting - mean_joint_pos_error False (0.0029451206934592933)
+check is_interesting - max_joint_pos_error True (0.02250687645777294)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+[feedback] INTERESTING!
+
+[92mCYCLE: 0 ROUND: 7 [0m 1679758314.9262416
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000092
+[+] no error found
+check is_interesting - end_point_deviation False (9.171403217210288e-05)
+check is_interesting - mean_joint_pos_error False (0.003004564544782916)
+check is_interesting - max_joint_pos_error True (0.023405506050260705)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+[feedback] INTERESTING!
+
+[92mCYCLE: 0 ROUND: 8 [0m 1679758341.6773129
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000068
+[+] no error found
+check is_interesting - end_point_deviation False (6.788913261081477e-05)
+check is_interesting - mean_joint_pos_error False (0.002385424350919264)
+check is_interesting - max_joint_pos_error False (0.020226387796934198)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 9 [0m 1679758367.2082484
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000095
+[+] no error found
+check is_interesting - end_point_deviation False (9.521086486028742e-05)
+check is_interesting - mean_joint_pos_error False (0.0024577417241517063)
+check is_interesting - max_joint_pos_error False (0.019894071404300107)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 10 [0m 1679758392.7833772
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (9.521086486028742e-05)
+check is_interesting - mean_joint_pos_error False (0.0024577417241517063)
+check is_interesting - max_joint_pos_error False (0.019894071404300107)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 11 [0m 1679758420.0048957
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (9.521086486028742e-05)
+check is_interesting - mean_joint_pos_error False (0.0024577417241517063)
+check is_interesting - max_joint_pos_error False (0.019894071404300107)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 12 [0m 1679758447.2633438
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (9.521086486028742e-05)
+check is_interesting - mean_joint_pos_error False (0.0024577417241517063)
+check is_interesting - max_joint_pos_error False (0.019894071404300107)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 13 [0m 1679758475.0980256
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (9.521086486028742e-05)
+check is_interesting - mean_joint_pos_error False (0.0024577417241517063)
+check is_interesting - max_joint_pos_error False (0.019894071404300107)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 14 [0m 1679758503.697196
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (9.521086486028742e-05)
+check is_interesting - mean_joint_pos_error False (0.0024577417241517063)
+check is_interesting - max_joint_pos_error False (0.019894071404300107)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 15 [0m 1679758532.0889459
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (9.521086486028742e-05)
+check is_interesting - mean_joint_pos_error False (0.0024577417241517063)
+check is_interesting - max_joint_pos_error False (0.019894071404300107)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 16 [0m 1679758559.0729105
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000074
+[+] no error found
+check is_interesting - end_point_deviation False (7.406041125937166e-05)
+check is_interesting - mean_joint_pos_error False (0.0026477934715650876)
+check is_interesting - max_joint_pos_error True (0.024798063679993376)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+[feedback] INTERESTING!
+
+[92mCYCLE: 0 ROUND: 17 [0m 1679758585.3424506
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000055
+[+] no error found
+check is_interesting - end_point_deviation False (5.4962915321911825e-05)
+check is_interesting - mean_joint_pos_error False (0.0024778498068902424)
+check is_interesting - max_joint_pos_error False (0.021795270343571982)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 18 [0m 1679758610.3084245
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000071
+[+] no error found
+check is_interesting - end_point_deviation False (7.142315154600956e-05)
+check is_interesting - mean_joint_pos_error True (0.004085898916004935)
+check is_interesting - max_joint_pos_error True (0.025807250430244455)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+[feedback] INTERESTING!
+
+[92mCYCLE: 0 ROUND: 19 [0m 1679758636.1088822
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000055
+[+] no error found
+check is_interesting - end_point_deviation False (5.458027637586587e-05)
+check is_interesting - mean_joint_pos_error False (0.003774544474649928)
+check is_interesting - max_joint_pos_error False (0.01913095418554267)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 20 [0m 1679758661.750408
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no /move_action/_action/status data available
+[checker] no /motion_plan_request data available
+[]
+[31mERROR DETECTED: 2
+- invalid goal action status: []
+- # Motion plan request != 1: (0)
+[0m
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 21 [0m 1679758684.190488
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 22 [0m 1679758712.050405
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 23 [0m 1679758740.8216343
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 24 [0m 1679758768.5744703
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000054
+[+] no error found
+check is_interesting - end_point_deviation True (5.421270460729876e-05)
+check is_interesting - mean_joint_pos_error True (0.0020547026099571645)
+check is_interesting - max_joint_pos_error True (0.020400026371934388)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+[feedback] INTERESTING!
+
+[92mCYCLE: 0 ROUND: 25 [0m 1679758794.1678555
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000098
+[+] no error found
+check is_interesting - end_point_deviation True (9.82723638065302e-05)
+check is_interesting - mean_joint_pos_error True (0.002859910303664204)
+check is_interesting - max_joint_pos_error True (0.022528898289329913)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+[feedback] INTERESTING!
+
+[92mCYCLE: 0 ROUND: 26 [0m 1679758820.1192722
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000094
+[+] no error found
+check is_interesting - end_point_deviation False (9.353253330347737e-05)
+check is_interesting - mean_joint_pos_error False (0.002270487431236933)
+check is_interesting - max_joint_pos_error False (0.018184429216278275)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 27 [0m 1679758845.5432284
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000059
+[+] no error found
+check is_interesting - end_point_deviation False (5.8818598562295565e-05)
+check is_interesting - mean_joint_pos_error False (0.002648918932030669)
+check is_interesting - max_joint_pos_error True (0.033586300283489745)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+[feedback] INTERESTING!
+
+[92mCYCLE: 0 ROUND: 28 [0m 1679758871.9518745
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000026
+[+] no error found
+check is_interesting - end_point_deviation False (2.6232762054179158e-05)
+check is_interesting - mean_joint_pos_error False (0.0026504396682930516)
+check is_interesting - max_joint_pos_error False (0.020822000313209355)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 29 [0m 1679758897.9895792
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (2.6232762054179158e-05)
+check is_interesting - mean_joint_pos_error False (0.0026504396682930516)
+check is_interesting - max_joint_pos_error False (0.020822000313209355)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 30 [0m 1679758926.3419917
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000084
+[+] no error found
+check is_interesting - end_point_deviation False (8.441655078261491e-05)
+check is_interesting - mean_joint_pos_error False (0.0021186833841954013)
+check is_interesting - max_joint_pos_error False (0.03351411125118453)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 31 [0m 1679758952.0629816
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (8.441655078261491e-05)
+check is_interesting - mean_joint_pos_error False (0.0021186833841954013)
+check is_interesting - max_joint_pos_error False (0.03351411125118453)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 32 [0m 1679758979.9334602
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - end_point_deviation False (8.441655078261491e-05)
+check is_interesting - mean_joint_pos_error False (0.0021186833841954013)
+check is_interesting - max_joint_pos_error False (0.03351411125118453)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 33 [0m 1679759017.273353
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (8.441655078261491e-05)
+check is_interesting - mean_joint_pos_error False (0.0021186833841954013)
+check is_interesting - max_joint_pos_error False (0.03351411125118453)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 34 [0m 1679759044.6900802
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000074
+[+] no error found
+check is_interesting - end_point_deviation False (7.367492256930345e-05)
+check is_interesting - mean_joint_pos_error False (0.0024465543416433036)
+check is_interesting - max_joint_pos_error False (0.01803111902810972)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 35 [0m 1679759069.4788446
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000096
+[+] no error found
+check is_interesting - end_point_deviation False (9.628981548371936e-05)
+check is_interesting - mean_joint_pos_error False (0.002579082092232741)
+check is_interesting - max_joint_pos_error False (0.019079473529391322)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 36 [0m 1679759094.8062282
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000055
+[+] no error found
+check is_interesting - end_point_deviation False (5.549545731789273e-05)
+check is_interesting - mean_joint_pos_error False (0.0025928335906368347)
+check is_interesting - max_joint_pos_error False (0.025155348578937975)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 37 [0m 1679759120.4104128
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (5.549545731789273e-05)
+check is_interesting - mean_joint_pos_error False (0.0025928335906368347)
+check is_interesting - max_joint_pos_error False (0.025155348578937975)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 38 [0m 1679759148.9810336
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000038
+[+] no error found
+check is_interesting - end_point_deviation False (3.836065775178208e-05)
+check is_interesting - mean_joint_pos_error False (0.002457836726649233)
+check is_interesting - max_joint_pos_error False (0.016221493630409256)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 39 [0m 1679759173.990034
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000087
+[+] no error found
+check is_interesting - end_point_deviation False (8.748570079020085e-05)
+check is_interesting - mean_joint_pos_error True (0.002897663074580518)
+check is_interesting - max_joint_pos_error False (0.020934802238874006)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+[feedback] INTERESTING!
+
+[92mCYCLE: 0 ROUND: 40 [0m 1679759199.2828805
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (8.748570079020085e-05)
+check is_interesting - mean_joint_pos_error False (0.002897663074580518)
+check is_interesting - max_joint_pos_error False (0.020934802238874006)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 41 [0m 1679759226.839516
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (8.748570079020085e-05)
+check is_interesting - mean_joint_pos_error False (0.002897663074580518)
+check is_interesting - max_joint_pos_error False (0.020934802238874006)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 42 [0m 1679759254.1455035
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no /joint_state data available
+[checker] no /move_action/_action/status data available
+[checker] no /motion_plan_request data available
+[]
+[31mERROR DETECTED: 2
+- invalid goal action status: []
+- # Motion plan request != 1: (0)
+[0m
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 43 [0m 1679759276.1270826
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 44 [0m 1679759304.5380914
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 45 [0m 1679759326.827854
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 46 [0m 1679759349.4964967
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000051
+[+] no error found
+check is_interesting - end_point_deviation True (5.075437019166061e-05)
+check is_interesting - mean_joint_pos_error True (0.0018025679245456904)
+check is_interesting - max_joint_pos_error True (0.01720847664266012)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+[feedback] INTERESTING!
+
+[92mCYCLE: 0 ROUND: 47 [0m 1679759374.199214
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000089
+[+] no error found
+check is_interesting - end_point_deviation True (8.935145378096568e-05)
+check is_interesting - mean_joint_pos_error True (0.002514471850171884)
+check is_interesting - max_joint_pos_error True (0.027614402569047236)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+[feedback] INTERESTING!
+
+[92mCYCLE: 0 ROUND: 48 [0m 1679759399.546513
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (8.935145378096568e-05)
+check is_interesting - mean_joint_pos_error False (0.002514471850171884)
+check is_interesting - max_joint_pos_error False (0.027614402569047236)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 49 [0m 1679759426.8593001
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (8.935145378096568e-05)
+check is_interesting - mean_joint_pos_error False (0.002514471850171884)
+check is_interesting - max_joint_pos_error False (0.027614402569047236)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 50 [0m 1679759454.6094704
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (8.935145378096568e-05)
+check is_interesting - mean_joint_pos_error False (0.002514471850171884)
+check is_interesting - max_joint_pos_error False (0.027614402569047236)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 51 [0m 1679759481.9616497
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (8.935145378096568e-05)
+check is_interesting - mean_joint_pos_error False (0.002514471850171884)
+check is_interesting - max_joint_pos_error False (0.027614402569047236)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 52 [0m 1679759510.4661832
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (8.935145378096568e-05)
+check is_interesting - mean_joint_pos_error False (0.002514471850171884)
+check is_interesting - max_joint_pos_error False (0.027614402569047236)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 53 [0m 1679759538.1976411
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (8.935145378096568e-05)
+check is_interesting - mean_joint_pos_error False (0.002514471850171884)
+check is_interesting - max_joint_pos_error False (0.027614402569047236)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 54 [0m 1679759565.7809646
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (8.935145378096568e-05)
+check is_interesting - mean_joint_pos_error False (0.002514471850171884)
+check is_interesting - max_joint_pos_error False (0.027614402569047236)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 55 [0m 1679759593.4259286
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (8.935145378096568e-05)
+check is_interesting - mean_joint_pos_error False (0.002514471850171884)
+check is_interesting - max_joint_pos_error False (0.027614402569047236)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 56 [0m 1679759621.9670122
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (8.935145378096568e-05)
+check is_interesting - mean_joint_pos_error False (0.002514471850171884)
+check is_interesting - max_joint_pos_error False (0.027614402569047236)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 57 [0m 1679759649.6438067
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000063
+[+] no error found
+check is_interesting - end_point_deviation False (6.25558502467894e-05)
+check is_interesting - mean_joint_pos_error True (0.0030782043494873832)
+check is_interesting - max_joint_pos_error False (0.02035943430555953)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+[feedback] INTERESTING!
+
+[92mCYCLE: 0 ROUND: 58 [0m 1679759675.861295
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000016
+[+] no error found
+check is_interesting - end_point_deviation False (1.611935133544992e-05)
+check is_interesting - mean_joint_pos_error False (0.0018881607254164947)
+check is_interesting - max_joint_pos_error False (0.021763472011986806)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 59 [0m 1679759701.3672314
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000088
+[+] no error found
+check is_interesting - end_point_deviation False (8.844116789815874e-05)
+check is_interesting - mean_joint_pos_error False (0.002207465892042249)
+check is_interesting - max_joint_pos_error False (0.021947449561862342)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 60 [0m 1679759727.5446618
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (8.844116789815874e-05)
+check is_interesting - mean_joint_pos_error False (0.002207465892042249)
+check is_interesting - max_joint_pos_error False (0.021947449561862342)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 61 [0m 1679759755.7295046
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (8.844116789815874e-05)
+check is_interesting - mean_joint_pos_error False (0.002207465892042249)
+check is_interesting - max_joint_pos_error False (0.021947449561862342)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 62 [0m 1679759783.1689613
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[31mERROR DETECTED: 1
+- controller failed to find inverse kinematics solution: [ 4.50814559e-01 -1.42080437e+00 -5.60257928e-05 -4.67014349e-01
+  6.92859268e-05  2.19465339e+00  3.34550325e-01]
+[0m
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 63 [0m 1679759810.2196357
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 64 [0m 1679759837.5878031
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 65 [0m 1679759865.6594272
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000080
+[+] no error found
+check is_interesting - end_point_deviation True (8.017703600456008e-05)
+check is_interesting - mean_joint_pos_error True (0.0018595984675964599)
+check is_interesting - max_joint_pos_error True (0.013259157890760154)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+[feedback] INTERESTING!
+
+[92mCYCLE: 0 ROUND: 66 [0m 1679759890.6004188
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000067
+[+] no error found
+check is_interesting - end_point_deviation False (6.689456732472042e-05)
+check is_interesting - mean_joint_pos_error True (0.0019823663406884945)
+check is_interesting - max_joint_pos_error True (0.015510215535889937)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+[feedback] INTERESTING!
+
+[92mCYCLE: 0 ROUND: 67 [0m 1679759914.9238405
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (6.689456732472042e-05)
+check is_interesting - mean_joint_pos_error False (0.0019823663406884945)
+check is_interesting - max_joint_pos_error False (0.015510215535889937)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 68 [0m 1679759942.7681026
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (6.689456732472042e-05)
+check is_interesting - mean_joint_pos_error False (0.0019823663406884945)
+check is_interesting - max_joint_pos_error False (0.015510215535889937)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 69 [0m 1679759970.6387043
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[31mERROR DETECTED: 1
+- controller failed to find inverse kinematics solution: [ 5.28066860e-01 -1.58429616e+00 -1.97993507e-04 -4.66979622e-01
+  2.20630255e-04  2.03474482e+00  2.57233467e-01]
+[0m
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 70 [0m 1679759997.9793258
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 71 [0m 1679760026.082804
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[31mERROR DETECTED: 1
+- controller failed to find inverse kinematics solution: [ 5.22714528e-01 -1.58353058e+00  2.36279349e-05 -4.67014497e-01
+ -2.61670272e-05  2.03540832e+00  2.62695856e-01]
+[0m
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 72 [0m 1679760054.2784574
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[31mERROR DETECTED: 1
+- controller failed to find inverse kinematics solution: [ 5.22705691e-01 -1.20661759e+00 -1.39072191e-05 -4.67001471e-01
+  1.95693710e-05  2.40968412e+00  2.62680714e-01]
+[0m
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 73 [0m 1679760081.8453162
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[31mERROR DETECTED: 1
+- controller failed to find inverse kinematics solution: [ 5.22711737e-01 -1.46703547e+00  1.29962821e-05 -4.67006095e-01
+ -1.54128231e-05  2.15140524e+00  2.62693613e-01]
+[0m
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 74 [0m 1679760109.26085
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 75 [0m 1679760136.9470236
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no /joint_state data available
+[checker] no /move_action/_action/status data available
+[checker] no /motion_plan_request data available
+[]
+[31mERROR DETECTED: 2
+- invalid goal action status: []
+- # Motion plan request != 1: (0)
+[0m
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 76 [0m 1679760158.7918348
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 77 [0m 1679760187.1374893
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 78 [0m 1679760218.198118
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 79 [0m 1679760245.4339306
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 80 [0m 1679760272.9482036
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 81 [0m 1679760301.2398293
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 82 [0m 1679760328.8324823
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 83 [0m 1679760356.462851
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 84 [0m 1679760384.0018718
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 85 [0m 1679760411.8606727
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 86 [0m 1679760434.5484977
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 87 [0m 1679760457.8632138
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 88 [0m 1679760485.652957
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 89 [0m 1679760514.7468107
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 90 [0m 1679760541.8818061
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 91 [0m 1679760569.5879805
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 92 [0m 1679760596.8646586
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 93 [0m 1679760624.8560953
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 94 [0m 1679760652.6874766
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 95 [0m 1679760680.8035378
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 96 [0m 1679760708.4285629
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 97 [0m 1679760736.8807378
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 98 [0m 1679760764.3407547
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 0 ROUND: 99 [0m 1679760792.7449467
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+--- cycle finished ---
+
+[92mCYCLE: 1 ROUND: 0 [0m 1679760821.2762294
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000080
+[+] no error found
+check is_interesting - end_point_deviation True (8.007407854629884e-05)
+check is_interesting - mean_joint_pos_error True (0.0023338620604260794)
+check is_interesting - max_joint_pos_error True (0.017357518025555407)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+[feedback] INTERESTING!
+
+[92mCYCLE: 1 ROUND: 1 [0m 1679760846.3553073
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (8.007407854629884e-05)
+check is_interesting - mean_joint_pos_error False (0.0023338620604260794)
+check is_interesting - max_joint_pos_error False (0.017357518025555407)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 1 ROUND: 2 [0m 1679760868.795678
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (8.007407854629884e-05)
+check is_interesting - mean_joint_pos_error False (0.0023338620604260794)
+check is_interesting - max_joint_pos_error False (0.017357518025555407)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 1 ROUND: 3 [0m 1679760891.53402
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[checker] no /move_action/_action/status data available
+[checker] no /motion_plan_request data available
+[]
+[31mERROR DETECTED: 2
+- invalid goal action status: []
+- # Motion plan request != 1: (0)
+[0m
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 1 ROUND: 4 [0m 1679760914.0501895
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 1 ROUND: 5 [0m 1679760936.2613087
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 1 ROUND: 6 [0m 1679760958.3584793
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 1 ROUND: 7 [0m 1679760986.277093
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 1 ROUND: 8 [0m 1679761013.6737685
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 1 ROUND: 9 [0m 1679761041.1412706
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 6]
+D: 0.000130
+[+] no error found
+check is_interesting - end_point_deviation False (0.0)
+check is_interesting - mean_joint_pos_error False (0.0)
+check is_interesting - max_joint_pos_error False (0.0)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+
+[92mCYCLE: 1 ROUND: 10 [0m 1679761067.9484665
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+                 + sent
+[executor] stop watching
+[executor] killing ros2 bag
+[2, 4]
+D: 0.000039
+[+] no error found
+check is_interesting - end_point_deviation True (3.930920431619418e-05)
+check is_interesting - mean_joint_pos_error True (0.0029207540086627825)
+check is_interesting - max_joint_pos_error True (0.018519962270487245)
+check is_interesting - mean_joint_vel_error False (0.0)
+check is_interesting - max_joint_vel_error False (0.0)
+[feedback] INTERESTING!
+
+[92mCYCLE: 1 ROUND: 11 [0m 1679761094.093916
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command
+Killed

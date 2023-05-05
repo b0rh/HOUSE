@@ -1,0 +1,504 @@
+INFO: INITializing Singularity SCRIPT ./BENCHMARK/singularity-phoronix-test-suite.sh in image ROS2_foxy-robofuzz.sif at Sun Mar 26 05:19:49 PM CEST 2023 epoch 1679843989162.
+
+Updated OpenBenchmarking.org Repository Index
+pts: 513 Distinct Tests, 2222 Test Versions, 56 Suites
+Available Changes From 20 March To 26 March
+Updated Test:   pts/apache       v3.0.0 Apache HTTP Server                  
+Updated Test:   pts/build-godot  v4.0.0 Timed Godot Game Engine Compilation 
+Updated Test:   pts/build-llvm   v1.5.0 Timed LLVM Compilation              
+Updated Test:   pts/build-nodejs v1.3.0 Timed Node.js Compilation           
+Updated Test:   pts/build2       v1.2.0 Build2                              
+Updated Test:   pts/memcached    v1.2.0 Memcached                           
+Updated Test:   pts/nginx        v3.0.1 nginx                               
+Updated Test:   pts/stress-ng    v1.8.0 Stress-NG                           
+Updated Test:   pts/vvenc        v1.1.0 VVenC                               
+Updated Suite:  pts/hpc          v1.1.8 HPC - High Performance Computing    
+Updated OpenBenchmarking.org Repository Index
+system: 41 Distinct Tests, 128 Test Versions
+Updated OpenBenchmarking.org Repository Index
+git: 9 Distinct Tests, 12 Test Versions
+
+Phoronix Test Suite v10.8.4
+8 Tests Installed
+
+pts/byte-1.2.2                       - BYTE Unix Benchmark           
+pts/ethr-1.0.4                       - Ethr                          
+pts/fs-mark-1.0.3                    - FS-Mark                       
+pts/iperf-1.0.2                      - iPerf                         
+pts/netperf-1.0.3                    - Netperf                       
+pts/scimark2-1.3.2                   - SciMark                       
+pts/sockperf-1.0.0                   - Sockperf                      
+pts/sysbench-1.1.0                   - Sysbench                      
+
+
+pts/byte-1.2.2                       INSTALLED           
+Installed: 2023-03-07                                    
+pts/ethr-1.0.4                       INSTALLED           
+Installed: 2023-03-07                                    
+pts/fs-mark-1.0.3                    INSTALLED           
+Installed: 2023-03-07                                    
+pts/iperf-1.0.2                      INSTALLED           
+Installed: 2023-03-07                                    
+pts/netperf-1.0.3                    INSTALLED           
+Installed: 2023-03-07                                    
+pts/scimark2-1.3.2                   INSTALLED           
+Installed: 2023-03-07                                    
+pts/sockperf-1.0.0                   INSTALLED           
+Installed: 2023-03-07                                    
+pts/sysbench-1.1.0                   INSTALLED           
+Installed: 2023-03-07                Times Run: 2        
+
+
+
+Phoronix Test Suite v10.8.4
+System Information
+
+
+  PROCESSOR:              6 x Intel Xeon E3-12xx v2
+    Core Count:           6                                 
+    Extensions:           SSE 4.2 + AVX + RDRAND + FSGSBASE 
+    Cache Size:           96 MB                             
+    Microcode:            0x1                               
+    Core Family:          Ivy Bridge                        
+
+  GRAPHICS:               virtio_gpudrmfb
+    Screen:               1024x768         
+
+  MOTHERBOARD:            Red Hat KVM
+    BIOS Version:         1.11.0-2.el7     
+    Audio:                QEMU Generic     
+
+  MEMORY:                 8GB
+
+  DISK:                   192GB
+    File-System:          ext4                              
+    Mount Options:        nodev nosuid relatime rw seclabel 
+    Disk Details:         Block Size: 4096                  
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               5.3.11-100.fc29.x86_64 (x86_64)                                                                          
+    Desktop:              LXQt                                                                                                     
+    Display Server:       X Server                                                                                                 
+    Compiler:             GCC 9.4.0                                                                                                
+    System Layer:         docker                                                                                                   
+    Security:             itlb_multihit: KVM: Mitigation of Split huge pages                                                       
+                          + l1tf: Mitigation of PTE Inversion; VMX: conditional cache flushes SMT disabled                         
+                          + mds: Mitigation of Clear buffers; SMT Host state unknown                                               
+                          + meltdown: Mitigation of PTI                                                                            
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp                                    
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization                     
+                          + spectre_v2: Mitigation of Full generic retpoline IBPB: conditional IBRS_FW STIBP: disabled RSB filling 
+                          + tsx_async_abort: Not affected                                                                          
+
+
+
+Phoronix Test Suite v10.8.4
+Supported Sensors For This System
+
+cpu.freq         CPU Frequency (CPU0):                        3400.00 Megahertz 
+cpu.freq         CPU Frequency (CPU1):                        3400.00 Megahertz 
+cpu.freq         CPU Frequency (CPU2):                        3400.00 Megahertz 
+cpu.freq         CPU Frequency (CPU3):                        3400.00 Megahertz 
+cpu.freq         CPU Frequency (CPU4):                        3400.00 Megahertz 
+cpu.freq         CPU Frequency (CPU5):                        3400.00 Megahertz 
+cpu.peak-freq    CPU Peak Freq (Highest CPU Core Frequency):  -1      Megahertz 
+cpu.usage        CPU Usage (CPU0):                            0.00    Percent   
+cpu.usage        CPU Usage (CPU1):                            0.00    Percent   
+cpu.usage        CPU Usage (CPU2):                            3.85    Percent   
+cpu.usage        CPU Usage (CPU3):                            0.00    Percent   
+cpu.usage        CPU Usage (CPU4):                            0.00    Percent   
+cpu.usage        CPU Usage (CPU5):                            1.96    Percent   
+cpu.usage        CPU Usage (Summary):                         4.67    Percent   
+gpu.fan-speed    GPU Fan Speed:                               100     Percent   
+hdd.read-speed   Drive Read Speed (vda):                      0.00    MB/s      
+hdd.write-speed  Drive Write Speed (vda):                     0.00    MB/s      
+memory.usage     Memory Usage:                                2045    Megabytes 
+swap.usage       Swap Usage:                                  1340    Megabytes 
+sys.iowait       System Iowait:                               0.00    Percent   
+
+Unsupported Sensors For This System
+
+- Ambient Temperature
+- Cgroup Cpu Usage
+- CPU Fan Speed
+- CPU Power Consumption
+- CPU Temperature
+- CPU Voltage
+- GPU Frequency
+- GPU Memory Usage
+- GPU Power Consumption
+- GPU Temperature
+- GPU Usage
+- GPU Voltage
+- Drive Temperature
+- Memory Temperature
+- System Fan Speed
+- System Power Consumption
+- System Temperature
+- System Voltage
+
+
+
+
+These are the default configuration options for when running the Phoronix Test Suite in a batch mode (i.e. running phoronix-test-suite batch-benchmark universe). Running in a batch mode is designed to be as autonomous as possible, except for where you'd like any end-user interaction.
+
+    Save test results when in batch mode (Y/n):     Open the web browser automatically when in batch mode (y/N):     Auto upload the results to OpenBenchmarking.org (Y/n):     Prompt for test identifier (Y/n):     Prompt for test description (Y/n):     Prompt for saved results file-name (Y/n):     Run all test options (Y/n): 
+Batch settings saved.
+
+
+
+
+Phoronix Test Suite v10.8.4
+System Information
+
+
+  PROCESSOR:              6 x Intel Xeon E3-12xx v2
+    Core Count:           6                                 
+    Extensions:           SSE 4.2 + AVX + RDRAND + FSGSBASE 
+    Cache Size:           96 MB                             
+    Microcode:            0x1                               
+    Core Family:          Ivy Bridge                        
+
+  GRAPHICS:               virtio_gpudrmfb
+    Screen:               1024x768         
+
+  MOTHERBOARD:            Red Hat KVM
+    BIOS Version:         1.11.0-2.el7     
+    Audio:                QEMU Generic     
+
+  MEMORY:                 8GB
+
+  DISK:                   192GB
+    File-System:          ext4                              
+    Mount Options:        nodev nosuid relatime rw seclabel 
+    Disk Details:         Block Size: 4096                  
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               5.3.11-100.fc29.x86_64 (x86_64)                                                                          
+    Desktop:              LXQt                                                                                                     
+    Display Server:       X Server                                                                                                 
+    Compiler:             GCC 9.4.0                                                                                                
+    System Layer:         docker                                                                                                   
+    Security:             itlb_multihit: KVM: Mitigation of Split huge pages                                                       
+                          + l1tf: Mitigation of PTE Inversion; VMX: conditional cache flushes SMT disabled                         
+                          + mds: Mitigation of Clear buffers; SMT Host state unknown                                               
+                          + meltdown: Mitigation of PTI                                                                            
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp                                    
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization                     
+                          + spectre_v2: Mitigation of Full generic retpoline IBPB: conditional IBRS_FW STIBP: disabled RSB filling 
+                          + tsx_async_abort: Not affected                                                                          
+
+
+Sysbench 1.0.20:
+    pts/sysbench-1.1.0 [Test: RAM / Memory]
+    Test 1 of 2
+    Estimated Trial Run Count:    3                      
+    Estimated Test Run-Time:      1 Minute               
+    Estimated Time To Completion: 5 Minutes [17:25 CEST] 
+        Started Run 1 @ 17:20:15
+        Started Run 2 @ 17:20:27
+        Started Run 3 @ 17:20:38
+
+    Test: RAM / Memory:
+        13545.02
+        13866.74
+        14096.2
+
+    Average: 13835.99 MiB/sec
+    Deviation: 2.00%
+
+Sysbench 1.0.20:
+    pts/sysbench-1.1.0 [Test: CPU]
+    Test 2 of 2
+    Estimated Trial Run Count:    3                      
+    Estimated Time To Completion: 5 Minutes [17:25 CEST] 
+        Started Run 1 @ 17:20:56
+        Started Run 2 @ 17:22:30
+        Started Run 3 @ 17:24:04
+
+    Test: CPU:
+        4770.76
+        4810.22
+        4772.19
+
+    Average: 4784.39 Events Per Second
+    Deviation: 0.47%
+
+
+
+
+Phoronix Test Suite v10.8.4
+System Information
+
+
+  PROCESSOR:              6 x Intel Xeon E3-12xx v2
+    Core Count:           6                                 
+    Extensions:           SSE 4.2 + AVX + RDRAND + FSGSBASE 
+    Cache Size:           96 MB                             
+    Microcode:            0x1                               
+    Core Family:          Ivy Bridge                        
+
+  GRAPHICS:               virtio_gpudrmfb
+    Screen:               1024x768         
+
+  MOTHERBOARD:            Red Hat KVM
+    BIOS Version:         1.11.0-2.el7     
+    Audio:                QEMU Generic     
+
+  MEMORY:                 8GB
+
+  DISK:                   192GB
+    File-System:          ext4                              
+    Mount Options:        nodev nosuid relatime rw seclabel 
+    Disk Details:         Block Size: 4096                  
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               5.3.11-100.fc29.x86_64 (x86_64)                                                                          
+    Desktop:              LXQt                                                                                                     
+    Display Server:       X Server                                                                                                 
+    Compiler:             GCC 9.4.0                                                                                                
+    System Layer:         docker                                                                                                   
+    Security:             itlb_multihit: KVM: Mitigation of Split huge pages                                                       
+                          + l1tf: Mitigation of PTE Inversion; VMX: conditional cache flushes SMT disabled                         
+                          + mds: Mitigation of Clear buffers; SMT Host state unknown                                               
+                          + meltdown: Mitigation of PTI                                                                            
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp                                    
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization                     
+                          + spectre_v2: Mitigation of Full generic retpoline IBPB: conditional IBRS_FW STIBP: disabled RSB filling 
+                          + tsx_async_abort: Not affected                                                                          
+
+
+BYTE Unix Benchmark 3.6:
+    pts/byte-1.2.2 [Computational Test: Dhrystone 2]
+    Test 1 of 1
+    Estimated Trial Run Count:    3                      
+    Estimated Time To Completion: 7 Minutes [17:32 CEST] 
+        Started Run 1 @ 17:25:40
+        Started Run 2 @ 17:27:46
+        Started Run 3 @ 17:29:52
+
+    Computational Test: Dhrystone 2:
+        30006547.8
+        29532657
+        29851328.4
+
+    Average: 29796844.4 LPS
+    Deviation: 0.81%
+
+
+
+
+Phoronix Test Suite v10.8.4
+System Information
+
+
+  PROCESSOR:              6 x Intel Xeon E3-12xx v2
+    Core Count:           6                                 
+    Extensions:           SSE 4.2 + AVX + RDRAND + FSGSBASE 
+    Cache Size:           96 MB                             
+    Microcode:            0x1                               
+    Core Family:          Ivy Bridge                        
+
+  GRAPHICS:               virtio_gpudrmfb
+    Screen:               1024x768         
+
+  MOTHERBOARD:            Red Hat KVM
+    BIOS Version:         1.11.0-2.el7     
+    Audio:                QEMU Generic     
+
+  MEMORY:                 8GB
+
+  DISK:                   192GB
+    File-System:          ext4                              
+    Mount Options:        nodev nosuid relatime rw seclabel 
+    Disk Details:         Block Size: 4096                  
+
+  OPERATING SYSTEM:       Ubuntu 20.04
+    Kernel:               5.3.11-100.fc29.x86_64 (x86_64)                                                                          
+    Desktop:              LXQt                                                                                                     
+    Display Server:       X Server                                                                                                 
+    Compiler:             GCC 9.4.0                                                                                                
+    System Layer:         docker                                                                                                   
+    Security:             itlb_multihit: KVM: Mitigation of Split huge pages                                                       
+                          + l1tf: Mitigation of PTE Inversion; VMX: conditional cache flushes SMT disabled                         
+                          + mds: Mitigation of Clear buffers; SMT Host state unknown                                               
+                          + meltdown: Mitigation of PTI                                                                            
+                          + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp                                    
+                          + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization                     
+                          + spectre_v2: Mitigation of Full generic retpoline IBPB: conditional IBRS_FW STIBP: disabled RSB filling 
+                          + tsx_async_abort: Not affected                                                                          
+
+
+FS-Mark 3.3:
+    pts/fs-mark-1.0.3 [Test: 1000 Files, 1MB Size]
+    Test 1 of 4
+    Estimated Trial Run Count:    3                               
+    Estimated Test Run-Time:      25 Minutes                      
+    Estimated Time To Completion: 1 Hour, 40 Minutes [19:11 CEST] 
+        Started Run 1 @ 17:32:00
+        Started Run 2 @ 17:48:07
+        Started Run 3 @ 18:02:39
+
+    Test: 1000 Files, 1MB Size:
+        22.5
+        22.2
+        23
+
+    Average: 22.6 Files/s
+    Deviation: 1.79%
+
+FS-Mark 3.3:
+    pts/fs-mark-1.0.3 [Test: 5000 Files, 1MB Size, 4 Threads]
+    Test 2 of 4
+    Estimated Trial Run Count:    3                                
+    Estimated Test Run-Time:      46 Minutes                       
+    Estimated Time To Completion: 2 Hours, 16 Minutes [20:32 CEST] 
+        Started Run 1 @ 18:17:22
+        Started Run 2 @ 19:11:49
+        Started Run 3 @ 20:06:50
+        Started Run 4 @ 21:00:58 *
+        Started Run 5 @ 21:55:14 *
+        Started Run 6 @ 22:46:48 *
+        Started Run 7 @ 23:40:38 *
+        Started Run 8 @ 00:38:14 *
+        Started Run 9 @ 01:31:16 *
+
+    Test: 5000 Files, 1MB Size, 4 Threads:
+        29.6
+        33.2
+        34.8
+        31.2
+        31.2
+        28.8
+        30
+        33.6
+        30.4
+
+    Average: 31.4 Files/s
+    Deviation: 6.43%
+    Samples: 9
+
+FS-Mark 3.3:
+    pts/fs-mark-1.0.3 [Test: 4000 Files, 32 Sub Dirs, 1MB Size]
+    Test 3 of 4
+    Estimated Trial Run Count:    3                                
+    Estimated Test Run-Time:      1 Hour, 45 Minutes               
+    Estimated Time To Completion: 3 Hours, 29 Minutes [05:54 CEST] 
+        Started Run 1 @ 02:26:41
+        Started Run 2 @ 02:58:11
+        Started Run 3 @ 03:28:15
+        Started Run 4 @ 04:02:00 *
+        Started Run 5 @ 04:38:42 *
+        Started Run 6 @ 05:11:01 *
+        Started Run 7 @ 05:40:19 *
+        Started Run 8 @ 06:17:02 *
+        Started Run 9 @ 06:48:38 *
+
+    Test: 4000 Files, 32 Sub Dirs, 1MB Size:
+        16
+        24.1
+        17.5
+        22.7
+        17.5
+        24.3
+        22.2
+        17.4
+        22.3
+
+    Average: 20.4 Files/s
+    Deviation: 16.06%
+    Samples: 9
+
+FS-Mark 3.3:
+    pts/fs-mark-1.0.3 [Test: 1000 Files, 1MB Size, No Sync/FSync]
+    Test 4 of 4
+    Estimated Trial Run Count:    3                               
+    Estimated Time To Completion: 1 Hour, 42 Minutes [08:58 CEST] 
+        Started Run 1 @ 07:17:16
+        Started Run 2 @ 07:35:55
+        Started Run 3 @ 07:54:49
+        Started Run 4 @ 08:14:09 *
+        Started Run 5 @ 08:33:06 *
+        Started Run 6 @ 08:52:57 *
+        Started Run 7 @ 09:12:07 *
+        Started Run 8 @ 09:30:58 *
+        Started Run 9 @ 09:50:08 *
+
+    Test: 1000 Files, 1MB Size, No Sync/FSync:
+        1054.7
+        126.4
+        182.3
+        1091.9
+        912.3
+        219.4
+        269.8
+        146
+        540.6
+
+    Average: 504.8 Files/s
+    Deviation: 80.68%
+    Samples: 9
+
+
+RAW resuls in /home/bhr/.phoronix-test-suite/test-results/
+Last test:
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/test-logs/63992f805edea5848af856d8bfe5fc1a5eedb68d/2023-03-26 1720.log
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/test-logs/7ac50240140d14b9c8eae4319f583618d78e9ab9/2023-03-26 1720.log
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/test-logs/336fd32cb2c05fec4e5cd3e11c488269ccfa508f/2023-03-26 1720.log
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/installation-logs/2023-03-26 1720/pts_sysbench-1.1.0.log
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/system-logs/2023-03-26 1720/cmdline
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/system-logs/2023-03-26 1720/version
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/system-logs/2023-03-26 1720/cpuinfo
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/system-logs/2023-03-26 1720/cc
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/system-logs/2023-03-26 1720/uname
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/system-logs/2023-03-26 1720/lsmod
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/system-logs/2023-03-26 1720/mdstat
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/system-logs/2023-03-26 1720/meminfo
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/system-logs/2023-03-26 1720/lscpu
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/system-logs/2023-03-26 1720/dmidecode
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/system-logs/2023-03-26 1720/dmesg
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/system-logs/2023-03-26 1720/modules
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/system-logs/2023-03-26 1720/mounts
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/system-logs/2023-03-26 1720/environment-variables
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/system-logs/2023-03-26 1720/vulkaninfo
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1720/composite.xml
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/test-logs/59aeda24b90e890a15e5b2cb57abe28b3e0db892/6 x Intel Xeon E3-12xx v2.log
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/installation-logs/6 x Intel Xeon E3-12xx v2/pts_byte-1.2.2.log
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/system-logs/6 x Intel Xeon E3-12xx v2/cmdline
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/system-logs/6 x Intel Xeon E3-12xx v2/version
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/system-logs/6 x Intel Xeon E3-12xx v2/cpuinfo
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/system-logs/6 x Intel Xeon E3-12xx v2/cc
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/system-logs/6 x Intel Xeon E3-12xx v2/uname
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/system-logs/6 x Intel Xeon E3-12xx v2/lsmod
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/system-logs/6 x Intel Xeon E3-12xx v2/mdstat
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/system-logs/6 x Intel Xeon E3-12xx v2/meminfo
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/system-logs/6 x Intel Xeon E3-12xx v2/lscpu
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/system-logs/6 x Intel Xeon E3-12xx v2/dmidecode
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/system-logs/6 x Intel Xeon E3-12xx v2/dmesg
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/system-logs/6 x Intel Xeon E3-12xx v2/modules
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/system-logs/6 x Intel Xeon E3-12xx v2/mounts
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/system-logs/6 x Intel Xeon E3-12xx v2/environment-variables
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/system-logs/6 x Intel Xeon E3-12xx v2/vulkaninfo
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1725/composite.xml
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/test-logs/8ba7462fc39f787c1cf8a7f01f8cf4a7c6b79fd3/2023-03-26 1731.log
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/test-logs/244d3fc1cabe4e11a31ff26c5cfecf4d27223882/2023-03-26 1731.log
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/test-logs/23f3bcd2e402020a107b6b06bdafebb7943ca11a/2023-03-26 1731.log
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/test-logs/6d53ac940f2ace431e2b21511f99af5fbd03c921/2023-03-26 1731.log
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/installation-logs/2023-03-26 1731/pts_fs-mark-1.0.3.log
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/system-logs/2023-03-26 1731/cmdline
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/system-logs/2023-03-26 1731/version
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/system-logs/2023-03-26 1731/cpuinfo
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/system-logs/2023-03-26 1731/cc
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/system-logs/2023-03-26 1731/uname
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/system-logs/2023-03-26 1731/lsmod
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/system-logs/2023-03-26 1731/mdstat
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/system-logs/2023-03-26 1731/meminfo
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/system-logs/2023-03-26 1731/lscpu
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/system-logs/2023-03-26 1731/dmidecode
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/system-logs/2023-03-26 1731/dmesg
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/system-logs/2023-03-26 1731/modules
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/system-logs/2023-03-26 1731/mounts
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/system-logs/2023-03-26 1731/environment-variables
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/system-logs/2023-03-26 1731/vulkaninfo
+/home/bhr/.phoronix-test-suite//test-results/2023-03-26-1731/composite.xml
+INFO: EXITing Singularity SCRIPT ./BENCHMARK/singularity-phoronix-test-suite.sh in image ROS2_foxy-robofuzz.sif at Mon Mar 27 10:09:57 AM CEST 2023 epoch 1679904597805.

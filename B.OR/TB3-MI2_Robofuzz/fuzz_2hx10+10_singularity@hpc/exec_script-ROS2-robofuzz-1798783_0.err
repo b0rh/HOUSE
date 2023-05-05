@@ -1,0 +1,12 @@
+  File "./fuzzer.py", line 1257, in main
+    fuzz_msg(fuzzer, fuzz_targets)
+  File "./fuzzer.py", line 978, in fuzz_msg
+    parser = RosbagParser(
+  File "/robofuzz/src/rosbag_parser.py", line 22, in __init__
+    topics = self.get_all_topics()
+  File "/robofuzz/src/rosbag_parser.py", line 58, in get_all_topics
+    self.cursor.execute("SELECT * from topics;")
+
+real	68m48.532s
+user	5m41.751s
+sys	2m27.792s

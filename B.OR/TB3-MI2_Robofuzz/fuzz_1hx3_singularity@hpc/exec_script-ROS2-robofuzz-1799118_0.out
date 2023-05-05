@@ -1,0 +1,5 @@
+## ## Starting step exec_script-ROS2-robofuzz with the script BENCHMARK/singularity-robofuzz_TB3.sh and argument(s) 1h at Thu Mar 23 19:46:58 CET 2023 epoch 1679597218490 ## ##
+INFO: Init Singularity SCRIPT BENCHMARK/singularity-robofuzz_TB3.sh in image ROS2_foxy-robofuzz.sif .
++ [1799118] Benchmarking TurtleBot3 Burger for 1h +
+INFO: TIMEOUT value 1h .
+## ## Completed step exec_script-ROS2-robofuzz with the script BENCHMARK/singularity-robofuzz_TB3.sh and the argument(s) 1h at Thu Mar 23 20:47:20 CET 2023 epoch 1679600840832 ## ##

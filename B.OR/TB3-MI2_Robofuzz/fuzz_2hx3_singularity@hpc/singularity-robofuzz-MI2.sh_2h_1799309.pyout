@@ -1,0 +1,29 @@
+INIT: 0x2b7677e56348 0x2b7677e5925c
+COVFILE_PATH envvar is not set. Defaulting to /tmp/cov
+[-] could not remove /tmp/cov
+[warning] ros_pkg or ros_node not provided.
+          Using exec_cmd instead.
+                          ____
+   _________  _____      / __/_  __________
+  / ___/ __ \/ ___/_____/ /_/ / / /_  /_  /
+ / /  / /_/ (__  )_____/ __/ /_/ / / /_/ /_
+/_/   \____/____/     /_/  \__,_/ /___/___/
+
+[*] Initializing shm for coverage tracking
+[*] Initializing test case queue
+[*] Starting moveit2 harness
+
+----- TARGET INFO -----
+  - TOPIC: /metatopic
+  - message type: <class 'geometry_msgs.msg._pose.Pose'>
+
+----- BEGIN FUZZING -----
+
+[92mCYCLE: 0 ROUND: 0 [0m 1679629845.8735821
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting moveit2 harness
+[executor] could not remove previous bag dir
+[executor] started ros2 bag recording
+[executor] start watching
+[moveit harness] sending goal command

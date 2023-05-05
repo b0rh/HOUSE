@@ -1,0 +1,13 @@
+type;subtype;environment;infrastructure;value;unit;category;testsuite;testNum
+benchmark;phoronix;docker;sdo;14587,99;MPS;memory;sysbench;1
+benchmark;phoronix;docker;sdo;5038,82;EPS;cpu;sysbench;2
+benchmark;phoronix;docker;sdo;31926035,7;LPS;compute;byte;1
+benchmark;phoronix;docker;sdo;20,3;Fs;storage;fs-mark;3
+benchmark;phoronix;singularity;hpc;5487,26;MPS;memory;sysbench;1
+benchmark;phoronix;singularity;hpc;1026,91;EPS;cpu;sysbench;2
+benchmark;phoronix;singularity;hpc;31663296,4;LPS;compute;byte;1
+benchmark;phoronix;singularity;hpc;24,3;Fs;storage;fs-mark;3
+benchmark;phoronix;singularity;sdo;13835,99;MPS;memory;sysbench;1
+benchmark;phoronix;singularity;sdo;4784,39;EPS;cpu;sysbench;2
+benchmark;phoronix;singularity;sdo;29796844,4;LPS;compute;byte;1
+benchmark;phoronix;singularity;sdo;20,4;Fs;storage;fs-mark;3

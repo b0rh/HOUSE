@@ -1,0 +1,18 @@
+INIT: 0x2b07ec534348 0x2b07ec53725c
+COVFILE_PATH envvar is not set. Defaulting to /tmp/cov
+[-] could not remove /tmp/cov
+[warning] ros_pkg or ros_node not provided.
+          Using exec_cmd instead.
+                          ____
+   _________  _____      / __/_  __________
+  / ___/ __ \/ ___/_____/ /_/ / / /_  /_  /
+ / /  / /_/ (__  )_____/ __/ /_/ / / /_/ /_
+/_/   \____/____/     /_/  \__,_/ /___/___/
+
+[*] Initializing shm for coverage tracking
+[*] Initializing test case queue
+[*] Starting moveit2 harness
+Runtime error: Failed to get_subscriber_names_and_types: error not set
+[-] nothing to kill
+killing state monitor
+[-] state monitor not initialized: 'Fuzzer' object has no attribute 'state_monitor_pgrp'

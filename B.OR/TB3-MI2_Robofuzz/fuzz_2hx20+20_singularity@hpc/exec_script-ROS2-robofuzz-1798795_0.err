@@ -1,0 +1,6 @@
+
+real	120m1.373s
+user	25m16.271s
+sys	12m56.122s
+srun: error: cn3015: task 0: Exited with exit code 124
+srun: launch/slurm: _step_signal: Terminating StepId=1798795.0

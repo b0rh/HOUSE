@@ -1,0 +1,4 @@
+environment-infrastructure;memory;cpu;compute;storage
+singularity-sdo;13835,99;4784,39;29796844,4;20,4
+singularity-hpc;5487,26;1026,91;31663296,4;24,3
+docker-sdo;14587,99;5038,82;31926035,7;20,3

@@ -1,0 +1,775 @@
+# Singularity definition file for ROS2 (foxy) container using Ubuntu focal + robofuzz enviroment
+# Based on osrf/ros2 docker compose https://hub.docker.com/r/osrf/ros2/dockerfile
+# and https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html
+# ROS package https://index.ros.org/packages/
+# Robofuzz  https://github.com/sslab-gatech/robofuzz
+
+
+Bootstrap: docker
+
+# Base on lastes robofuzz enviroment
+From: ghcr.io/sslab-gatech/robofuzz:latest
+
+# Alternative without ROS2 robofuzz customization
+# From scratch
+#From: ubuntu:focal
+
+%help
+  ROS2 Foxy + Robofuzz + ROS2 profiling + Phoronix Test Suite - singularity enviroment v.1
+
+  ROS2 foxy and robofuzz image with support for CycloneDDS, Fast-DDS, 
+  Turtlesim, Move It 2, TurtleBot3 and PX4 quadcopter.
+
+  Image + init.sh capable of running in HPC environments with multiple
+  instances in parallel without inferences and it has different tools to analysis performance.
+
+  Documentation: 
+        - Singularity container: https://github.com/b0rh/HOUSE/tree/main/0.TLB/robofuzz/README.md
+        - Workloads cases: https://github.com/b0rh/HOUSE/tree/main/3.WLP/ROS2.README.md
+  
+  Source:        https://github.com/b0rh/HOUSE/
+
+  References:
+        robofuzz: https://github.com/sslab-gatech/RoboFuzz
+        ROS 2 Foxy: https://docs.ros.org/en/foxy/
+        ROS2 profiling: https://github.com/safe-ros/ros2_profiling
+        Phoronix Test Suite:    https://github.com/phoronix-test-suite/phoronix-test-suite/blob/master/documentation/phoronix-test-suite.md
+                                https://openbenchmarking.org/tests
+
+%setup
+# This section are executed on the host system outside of the container.
+
+    # It's better manage from outside with init.sh
+    # Leave out robofuzz write path, src for out files and modificate watchlist and src/logs for fuzzer output.
+    #mkdir -p ./robofuzz/src
+    # Extract robofuzz source code, (skip-old-files) don't replace existing files when extracting, silently skip over them.
+    #tar xvfz ./robofuzz_src_fs.tgz --skip-old-files
+
+
+%startscript
+    # Used as entrypoint script setting enviroment variables
+        export ROS_DISTRO=foxy
+
+
+%files
+        # Copy local files to folder if needed
+
+%post
+        # Support isolate home directories
+        # mkdir -p /home_alone
+        # export HOME=/home_alone
+        mkdir -p /home
+        export HOME=/home
+
+        # Set Timezone UTC
+        echo 'UTC' > /etc/timezone && \
+        rm /etc/localtime  && \
+        ln -s /usr/share/zoneinfo/UTC /etc/localtime && \
+        apt-get update && apt-get install -q -y tzdata 
+
+        # Set locale
+        apt update && apt install locales
+        locale-gen en_US en_US.UTF-8
+        update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+        export LANG=en_US.UTF-8
+
+        # Install base packages
+        apt-get update && apt-get install -q -y --no-install-recommends \
+        bash-completion \
+        python3 \
+        python3-dev \
+        build-essential \
+        dirmngr \
+        gnupg2 \
+        lsb-release \
+        python3-pip \
+        git
+
+        # Upgrade python 3 build/manager modules tools
+        pip3 install --upgrade pip
+        pip3 install --upgrade setuptools
+        pip3 install pytest>=5.3
+
+        # Setup Sources
+        # Now add the ROS 2 GPG key with apt.
+
+        # setup keys
+        #alternative:# curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+        apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+
+        # setup sources.list
+        #alternative:# echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null
+        echo "deb http://packages.ros.org/ros2/ubuntu focal main" > /etc/apt/sources.list.d/ros2-latest.list
+
+        # install bootstrap tools
+        apt-get update && apt-get install --no-install-recommends -y \
+        build-essential \
+        git \
+        python3-colcon-common-extensions \
+        python3-colcon-mixin \
+        python3-rosdep \
+        python3-vcstool
+
+        # install ROS-Base Install (Bare Bones): Communication libraries, message packages, command line tools. No GUI tools.
+        apt-get update && apt-get install -q -y --no-install-recommends \
+        ros-foxy-ros-base \
+        python3-argcomplete
+
+        # install ROS Development tools: Compilers and other tools to build ROS packages
+        apt-get update && apt-get install -q -y --no-install-recommends \
+        ros-dev-tools 
+
+        # Install ROS developmente indirect python packages dependencies.
+        pip3 install -U \
+        argcomplete \
+        flake8 \
+        flake8-blind-except \
+        flake8-builtins \
+        flake8-class-newline \
+        flake8-comprehensions \
+        flake8-deprecated \
+        flake8-docstrings \
+        flake8-import-order \
+        flake8-quotes \
+        pytest-repeat 
+
+        # Install ROS2 cyclone
+        apt-get update && apt-get install -q -y --no-install-recommends \
+        ros-foxy-rmw-cyclonedds-cpp
+
+        # Install fastrtps DDS implementation (it's part of default install)
+        apt-get update && apt-get install -q -y --no-install-recommends \
+        ros-foxy-rmw-fastrtps-cpp
+
+        # Install turtlesim tool
+        apt-get update && apt-get install -q -y --no-install-recommends \
+        ros-foxy-turtlesim
+
+        # Install ROS2 demos talker and listener
+        apt-get update && apt-get install -q -y --no-install-recommends \
+        ros-foxy-demo-nodes-cpp\
+        ros-foxy-demo-nodes-py
+
+
+        # install robofuzz python packages dependencies
+        pip3 install -U \
+        pymavlink
+
+
+        # Support redirect stdout and stderr with tee to /log
+        apt-get install --no-install-recommends -y coreutils
+        mkdir -p /log/
+
+        # WORKAROUND: Ubuntu QT share objects bug
+        # Fix libQt5Core.so.5: cannot open shared object file: No such file or directory
+        # ref https://askubuntu.com/questions/1034313/ubuntu-18-4-libqt5core-so-5-cannot-open-shared-object-file-no-such-file-or-dir
+        # ref https://stackoverflow.com/questions/70815369/ros-problem-libqt5core-so-5-cannot-open-shared-object-file-no-such-file-or-di
+        apt-get install libqt5gui5
+        #strip -v --remove-section=.note.ABI-tag $(whereis libQt5Core.so.5 | cut -d ' ' -f 3)
+        strip -v --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so.5
+
+        
+        # _outside_ directory to bind outside workspace
+        mkdir -p /_outside_/
+        
+        # Install phoronix-test-suite and dependencies
+        # https://github.com/phoronix-test-suite/phoronix-test-suite/blob/master/documentation/phoronix-test-suite.md
+        #
+        
+        # From source intalls
+        #mkdir -p /opt
+        #cd /opt
+        #wget https://phoronix-test-suite.com/releases/phoronix-test-suite-10.8.4.tar.gz
+        #tar xfvz phoronix-test-suite-10.8.4.tar.gz
+
+        # From package
+        
+        apt-get install -y  \
+        php-cli \
+        php-common \
+        php-gd \
+        php-fdomdocument \
+        php-dompdf \
+        php-zip \
+        php-curl \
+        php-xml \
+        php-json \
+        php-fpdf \
+        php-bz2 \
+        php-sqlite3 \
+        xz-utils 
+        
+        cd /tmp
+        wget https://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_10.8.4_all.deb
+        yes 4 | dpkg -i phoronix-test-suite_10.8.4_all.deb
+
+        rm /tmp/phoronix-test-suite_10.8.4_all.deb
+        
+        # Change defult results, cache and test path from ~/.phoronix-test-suite to /home/phoronix-test-suite 
+        # NOTE: Change path in conf does not work in all cases, some testsuite/components have hardcoded the default path.
+        #phoronix-test-suite list-test-status
+        #sed 's/~\/.phoronix-test-suite/\/home\/phoronix-test-suite/' -in-place /etc/phoronix-test-suite.xml
+
+        # Install testsuites
+
+        # CPU TESTSUITE COLLECTION -  https://openbenchmarking.org/suite/pts/cpu
+        # to install all collection: phoronix-test-suite install pts/cpu
+        phoronix-test-suite install pts/sysbench
+        #phoronix-test-suite install pts/radiance
+        #phoronix-test-suite install pts/openssl
+        
+        # DISK TESTSUITE COLLECTION -  https://openbenchmarking.org/suite/pts/disk
+        # to install all collection: phoronix-test-suite install pts/disk
+        #phoronix-test-suite install pts/fio
+        phoronix-test-suite install pts/fs-mark
+        
+        # MEMORY TESTSUITE COLLECTION -  https://openbenchmarking.org/suite/pts/memory
+        # to install all collection: phoronix-test-suite install pts/memory
+        phoronix-test-suite install pts/memory
+
+        # MULTICORE TESTSUITE COLLECTION -  https://openbenchmarking.org/suite/pts/multicore
+        # to install all collection: phoronix-test-suite install pts/multicore
+        phoronix-test-suite install pts/coremark
+
+        # NETWORK TESTSUITE COLLECTION -  https://openbenchmarking.org/suite/pts/network
+        # to install all collection: phoronix-test-suite install pts/network
+        phoronix-test-suite install pts/network
+        phoronix-test-suite install pts/iperf
+
+        # COMPUTATIONAL TESTSUITE COLLECTION -  https://openbenchmarking.org/suite/pts/computational
+        # to install all collection: phoronix-test-suite install pts/computational
+        phoronix-test-suite install pts/byte
+        phoronix-test-suite install pts/scimark2
+        
+        # Checks phoronix instalation
+        #phoronix-test-suite list-recommended-tests
+        #phoronix-test-suite list-tests
+        phoronix-test-suite list-installed-tests
+
+        phoronix-test-suite list-test-status
+
+
+        # TODO: Not works inside containers or unprivilegied systems. Checks profiling metric altenatives like slurm stats align with profiling.
+        # Installs ROS2 PROFILING and dependencies
+        # https://github.com/safe-ros/ros2_profiling
+      #  
+      #  apt-get install -y \
+      #  lttng-tools \
+      #  liblttng-ust-dev \
+      #  python3-babeltrace \
+      #  python3-lttng
+
+      #  # Also install lttng kernel tracing for additional memory/cpu/threading information
+      #  # TODO: Look for workaround host kernel modules dependencies and singularity permissions/capabilities.
+      #  apt-get install -y lttng-modules-dkms
+
+      #  
+      #  # In Ubuntu 22.04 LTTng-UST is not built with SDT support in the package repositories.
+      #  # Since message flow analysis makes use of SDT support,
+      #  # it is necessary to build a custom copy of lttng-ust.
+      #  # ref: https://github.com/safe-ros/ros2_profiling#note-for-ubuntu-2204
+      #  
+      #  # apt-get install -y systemtap-sdt-dev
+
+      #  # mkdir -p /tmp/lttng-ust
+      #  # cd /tmp/lttng-ust
+
+      #  # git clone https://github.com/lttng/lttng-ust -b stable-2.13
+
+      #  # cd lttng-ust
+      #  # ./bootstrap
+      #  # ./configure --with-sdt
+      #  # make && make install
+      #  
+      #  # Setup ROS2 enviroment
+      #  . /opt/ros/foxy/setup.sh
+      #  
+      #  # Create workspace
+      #  c_ROS2_PROFILING_PATH="/ros2_profiling/"
+      #  mkdir -p ${c_ROS2_PROFILING_PATH}/src
+      #  cd ${c_ROS2_PROFILING_PATH}
+
+      #  wget https://raw.githubusercontent.com/safe-ros/ros2_profiling/main/ros2_profiling_demo/demo.repos
+      #  vcs import src < demo.repos
+      #  rosdep install --from-paths src --ignore-src -r -y
+
+      #  # Build demo profiling workspace
+      #  cd ${c_ROS2_PROFILING_PATH}
+      #  colcon build
+
+        # Installs timeout tool to limit process execution time
+        apt-get install -y  \
+        timelimit
+
+
+
+#       #  # Clean unnecesary, temporal, cache ...  files (save 500MB aprox and take 15 minutes in sif build task)
+#       apt-get install --no-install-recommends -y bleachbit
+#       #bleachbit -c $(bleachbit -l) # To run all options
+#       #rm -rf /var/lib/apt/lists/* # Manual package cache list clean
+#       bleachbit -c apt.autoclean apt.autoremove apt.clean apt.package_lists bash.history deepscan.ds_store deepscan.thumbs_db deepscan.tmp deepscan.vim_swap_root deepscan.vim_swap_user dnf.autoremove dnf.clean_all filezilla.mru firefox.backup firefox.cache firefox.cookies firefox.crash_reports firefox.dom firefox.forms firefox.passwords firefox.session_restore firefox.site_preferences firefox.url_history firefox.vacuum flash.cache flash.cookies gedit.recent_documents java.cache journald.clean kde.cache kde.recent_documents kde.tmp screenlets.logs system.cache system.custom system.desktop_entry system.localizations system.recent_documents system.rotated_logs system.tmp system.trash thumbnails.cache vim.history wine.tmp winetricks.temporary_files x11.debug_logs yum.clean_all yum.vacuum 
+
+
+
+%environment
+        #TODO: # Improve enviroment variables setting to avoid embeded workaround with source to conf files in %apprun.
+        # Set locale
+        export LANG=C.UTF-8
+        export LC_ALL=C.UTF-8
+        export ROS2_WS=/opt/ros
+
+        # Variables de entorno desde source /opt/ros/foxy/setup.bash
+        export AMENT_CURRENT_PREFIX=/opt/ros/foxy
+        export AMENT_SHELL=bash
+
+        # To avoid share HOME in all singulary instance (using a dynamics bind path using init.sh) or to use static withot bind.
+        #export HOME=/home_alone
+        export HOME=/home
+
+
+%apprun ROS2_demo_FastRTPS_talker
+# Using FastRTPS ref: https://docs.ros.org/en/humble/Installation/DDS-Implementations/Working-with-eProsima-Fast-DDS.html
+        # set -x y exec to generate detailed stdout inside container
+        # TMPDIR using epoc to resolve concurrency
+
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+export HS_IDNUM="$(cat /tmp/value/IDNUM)"
+        source /opt/ros/foxy/setup.bash
+        echo "+ [${HS_IDNUM}] Running FastRTPS DDS talker +"
+        export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+        bash -c "
+                source "/opt/ros/$ROS_DISTRO/setup.bash";\
+                source "/robofuzz/ros2_foxy/install/setup.bash";\
+                source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash";\
+                source "/robofuzz/targets/idltest_ws/install/setup.bash";\
+                source "/robofuzz/targets/turtlebot3_ws/install/setup.bash";\
+                source "/robofuzz/targets/moveit2_ws/install/setup.bash";\
+                set -x;\
+                exec 2> >(tee -a /log/singularity_${HS_IDNUM}.err /log/singularity_${HS_IDNUM}.all) 1> >(tee -a /log/singularity_${HS_IDNUM}.out /log/singularity_${HS_IDNUM}.all);\
+                echo "RMW_IMPLEMENTATION=$RMW_IMPLEMENTATION";\
+                time ros2 run demo_nodes_cpp talker"
+
+%apprun ROS2_demo_FastRTPS_listener
+# Using FastRTPS ref: https://docs.ros.org/en/humble/Installation/DDS-Implementations/Working-with-eProsima-Fast-DDS.html
+        
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+export HS_IDNUM="$(cat /tmp/value/IDNUM)"
+        source /opt/ros/foxy/setup.bash
+        echo "+ [${HS_IDNUM}] Running FASTRTPS DDS listener +"
+        export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+        bash -c "
+                source "/opt/ros/$ROS_DISTRO/setup.bash";\
+                source "/robofuzz/ros2_foxy/install/setup.bash";\
+                source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash";\
+                source "/robofuzz/targets/idltest_ws/install/setup.bash";\
+                source "/robofuzz/targets/turtlebot3_ws/install/setup.bash";\
+                source "/robofuzz/targets/moveit2_ws/install/setup.bash";\
+                set -x;\
+                exec 2> >(tee -a /log/singularity_${HS_IDNUM}.err /log/singularity_${HS_IDNUM}.all) 1> >(tee -a /log/singularity_${HS_IDNUM}.out /log/singularity_${HS_IDNUM}.all);\
+                echo "RMW_IMPLEMENTATION=$RMW_IMPLEMENTATION";\
+                time ros2 run demo_nodes_cpp listener"
+
+%apprun ROS2_demo_Cyclone_talker
+# Using Cyclone ref: https://docs.ros.org/en/humble/Installation/DDS-Implementations/Working-with-Eclipse-CycloneDDS.html
+        # set -x y exec to generate detailed stdout inside container
+        # TMPDIR using epoc to resolve concurrency
+
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+export HS_IDNUM="$(cat /tmp/value/IDNUM)"
+        source /opt/ros/foxy/setup.bash
+        echo "+ [${HS_IDNUM}] Running Cyclone DDS talker"
+        export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+        bash -c "
+                source "/opt/ros/$ROS_DISTRO/setup.bash";\
+                source "/robofuzz/ros2_foxy/install/setup.bash";\
+                source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash";\
+                source "/robofuzz/targets/idltest_ws/install/setup.bash";\
+                source "/robofuzz/targets/turtlebot3_ws/install/setup.bash";\
+                source "/robofuzz/targets/moveit2_ws/install/setup.bash";\
+                set -x;\
+                exec 2> >(tee -a /log/singularity_${HS_IDNUM}.err /log/singularity_${HS_IDNUM}.all) 1> >(tee -a /log/singularity_${HS_IDNUM}.out /log/singularity_${HS_IDNUM}.all);\
+                echo "RMW_IMPLEMENTATION=$RMW_IMPLEMENTATION";\
+                time ros2 run demo_nodes_cpp talker"
+
+%apprun ROS2_demo_Cyclone_listener
+# Using Cyclone ref: https://docs.ros.org/en/humble/Installation/DDS-Implementations/Working-with-Eclipse-CycloneDDS.html
+        
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+        export HS_IDNUM="$(cat /tmp/value/IDNUM)"
+        source /opt/ros/foxy/setup.bash
+        echo "+ [${HS_IDNUM}] Running Cyclone DDS listener"
+        export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+        bash -c "
+                source "/opt/ros/$ROS_DISTRO/setup.bash";\
+                source "/robofuzz/ros2_foxy/install/setup.bash";\
+                source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash";\
+                source "/robofuzz/targets/idltest_ws/install/setup.bash";\
+                source "/robofuzz/targets/turtlebot3_ws/install/setup.bash";\
+                source "/robofuzz/targets/moveit2_ws/install/setup.bash";\
+                set -x;\
+                exec 2> >(tee -a /log/singularity_${HS_IDNUM}.err /log/singularity_${HS_IDNUM}.all) 1> >(tee -a /log/singularity_${HS_IDNUM}.out /log/singularity_${HS_IDNUM}.all);\
+                echo "RMW_IMPLEMENTATION=$RMW_IMPLEMENTATION";\
+                time ros2 run demo_nodes_cpp listener"
+
+%apprun ROBOFUZZ_test_ROSIDL
+        
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+        export HS_IDNUM="$(cat /tmp/value/IDNUM)"       
+        export ROS_DISTRO=foxy
+        echo "+ [${HS_IDNUM}] Testing ROSIDL +"
+        bash -c "
+                source "/opt/ros/$ROS_DISTRO/setup.bash";\
+                source "/robofuzz/ros2_foxy/install/setup.bash";\
+                source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash";\
+                source "/robofuzz/targets/idltest_ws/install/setup.bash";\
+                source "/robofuzz/targets/turtlebot3_ws/install/setup.bash";\
+                source "/robofuzz/targets/moveit2_ws/install/setup.bash";\                               
+                cd /robofuzz/src;\
+                export PYTHONUNBUFFERED=1 ;\
+                python3 -u ./fuzzer.py  --test-rosidl --no-cov --watchlist watchlist/idltest.json >> /log/$(basename $0)_${HS_IDNUM}.pyout"
+
+%apprun ROBOFUZZ_test_RCL_API_publisher
+
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+        export HS_IDNUM="$(cat /tmp/value/IDNUM)"
+        export ROS_DISTRO=foxy
+        echo "+ [${HS_IDNUM}] Testing RCL publisher APIs while creating a publisher +"
+        bash -c "
+                source "/opt/ros/$ROS_DISTRO/setup.bash";\
+                source "/robofuzz/ros2_foxy/install/setup.bash";\
+                source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash";\
+                source "/robofuzz/targets/idltest_ws/install/setup.bash";\
+                source "/robofuzz/targets/turtlebot3_ws/install/setup.bash";\
+                source "/robofuzz/targets/moveit2_ws/install/setup.bash";\
+                cd /robofuzz/src;\
+                export PYTHONUNBUFFERED=1 ;\
+                python3 -u ./fuzzer.py  --test-rcl --rcl-api publisher --rcl-job create_publisher >> /log/$(basename $0)_${HS_IDNUM}.pyout"
+
+%apprun ROBOFUZZ_test_RCL_API_subscriber
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+        export HS_IDNUM="$(cat /tmp/value/IDNUM)"        
+        export ROS_DISTRO=foxy
+        echo "+ [${HS_IDNUM}] Testing RCL subscriber APIs while creating a subscriber +"
+        bash -c "
+                source "/opt/ros/$ROS_DISTRO/setup.bash";\
+                source "/robofuzz/ros2_foxy/install/setup.bash";\
+                source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash";\
+                source "/robofuzz/targets/idltest_ws/install/setup.bash";\
+                source "/robofuzz/targets/turtlebot3_ws/install/setup.bash";\
+                source "/robofuzz/targets/moveit2_ws/install/setup.bash";\
+                cd /robofuzz/src;\
+                export PYTHONUNBUFFERED=1 ;\
+                python3 -u ./fuzzer.py  --test-rcl --rcl-api subscriber --rcl-job create_subscriber >> /log/$(basename $0)_${HS_IDNUM}.pyout"                
+
+%apprun ROBOFUZZ_test_RCL_API_node
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+        export HS_IDNUM="$(cat /tmp/value/IDNUM)"    
+        export ROS_DISTRO=foxy
+        echo "+ [${HS_IDNUM}] Testing RCL node APIs while creating a node +"
+        bash -c "
+                source "/opt/ros/$ROS_DISTRO/setup.bash";\
+                source "/robofuzz/ros2_foxy/install/setup.bash";\
+                source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash";\
+                source "/robofuzz/targets/idltest_ws/install/setup.bash";\
+                source "/robofuzz/targets/turtlebot3_ws/install/setup.bash";\
+                source "/robofuzz/targets/moveit2_ws/install/setup.bash";\
+                cd /robofuzz/src;\
+                export PYTHONUNBUFFERED=1 ;\
+                python3 -u ./fuzzer.py  --test-rcl --rcl-api node --rcl-job create_node >> /log/$(basename $0)_${HS_IDNUM}.pyout"                
+
+%apprun ROBOFUZZ_test_RCL_API_CLI_API
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+        export HS_IDNUM="$(cat /tmp/value/IDNUM)"        
+        export ROS_DISTRO=foxy
+        echo "+ [${HS_IDNUM}] Testing RCL + CLI API consistency while setting a parameter +"
+        bash -c "
+                source "/opt/ros/$ROS_DISTRO/setup.bash";\
+                source "/robofuzz/ros2_foxy/install/setup.bash";\
+                source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash";\
+                source "/robofuzz/targets/idltest_ws/install/setup.bash";\
+                source "/robofuzz/targets/turtlebot3_ws/install/setup.bash";\
+                source "/robofuzz/targets/moveit2_ws/install/setup.bash";\
+                cd /robofuzz/src;\
+                export PYTHONUNBUFFERED=1 ;\
+                python3 -u ./fuzzer.py  --test-cli --no-cov >> /log/$(basename $0)_${HS_IDNUM}.pyout"                                
+
+%apprun ROBOFUZZ_test_Turtlesim
+#!/bin/bash
+
+#set -x
+
+# Use VNC to use gui in HPC without complex configurations. export QT_QPA_PLATFORM=vnc:mode=websocket
+# To use a web viewer in http://127.0.0.1:5900 if it's avaible for traditional vnc export QT_QPA_PLATFORM=vnc
+# or disable with QT_QPA_PLATFORM=offscreen .Other options export QT_QPA_PLATFORM="vnc:size=1280x720:display=20:addr=0.0.0.0" .
+# display=<num> VNC display number. Server listens to port 5900 + <num>
+# ref: https://github.com/pigshell/qtbase/blob/vnc-websocket/README.md
+
+# VNC in 5920
+#export QT_QPA_PLATFORM=qxcb
+export DISPLAY=":20"
+export QT_QPA_PLATFORM=vnc
+
+export HOME="$(cat /tmp/value/c_HOME_PATH)"
+export HOME="$(cat /tmp/value/c_HOME_PATH)"
+export HS_IDNUM="$(cat /tmp/value/IDNUM)"        
+export ROS_DISTRO=foxy
+
+echo "+ [${HS_IDNUM}] Testing Turtlesim  +"
+
+source "/opt/ros/$ROS_DISTRO/setup.bash"
+source "/robofuzz/ros2_foxy/install/setup.bash"
+source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash"
+source "/robofuzz/targets/idltest_ws/install/setup.bash"
+source "/robofuzz/targets/turtlebot3_ws/install/setup.bash"
+source "/robofuzz/targets/moveit2_ws/install/setup.bash"
+
+# Fix libQt5Core.so.5: cannot open shared object file: No such file or directory
+# ref https://askubuntu.com/questions/1034313/ubuntu-18-4-libqt5core-so-5-cannot-open-shared-object-file-no-such-file-or-dir
+# ref https://stackoverflow.com/questions/70815369/ros-problem-libqt5core-so-5-cannot-open-shared-object-file-no-such-file-or-di
+#strip -v --remove-section=.note.ABI-tag $(whereis libQt5Core.so.5 | cut -d ' ' -f 3)
+strip -v --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so.5
+
+cd /robofuzz/src
+export PYTHONUNBUFFERED=1
+python3 -u ./fuzzer.py  --no-cov --ros-pkg turtlesim --ros-node turtlesim_node --watchlist watchlist/turtlesim.json --method message --schedule single --interval 0.1 >> /log/$(basename $0)_${HS_IDNUM}.pyout
+
+%apprun ROBOFUZZ_test_Move_It_2_plus_PANDA_manipulator
+#!/bin/bash
+
+#set -x
+
+
+export HOME="$(cat /tmp/value/c_HOME_PATH)"
+export HS_IDNUM="$(cat /tmp/value/IDNUM)"
+export ROS_DISTRO=foxy
+echo "+ [${HS_IDNUM}] Testing Move It 2 + PANDA manipulator +"
+
+source "/opt/ros/$ROS_DISTRO/setup.bash"
+source "/robofuzz/ros2_foxy/install/setup.bash"
+source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash"
+source "/robofuzz/targets/idltest_ws/install/setup.bash"
+source "/robofuzz/targets/turtlebot3_ws/install/setup.bash"
+source "/robofuzz/targets/moveit2_ws/install/setup.bash"
+
+cd /robofuzz/src
+export PYTHONUNBUFFERED=1
+python3 -u ./fuzzer.py  --test-moveit --watchlist watchlist/moveit2.json --no-cov >> /log/$(basename $0)_${HS_IDNUM}.pyout
+
+%apprun ROBOFUZZ_test_TurtleBot3_Burger
+#!/bin/bash
+
+#set -x
+
+export HOME="$(cat /tmp/value/c_HOME_PATH)"
+export HS_IDNUM="$(cat /tmp/value/IDNUM)"
+export ROS_DISTRO=foxy
+echo "+ [${HS_IDNUM}] Testing TurtleBot3 Burger +"
+
+source "/opt/ros/$ROS_DISTRO/setup.bash"
+source "/robofuzz/ros2_foxy/install/setup.bash"
+source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash"
+source "/robofuzz/targets/idltest_ws/install/setup.bash"
+source "/robofuzz/targets/turtlebot3_ws/install/setup.bash"
+source "/robofuzz/targets/moveit2_ws/install/setup.bash"
+
+cd /robofuzz/src
+export PYTHONUNBUFFERED=1
+python3 -u ./fuzzer.py  --tb3-sitl --no-cov --method message --schedule single --repeat 1 --interval 5.0 --watchlist watchlist/turtlebot3.json >> /log/$(basename $0)_${HS_IDNUM}.pyout
+
+
+%apprun ROBOFUZZ_run_PX4_quadcopter_micrortps_agent
+#!/bin/bash
+
+#set -x
+
+export HOME="$(cat /tmp/value/c_HOME_PATH)"
+export HS_IDNUM="$(cat /tmp/value/IDNUM)"        
+export ROS_DISTRO=foxy
+echo "+ [${HS_IDNUM}] Testing PX4 quadcopter - micrortps_agent +"
+bash -c "
+        source "/opt/ros/$ROS_DISTRO/setup.bash";\
+        source "/robofuzz/ros2_foxy/install/setup.bash";\
+        source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash";\
+        source "/robofuzz/targets/idltest_ws/install/setup.bash";\
+        source "/robofuzz/targets/turtlebot3_ws/install/setup.bash";\
+        source "/robofuzz/targets/moveit2_ws/install/setup.bash";\
+        cd /robofuzz/src;\
+        micrortps_agent -t UDP"
+
+
+%apprun ROBOFUZZ_test_PX4_quadcopter_offboard_mode
+#!/bin/bash
+
+#set -x
+
+# Use VNC to use gui in HPC without complex configurations. export QT_QPA_PLATFORM=vnc:mode=websocket
+# To use a web viewer in http://127.0.0.1:5900 if it's avaible for traditional vnc export QT_QPA_PLATFORM=vnc
+# or disable with QT_QPA_PLATFORM=offscreen .Other options export QT_QPA_PLATFORM="vnc:size=1280x720:addr=0.0.0.0" .
+# ref: https://github.com/pigshell/qtbase/blob/vnc-websocket/README.md
+
+export DISPLAY=":40"
+export QT_QPA_PLATFORM=vnc
+
+export HOME="$(cat /tmp/value/c_HOME_PATH)"
+export HS_IDNUM="$(cat /tmp/value/IDNUM)"
+export ROS_DISTRO=foxy
+echo "+ [${HS_IDNUM}] Testing PX4 quadcopter - Testing the offboard mode (via ROS trajectory setpoint) +"
+bash -c "
+        source "/opt/ros/$ROS_DISTRO/setup.bash";\
+        source "/robofuzz/ros2_foxy/install/setup.bash";\
+        source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash";\
+        source "/robofuzz/targets/idltest_ws/install/setup.bash";\
+        source "/robofuzz/targets/turtlebot3_ws/install/setup.bash";\
+        source "/robofuzz/targets/moveit2_ws/install/setup.bash";\
+        cd /robofuzz/src;\
+        export PYTHONUNBUFFERED=1 ;\
+        python3 -u ./fuzzer.py  --px4-sitl-ros --method message --schedule sequence --repeat 1 --watchlist watchlist/px4.json --interval 0.02 >> /log/$(basename $0)_${HS_IDNUM}.pyout"  
+
+%apprun ROBOFUZZ_test_PX4_quadcopter_remote_control
+#!/bin/bash
+
+#set -x
+
+# Use VNC to use gui in HPC without complex configurations. export QT_QPA_PLATFORM=vnc:mode=websocket
+# To use a web viewer in http://127.0.0.1:5900 if it's avaible for traditional vnc export QT_QPA_PLATFORM=vnc
+# or disable with QT_QPA_PLATFORM=offscreen .Other options export QT_QPA_PLATFORM="vnc:size=1280x720:addr=0.0.0.0" .
+# ref: https://github.com/pigshell/qtbase/blob/vnc-websocket/README.md
+
+export DISPLAY=":60"
+export QT_QPA_PLATFORM=vnc
+
+export HOME="$(cat /tmp/value/c_HOME_PATH)"
+export HS_IDNUM="$(cat /tmp/value/IDNUM)"
+export ROS_DISTRO=foxy
+echo "+ [${HS_IDNUM}] Testing via remote control commands (MAVLink) +";\
+bash -c "
+        source "/opt/ros/$ROS_DISTRO/setup.bash";\
+        source "/robofuzz/ros2_foxy/install/setup.bash";\
+        source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash";\
+        source "/robofuzz/targets/idltest_ws/install/setup.bash";\
+        source "/robofuzz/targets/turtlebot3_ws/install/setup.bash";\
+        source "/robofuzz/targets/moveit2_ws/install/setup.bash";\
+        cd /robofuzz/src;\
+        export PYTHONUNBUFFERED=1 ;\
+        python3 -u ./fuzzer.py  --px4-sitl-mav --method message --schedule sequence --seqlen 100 --repeat 1 --watchlist watchlist/px4.json --interval 0.1 --px4-flight-mode POSCTL >> /log/$(basename $0)_${HS_IDNUM}.pyout"
+
+%apprun ROBOFUZZ_test_PX4_quadcopter_mutating_parameter
+#!/bin/bash
+
+#set -x        
+        
+# Use VNC to use gui in HPC without complex configurations. export QT_QPA_PLATFORM=vnc:mode=websocket
+# To use a web viewer in http://127.0.0.1:5900 if it's avaible for traditional vnc export QT_QPA_PLATFORM=vnc
+# or disable with QT_QPA_PLATFORM=offscreen .Other options export QT_QPA_PLATFORM="vnc:size=1280x720:addr=0.0.0.0" .
+# ref: https://github.com/pigshell/qtbase/blob/vnc-websocket/README.md
+
+export DISPLAY=":70"
+export QT_QPA_PLATFORM=vnc
+
+export HOME="$(cat /tmp/value/c_HOME_PATH)"
+export HS_IDNUM="$(cat /tmp/value/IDNUM)"
+export ROS_DISTRO=foxy
+echo "+ [${HS_IDNUM}]  Testing by mutating parameter values (similar to PGFuzz) +"
+bash -c "
+        source "/opt/ros/$ROS_DISTRO/setup.bash";\
+        source "/robofuzz/ros2_foxy/install/setup.bash";\
+        source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash";\
+        source "/robofuzz/targets/idltest_ws/install/setup.bash";\
+        source "/robofuzz/targets/turtlebot3_ws/install/setup.bash";\
+        source "/robofuzz/targets/moveit2_ws/install/setup.bash";\
+        cd /robofuzz/src;\
+        export PYTHONUNBUFFERED=1 ;\
+        python3 -u ./fuzzer.py  --px4-sitl-pgfuzz --method message --schedule single --repeat 1 --watchlist watchlist/px4.json --interval 15 >> /log/$(basename $0)_${HS_IDNUM}.pyout"
+
+%apprun ROBOFUZZ_exec
+        # Use VNC to use gui in HPC without complex configurations. export QT_QPA_PLATFORM=vnc:mode=websocket
+        # To use a web viewer in http://127.0.0.1:5900 if it's avaible for traditional vnc export QT_QPA_PLATFORM=vnc
+        # or disable with QT_QPA_PLATFORM=offscreen .Other options export QT_QPA_PLATFORM="vnc:size=1280x720:addr=0.0.0.0" .
+        # ref: https://github.com/pigshell/qtbase/blob/vnc-websocket/README.md
+
+        export DISPLAY=":75"
+        export QT_QPA_PLATFORM=vnc
+        
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+export HS_IDNUM="$(cat /tmp/value/IDNUM)"
+        export ROS_DISTRO=foxy
+        echo "+ [${HS_IDNUM}]  Execute robofuzz: ./fuzzer.py $* at /robofuzz/src/ +"       
+        bash -c "
+                source "/opt/ros/$ROS_DISTRO/setup.bash";\
+                source "/robofuzz/ros2_foxy/install/setup.bash";\
+                source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash";\
+                source "/robofuzz/targets/idltest_ws/install/setup.bash";\
+                source "/robofuzz/targets/turtlebot3_ws/install/setup.bash";\
+                source "/robofuzz/targets/moveit2_ws/install/setup.bash";\
+                cd /robofuzz/src;\
+                export PYTHONUNBUFFERED=1 ;\
+                python3 -u ./fuzzer.py $* >> /log/$(basename $0)_${HS_IDNUM}.pyout"
+
+%apprun ROBOFUZZ_check_install
+        # Use VNC to use gui in HPC without complex configurations. export QT_QPA_PLATFORM=vnc:mode=websocket
+        # To use a web viewer in http://127.0.0.1:5900 if it's avaible for traditional vnc export QT_QPA_PLATFORM=vnc
+        # or disable with QT_QPA_PLATFORM=offscreen .
+        # ref: https://github.com/pigshell/qtbase/blob/vnc-websocket/README.md
+
+        export DISPLAY=":80"
+        export QT_QPA_PLATFORM=vnc
+        
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+        export HOME="$(cat /tmp/value/c_HOME_PATH)"
+export HS_IDNUM="$(cat /tmp/value/IDNUM)"
+        export ROS_DISTRO=foxy
+        echo "+ [${HS_IDNUM}] Python PATHS and imports list +"
+        bash -c "
+                source "/opt/ros/$ROS_DISTRO/setup.bash";\
+                source "/robofuzz/ros2_foxy/install/setup.bash";\
+                source "/robofuzz/targets/px4_ros_com_ros2/install/setup.bash";\
+                source "/robofuzz/targets/idltest_ws/install/setup.bash";\
+                source "/robofuzz/targets/turtlebot3_ws/install/setup.bash";\
+                source "/robofuzz/targets/moveit2_ws/install/setup.bash";\
+                export | grep PYTHONPATH;\
+                python3 -u -c 'import sys;print(sys.path)' >> /log/$(basename $0)_${HS_IDNUM}.pyout ;\               
+                cd /robofuzz/src;\
+                python3 -u ./fuzzer.py -h >> /log/$(basename $0)_${HS_IDNUM}.pyout"
+
+%apprun selfcheck
+        echo "Locale settings"
+        locale
+        echo " - - - - - - - - - - - - - - -"
+        echo ""
+
+        echo "Checking paths"
+        echo " - - - - - - - - - - - - - - -"
+        find /opt/ /robofuzz -type d 
+        echo " - - - - - - - - - - - - - - -"
+        echo ""
+
+        echo "Python3 version"
+        echo " - - - - - - - - - - - - - - -"
+        python3 --version
+        echo " - - - - - - - - - - - - - - -"
+        echo ""
+
+        echo "Python 3 modules"
+        echo " - - - - - - - - - - - - - - -"
+        pip3 list 
+        echo ""
+
+        echo "Python PYTHONPATH variable"
+        echo " - - - - - - - - - - - - - - -"
+        export | grep PYTHONPATH
+        echo ""
+
+        echo "Python 3 imports list"
+        echo " - - - - - - - - - - - - - - -"
+        python3 -c 'import sys;print(sys.path)'
+        echo ""

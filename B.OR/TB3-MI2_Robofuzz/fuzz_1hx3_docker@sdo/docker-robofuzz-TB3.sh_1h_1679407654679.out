@@ -1,0 +1,4031 @@
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 52%Reading package lists... 52%Reading package lists... 52%Reading package lists... 52%Reading package lists... 62%Reading package lists... 62%Reading package lists... 67%Reading package lists... 69%Reading package lists... 69%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 75%Reading package lists... 75%Reading package lists... 83%Reading package lists... 83%Reading package lists... 89%Reading package lists... 89%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 94%Reading package lists... 94%Reading package lists... 97%Reading package lists... 97%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following NEW packages will be installed:
+  timelimit
+0 upgraded, 1 newly installed, 0 to remove and 387 not upgraded.
+Need to get 15.0 kB of archives.
+After this operation, 58.4 kB of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu focal/universe amd64 timelimit amd64 1.9.0-5 [15.0 kB]
+76% [1 timelimit 14.2 kB/15.0 kB 94%]                                     100% [Working]              Fetched 15.0 kB in 0s (37.5 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package timelimit.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 159997 files and directories currently installed.)
+Preparing to unpack .../timelimit_1.9.0-5_amd64.deb ...
+Unpacking timelimit (1.9.0-5) ...
+Setting up timelimit (1.9.0-5) ...
+Processing triggers for man-db (2.9.1-1) ...
+INIT: 0x7fc3106f8348 0x7fc3106fb25c
+COVFILE_PATH envvar is not set. Defaulting to /tmp/cov
+[-] could not remove /tmp/cov
+[warning] ros_pkg or ros_node not provided.
+          Using exec_cmd instead.
+                          ____
+   _________  _____      / __/_  __________
+  / ___/ __ \/ ___/_____/ /_/ / / /_  /_  /
+ / /  / /_/ (__  )_____/ __/ /_/ / / /_/ /_
+/_/   \____/____/     /_/  \__,_/ /___/___/
+
+[*] Initializing shm for coverage tracking
+[*] Initializing test case queue
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 221
+
+----- TARGET INFO -----
+  - TOPIC: /cmd_vel
+  - message type: <class 'geometry_msgs.msg._twist.Twist'>
+
+----- BEGIN FUZZING -----
+
+[92mCYCLE: 0 ROUND: 0 EXEC: 0 [0m 1679407729.7454612
+NEW CYCLE
+Current field: angular (z)
+STAGE: GEN
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 241
+[executor] could not remove previous bag dir
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[checker] no state available
+[+] no error found
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 1 [0m 1679407750.1721277
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 0 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 0
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 310
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 984
+- imu.angular_velocity.z (7.641613963579647) exceeded max (2.84)
+- imu.angular_velocity.z (12.744326378887516) exceeded max (2.84)
+- imu.angular_velocity.z (33.07193585587441) exceeded max (2.84)
+- angular velocity (36.216698591132364) exceeded max (2.84)
+- imu.angular_velocity.z (42.54931083933384) exceeded max (2.84)
+- imu.angular_velocity.z (35.81118021514426) exceeded max (2.84)
+- imu.angular_velocity.z (12.533893734706412) exceeded max (2.84)
+- imu.angular_velocity.z (6.349018555995893) exceeded max (2.84)
+- imu.angular_velocity.z (19.70791378182337) exceeded max (2.84)
+- imu.angular_velocity.z (21.30901428698301) exceeded max (2.84)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 2 [0m 1679407771.2837238
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 1 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 1
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 421
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 37
+- scan.range inf is out of range
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 3 [0m 1679407791.5245652
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 2 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 2
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 534
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- linear velocity (2.039633070932407) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.013695215262949) exceeded max (0.22)
+- theta estimation error is too huge: 6.16624159382763
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 4 [0m 1679407811.4909644
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 3 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 3
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 643
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[31mERROR DETECTED: 37
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.189647512384179
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 5 [0m 1679407831.8320076
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 4 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 4
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 756
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 42
+- scan.range inf is out of range
+- linear velocity (2.0109535380834163) exceeded max (0.22)
+- theta estimation error is too huge: 6.224651811851326
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 6 [0m 1679407852.4863214
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 5 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 5
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 871
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 44
+- linear velocity (2.0823640683150417) exceeded max (0.22)
+- linear velocity (1.9984671178452988) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.04219681997434) exceeded max (0.22)
+- linear velocity (2.122615881786182) exceeded max (0.22)
+- theta estimation error is too huge: 6.1316892620874
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 7 [0m 1679407873.0973394
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 6 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 6
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 985
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.239271773701838
+- linear velocity (1.9924430466098217) exceeded max (0.22)
+- linear velocity (2.0359621908997165) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 8 [0m 1679407893.1828103
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 7 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 7
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 1099
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- linear velocity (1.9408085454136337) exceeded max (0.22)
+- theta estimation error is too huge: 6.195440122568199
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 9 [0m 1679407913.247874
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 8 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 8
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 1212
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 44
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.1516436392454015
+- linear velocity (1.9097278826160808) exceeded max (0.22)
+- linear velocity (2.114695072365285) exceeded max (0.22)
+- linear velocity (2.0745799051351215) exceeded max (0.22)
+- linear velocity (2.034315433380431) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 10 [0m 1679407933.4767003
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 9 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 9
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 1322
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- linear velocity (2.039098805970495) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0133472053554993) exceeded max (0.22)
+- theta estimation error is too huge: 6.195428294933968
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 11 [0m 1679407953.8948867
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 10 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 10
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 1433
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- linear velocity (2.039224460649008) exceeded max (0.22)
+- theta estimation error is too huge: 6.224652122947239
+- linear velocity (2.0099601166809804) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 12 [0m 1679407975.0116682
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 11 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 11
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 1548
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.251943995728514
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 13 [0m 1679407995.5624943
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 12 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 12
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 1661
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- linear velocity (2.0797687963109777) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0391366719803985) exceeded max (0.22)
+- linear velocity (2.01328666998484) exceeded max (0.22)
+- theta estimation error is too huge: 6.224649121831554
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 14 [0m 1679408015.9288719
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 13 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 13
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 1772
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- linear velocity (2.0103161634754168) exceeded max (0.22)
+- linear velocity (2.0403083568363423) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.252849045628688
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 15 [0m 1679408036.4686306
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 14 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 14
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 1884
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 37
+- scan.range inf is out of range
+- linear velocity (1.9399570876750087) exceeded max (0.22)
+- theta estimation error is too huge: 6.210046220328582
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 16 [0m 1679408056.8440113
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 15 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 15
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 1995
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- linear velocity (2.040982055084498) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.21004037770901
+- linear velocity (2.081586370998172) exceeded max (0.22)
+- linear velocity (2.0109535380834163) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 17 [0m 1679408077.6029663
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 16 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 16
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 2108
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- linear velocity (2.012639820593959) exceeded max (0.22)
+- theta estimation error is too huge: 6.210036335783018
+- scan.range inf is out of range
+- linear velocity (2.0390149541503604) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 18 [0m 1679408098.1558423
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 17 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 17
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 2212
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 42
+- scan.range inf is out of range
+- linear velocity (1.986513618285534) exceeded max (0.22)
+- theta estimation error is too huge: 6.117288794882416
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 19 [0m 1679408118.7075396
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 18 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 18
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 2326
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- linear velocity (1.9168520854309001) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0717188265333477) exceeded max (0.22)
+- linear velocity (2.0314858650074807) exceeded max (0.22)
+- theta estimation error is too huge: 6.222593399755514
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 20 [0m 1679408139.1320293
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 19 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 19
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 2431
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- linear velocity (2.007970154747209) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.179818544035252
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 21 [0m 1679408159.476642
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 20 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 20
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 2540
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 42
+- scan.range inf is out of range
+- linear velocity (1.986513618285534) exceeded max (0.22)
+- linear velocity (2.034982174549408) exceeded max (0.22)
+- linear velocity (2.0755796590192634) exceeded max (0.22)
+- theta estimation error is too huge: 6.101366244984373
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 22 [0m 1679408179.7694345
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 21 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 21
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 2649
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- linear velocity (2.040982055084498) exceeded max (0.22)
+- theta estimation error is too huge: 6.166235895235014
+- scan.range inf is out of range
+- linear velocity (2.081586370998172) exceeded max (0.22)
+- linear velocity (2.0109535380834163) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 23 [0m 1679408200.7060785
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 22 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 22
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 2764
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.131556834314424
+- linear velocity (2.039409407552427) exceeded max (0.22)
+- linear velocity (2.009826555596123) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 24 [0m 1679408221.1164272
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 23 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 23
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 2878
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- linear velocity (1.986513618285534) exceeded max (0.22)
+- linear velocity (2.034982174549408) exceeded max (0.22)
+- theta estimation error is too huge: 6.21003839992867
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 25 [0m 1679408241.623362
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 24 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 24
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 2992
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 43
+- scan.range inf is out of range
+- linear velocity (2.012639820593959) exceeded max (0.22)
+- theta estimation error is too huge: 6.144786355174507
+- linear velocity (2.0390149541503604) exceeded max (0.22)
+- linear velocity (2.0794728108152607) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 26 [0m 1679408262.2196226
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 25 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 25
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 3092
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- linear velocity (2.039409407552427) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0801012719706984) exceeded max (0.22)
+- theta estimation error is too huge: 6.195441793008122
+- linear velocity (2.009826555596123) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 27 [0m 1679408282.8056228
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 26 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 26
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 3212
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- scan.range inf is out of range
+- linear velocity (2.073137683705624) exceeded max (0.22)
+- linear velocity (2.0328072171679312) exceeded max (0.22)
+- linear velocity (1.890877370282727) exceeded max (0.22)
+- theta estimation error is too huge: 6.239274809043135
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 28 [0m 1679408303.6505609
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 27 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 27
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 3322
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- linear velocity (2.0109535380834163) exceeded max (0.22)
+- theta estimation error is too huge: 6.128566918141375
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 29 [0m 1679408324.320002
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 28 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 28
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 3437
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.224653551916763
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 30 [0m 1679408344.60969
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 29 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 29
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 3541
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- theta estimation error is too huge: 6.239271028133302
+- scan.range inf is out of range
+- linear velocity (2.039224460649008) exceeded max (0.22)
+- linear velocity (2.0099601166809804) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 31 [0m 1679408365.2318954
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 30 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 30
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 3662
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- linear velocity (2.0815693184450743) exceeded max (0.22)
+- theta estimation error is too huge: 6.224655664075049
+- linear velocity (2.04099362257132) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.011196261372952) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 32 [0m 1679408385.7822864
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 31 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 31
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 3777
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.2246522332038925
+- linear velocity (1.947103393060663) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 33 [0m 1679408406.044673
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 32 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 32
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 3889
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.224651811851325
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 34 [0m 1679408426.7219293
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 33 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 33
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 4003
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- linear velocity (2.0100525995412855) exceeded max (0.22)
+- linear velocity (2.0397224690785096) exceeded max (0.22)
+- theta estimation error is too huge: 6.210046279193085
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 35 [0m 1679408447.247318
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 34 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 34
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 4115
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- linear velocity (2.039409407552427) exceeded max (0.22)
+- theta estimation error is too huge: 6.2246556821534345
+- linear velocity (2.009826555596123) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 36 [0m 1679408467.5126843
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 35 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 35
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 4229
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 44
+- scan.range inf is out of range
+- linear velocity (1.9914330582203128) exceeded max (0.22)
+- linear velocity (2.0340821332049357) exceeded max (0.22)
+- linear velocity (2.0749117637707295) exceeded max (0.22)
+- linear velocity (2.1154557072424733) exceeded max (0.22)
+- theta estimation error is too huge: 6.129163937305318
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 37 [0m 1679408488.0789568
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 36 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 36
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 4341
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- scan.range inf is out of range
+- linear velocity (2.0100525995412855) exceeded max (0.22)
+- theta estimation error is too huge: 6.224656261060737
+- linear velocity (2.0397224690785096) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 38 [0m 1679408508.4263608
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 37 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 37
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 4453
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- scan.range inf is out of range
+- linear velocity (2.039224460649008) exceeded max (0.22)
+- theta estimation error is too huge: 6.058915696846633
+- linear velocity (2.0099601166809804) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 39 [0m 1679408528.9315324
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 38 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 38
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 4566
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- linear velocity (2.0815693184450743) exceeded max (0.22)
+- theta estimation error is too huge: 6.224655664075049
+- linear velocity (2.04099362257132) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.011196261372952) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 40 [0m 1679408549.530611
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 39 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 39
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 4681
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 43
+- linear velocity (2.1546935957202993) exceeded max (0.22)
+- linear velocity (1.9168520854309001) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0717188265333477) exceeded max (0.22)
+- linear velocity (2.111993463085381) exceeded max (0.22)
+- linear velocity (2.0314858650074807) exceeded max (0.22)
+- theta estimation error is too huge: 6.21004221725293
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 41 [0m 1679408569.9220366
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 40 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 40
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 4794
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[31mERROR DETECTED: 41
+- linear velocity (1.9984671178452988) exceeded max (0.22)
+- linear velocity (2.04219681997434) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.131689262087401
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 42 [0m 1679408590.3102512
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 41 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 41
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 4909
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.210041105284251
+- linear velocity (1.947103393060663) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 43 [0m 1679408610.6324806
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 42 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 42
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 5020
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- theta estimation error is too huge: 6.239271748740569
+- linear velocity (1.9168520854309001) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0717188265333477) exceeded max (0.22)
+- linear velocity (2.0314858650074807) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 44 [0m 1679408630.8755987
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 43 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 43
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 5133
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- linear velocity (2.0314858650074807) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.195437694218126
+- linear velocity (1.9168520854309001) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 45 [0m 1679408651.319189
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 44 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 44
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 5245
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.116994689726066
+- linear velocity (2.0099601166809804) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 46 [0m 1679408671.8342571
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 45 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 45
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 5352
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.077780180507559
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 47 [0m 1679408692.3140147
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 46 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 46
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 5474
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- linear velocity (2.039098805970495) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0133472053554993) exceeded max (0.22)
+- linear velocity (2.0798671497620687) exceeded max (0.22)
+- theta estimation error is too huge: 6.239267386233424
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 48 [0m 1679408712.5040598
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 47 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 47
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 5583
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- linear velocity (1.936447962006878) exceeded max (0.22)
+- linear velocity (2.0328198969172124) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.195437383766247
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 49 [0m 1679408732.6880565
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 48 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 48
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 5696
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- linear velocity (2.011196261372952) exceeded max (0.22)
+- linear velocity (2.04099362257132) exceeded max (0.22)
+- theta estimation error is too huge: 6.158560936037615
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 50 [0m 1679408753.1651473
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 49 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 49
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 5804
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- linear velocity (2.0815693184450743) exceeded max (0.22)
+- linear velocity (2.04099362257132) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.011196261372952) exceeded max (0.22)
+- theta estimation error is too huge: 6.239273609984252
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 51 [0m 1679408773.6304934
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 50 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 50
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 5918
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- scan.range inf is out of range
+- linear velocity (2.011196261372952) exceeded max (0.22)
+- theta estimation error is too huge: 6.252865089203946
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 52 [0m 1679408794.072876
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 51 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 51
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 6030
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 36
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.239274623445309
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 53 [0m 1679408814.3801851
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 52 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 52
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 6144
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- scan.range inf is out of range
+- linear velocity (2.0100525995412855) exceeded max (0.22)
+- linear velocity (2.0397224690785096) exceeded max (0.22)
+- theta estimation error is too huge: 6.1619051025332405
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 54 [0m 1679408834.8515286
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 53 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 53
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 6258
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 43
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.2246522332038925
+- linear velocity (1.947103393060663) exceeded max (0.22)
+- linear velocity (2.029597348239037) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 55 [0m 1679408855.1150727
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 54 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 54
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 6371
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.210036335783018
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 56 [0m 1679408875.8134277
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 55 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 55
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 6478
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.1585364802887685
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 57 [0m 1679408896.0462105
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 56 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 56
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 6593
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- theta estimation error is too huge: 6.210037181786387
+- linear velocity (2.0797687963109777) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0391366719803985) exceeded max (0.22)
+- linear velocity (2.01328666998484) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 58 [0m 1679408916.556909
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 57 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 57
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 6705
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 37
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.210041105284251
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 59 [0m 1679408936.753585
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 58 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 58
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 6810
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 43
+- linear velocity (1.9168520854309001) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0717188265333477) exceeded max (0.22)
+- linear velocity (2.0314858650074807) exceeded max (0.22)
+- theta estimation error is too huge: 6.21004221725293
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 60 [0m 1679408956.9953828
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 59 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 59
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 6922
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- theta estimation error is too huge: 6.195432814025123
+- scan.range inf is out of range
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 61 [0m 1679408977.4319634
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 60 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 60
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 7032
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.103470279249161
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 62 [0m 1679408998.935389
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 61 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 61
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 7147
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- theta estimation error is too huge: 6.220919354080934
+- linear velocity (2.0697360639973432) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.029862136124993) exceeded max (0.22)
+- linear velocity (1.6875991082192245) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 63 [0m 1679409019.107335
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 62 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 62
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 7257
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.210042703675908
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 64 [0m 1679409039.8319626
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 63 ( 64 )
+[*] mutate flip 1/1 on float64 -1.4946290807555987e+196 at 63
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 7362
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 42
+- linear velocity (2.0397224690785096) exceeded max (0.22)
+- theta estimation error is too huge: 6.13159932745109
+- scan.range inf is out of range
+- linear velocity (2.0100525995412855) exceeded max (0.22)
+- linear velocity (2.08033875495655) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 65 [0m 1679409060.1264076
+Current field: angular (z)
+STAGE: DETERM flip 1/1
+data before determ mutation: -1.4946290807555987e+196
+end of one determ stage of an operation
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 66 [0m 1679409060.1269944
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 0 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 0
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 7477
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 35
+- scan.range inf is out of range
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 67 [0m 1679409080.385542
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 1 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 1
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 7587
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 36
+- scan.range inf is out of range
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 68 [0m 1679409100.6549327
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 2 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 2
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 7701
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.192242875652829
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 69 [0m 1679409121.1025386
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 3 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 3
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 7808
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- scan.range inf is out of range
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 70 [0m 1679409141.3341448
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 4 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 4
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 7919
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 42
+- linear velocity (2.009795085335292) exceeded max (0.22)
+- linear velocity (2.0393454767770622) exceeded max (0.22)
+- theta estimation error is too huge: 6.195435638701487
+- scan.range inf is out of range
+- linear velocity (2.0799920220447623) exceeded max (0.22)
+- linear velocity (2.120061726923377) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 71 [0m 1679409161.7166698
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 5 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 5
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 8028
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[31mERROR DETECTED: 41
+- linear velocity (2.039409407552427) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0801012719706984) exceeded max (0.22)
+- theta estimation error is too huge: 6.2246556821534345
+- linear velocity (2.009826555596123) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 72 [0m 1679409182.0333285
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 6 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 6
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 8140
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.166245787852036
+- linear velocity (2.039409407552427) exceeded max (0.22)
+- linear velocity (2.009826555596123) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 73 [0m 1679409202.5300422
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 7 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 7
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 8254
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 42
+- linear velocity (1.9168520854309001) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0717188265333477) exceeded max (0.22)
+- theta estimation error is too huge: 6.19230640514627
+- linear velocity (2.111993463085381) exceeded max (0.22)
+- linear velocity (2.0314858650074807) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 74 [0m 1679409222.9648032
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 8 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 8
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 8366
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- scan.range inf is out of range
+- linear velocity (1.9166359514625904) exceeded max (0.22)
+- theta estimation error is too huge: 6.12750640019385
+- linear velocity (2.031508486269413) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 75 [0m 1679409243.2901883
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 9 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 9
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 8481
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- linear velocity (2.039098805970495) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.166226703725123
+- linear velocity (2.0133472053554993) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 76 [0m 1679409263.6971204
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 10 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 10
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 8588
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 77 [0m 1679409284.3330922
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 11 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 11
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 8700
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- linear velocity (2.0100525995412855) exceeded max (0.22)
+- theta estimation error is too huge: 6.224656261060737
+- linear velocity (2.0397224690785096) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 78 [0m 1679409304.6362283
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 12 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 12
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 8806
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- linear velocity (2.0100525995412855) exceeded max (0.22)
+- theta estimation error is too huge: 6.210046279193085
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 79 [0m 1679409325.2049809
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 13 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 13
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 8916
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- linear velocity (1.936447962006878) exceeded max (0.22)
+- theta estimation error is too huge: 6.1922325524237145
+- scan.range inf is out of range
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 80 [0m 1679409345.9710987
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 14 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 14
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 9028
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 34
+- linear velocity (2.0093340578011567) exceeded max (0.22)
+- linear velocity (2.0795019104818397) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0388631644416093) exceeded max (0.22)
+- theta estimation error is too huge: 6.195438281930365
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 81 [0m 1679409366.895071
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 15 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 15
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 9132
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- linear velocity (2.03686719548794) exceeded max (0.22)
+- linear velocity (2.0101210721315406) exceeded max (0.22)
+- theta estimation error is too huge: 6.15163630329198
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 82 [0m 1679409387.0818331
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 16 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 16
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 9245
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- linear velocity (2.0314858650074807) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.1586638104729765
+- linear velocity (1.9168520854309001) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 83 [0m 1679409407.5289798
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 17 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 17
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 9358
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- linear velocity (1.9166359514625904) exceeded max (0.22)
+- theta estimation error is too huge: 6.224655370400541
+- linear velocity (2.031508486269413) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 84 [0m 1679409428.1286392
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 18 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 18
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 9473
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- theta estimation error is too huge: 6.210037181786387
+- linear velocity (2.0797687963109777) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0391366719803985) exceeded max (0.22)
+- linear velocity (2.01328666998484) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 85 [0m 1679409448.202018
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 19 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 19
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 9585
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 42
+- scan.range inf is out of range
+- linear velocity (1.9914330582203128) exceeded max (0.22)
+- linear velocity (2.0340821332049357) exceeded max (0.22)
+- theta estimation error is too huge: 6.16624370603115
+- linear velocity (2.0749117637707295) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 86 [0m 1679409469.39393
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 20 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 20
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 9696
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 43
+- scan.range inf is out of range
+- linear velocity (2.012639820593959) exceeded max (0.22)
+- theta estimation error is too huge: 6.137030391338257
+- linear velocity (2.0390149541503604) exceeded max (0.22)
+- linear velocity (2.0794728108152607) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 87 [0m 1679409490.086796
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 21 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 21
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 9807
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- linear velocity (2.0314858650074807) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.231657514726196
+- linear velocity (1.9168520854309001) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 88 [0m 1679409510.5499823
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 22 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 22
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 9921
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 43
+- scan.range inf is out of range
+- linear velocity (2.0390785080234224) exceeded max (0.22)
+- theta estimation error is too huge: 6.210039532052429
+- linear velocity (2.0092296219842387) exceeded max (0.22)
+- linear velocity (2.079648145709462) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 89 [0m 1679409531.713374
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 23 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 23
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 10036
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 37
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.210045434278992
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 90 [0m 1679409552.2234116
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 24 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 24
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 10148
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 45
+- linear velocity (2.0397224690785096) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.192216371451839
+- linear velocity (2.1204327005931134) exceeded max (0.22)
+- linear velocity (2.0100525995412855) exceeded max (0.22)
+- linear velocity (2.08033875495655) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 91 [0m 1679409572.7284646
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 25 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 25
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 10260
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- scan.range inf is out of range
+- linear velocity (1.9166359514625904) exceeded max (0.22)
+- theta estimation error is too huge: 6.231657869896864
+- linear velocity (2.071734360076081) exceeded max (0.22)
+- linear velocity (2.031508486269413) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 92 [0m 1679409593.1928806
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 26 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 26
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 10374
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- linear velocity (2.026892886597502) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (1.9985863231689875) exceeded max (0.22)
+- linear velocity (2.0680013714439323) exceeded max (0.22)
+- theta estimation error is too huge: 6.21170921039076
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 93 [0m 1679409613.8802853
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 27 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 27
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 10487
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- linear velocity (1.986513618285534) exceeded max (0.22)
+- theta estimation error is too huge: 6.103469975039891
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 94 [0m 1679409634.2806766
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 28 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 28
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 10597
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- linear velocity (2.034315433380431) exceeded max (0.22)
+- linear velocity (1.9097278826160808) exceeded max (0.22)
+- theta estimation error is too huge: 6.128548664899816
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 95 [0m 1679409654.6363704
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 29 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 29
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 10705
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.222533395547627
+- linear velocity (2.0100525995412855) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 96 [0m 1679409674.7777798
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 30 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 30
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 10814
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.2246522332038925
+- linear velocity (1.947103393060663) exceeded max (0.22)
+- linear velocity (2.029597348239037) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 97 [0m 1679409695.450767
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 31 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 31
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 10926
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.2528650892039455
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 98 [0m 1679409716.030084
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 32 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 32
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 11039
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- linear velocity (2.012639820593959) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.224648533406011
+- linear velocity (2.0390149541503604) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 99 [0m 1679409736.9579396
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 33 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 33
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 11151
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 43
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.108698308044264
+- linear velocity (2.0804245925607394) exceeded max (0.22)
+- linear velocity (2.0396850380281566) exceeded max (0.22)
+- linear velocity (2.0139475435778578) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 100 [0m 1679409757.282636
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 34 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 34
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 11265
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 35
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.21004182223227
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 101 [0m 1679409777.3722503
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 35 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 35
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 11380
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- linear velocity (2.009795085335292) exceeded max (0.22)
+- linear velocity (2.0393454767770622) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.210040682870496
+- linear velocity (2.0799920220447623) exceeded max (0.22)
+- linear velocity (2.120061726923377) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 102 [0m 1679409797.509843
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 36 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 36
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 11491
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- linear velocity (2.0093340578011567) exceeded max (0.22)
+- linear velocity (2.0795019104818397) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.224653725139189
+- linear velocity (2.0388631644416093) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 103 [0m 1679409817.7690685
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 37 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 37
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 11605
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 42
+- scan.range inf is out of range
+- linear velocity (1.9914330582203128) exceeded max (0.22)
+- linear velocity (2.0340821332049357) exceeded max (0.22)
+- theta estimation error is too huge: 6.117171906245578
+- linear velocity (2.0749117637707295) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 104 [0m 1679409838.7534418
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 38 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 38
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 11719
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- scan.range inf is out of range
+- linear velocity (2.0399671310103904) exceeded max (0.22)
+- linear velocity (2.0147472806223448) exceeded max (0.22)
+- theta estimation error is too huge: 6.252054106397098
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 105 [0m 1679409859.219227
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 39 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 39
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 11830
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 43
+- linear velocity (2.039633070932407) exceeded max (0.22)
+- linear velocity (2.1202736498927357) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.210043086138539
+- linear velocity (2.013695215262949) exceeded max (0.22)
+- linear velocity (2.0802825817431567) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 106 [0m 1679409879.542783
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 40 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 40
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 11945
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- linear velocity (2.012639820593959) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.122426662233437
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 107 [0m 1679409900.1214876
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 41 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 41
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 12051
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.2100455123456255
+- linear velocity (2.039409407552427) exceeded max (0.22)
+- linear velocity (2.009826555596123) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 108 [0m 1679409920.9374
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 42 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 42
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 12157
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.137044369019666
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 109 [0m 1679409941.3018413
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 43 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 43
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 12263
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.137051485806011
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 110 [0m 1679409961.849144
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 44 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 44
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 12382
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 37
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.1172786924500056
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 111 [0m 1679409982.1286695
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 45 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 45
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 12487
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- linear velocity (1.9166359514625904) exceeded max (0.22)
+- theta estimation error is too huge: 6.180842296831884
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 112 [0m 1679410002.4572203
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 46 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 46
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 12607
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- linear velocity (2.012639820593959) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0390149541503604) exceeded max (0.22)
+- theta estimation error is too huge: 6.076809758920168
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 113 [0m 1679410022.9762013
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 47 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 47
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 12720
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 42
+- scan.range inf is out of range
+- linear velocity (1.986513618285534) exceeded max (0.22)
+- linear velocity (2.034982174549408) exceeded max (0.22)
+- linear velocity (2.0755796590192634) exceeded max (0.22)
+- theta estimation error is too huge: 6.210038399928671
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 114 [0m 1679410044.412272
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 48 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 48
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 12829
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- theta estimation error is too huge: 6.224648533406011
+- scan.range inf is out of range
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 115 [0m 1679410065.0199022
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 49 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 49
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 12934
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- scan.range inf is out of range
+- linear velocity (2.0100525995412855) exceeded max (0.22)
+- theta estimation error is too huge: 6.192216371451839
+- linear velocity (2.0397224690785096) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 116 [0m 1679410085.3370361
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 50 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 50
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 13050
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.2246556821534345
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 117 [0m 1679410105.7064745
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 51 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 51
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 13157
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- linear velocity (2.007970154747209) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.036993771357322) exceeded max (0.22)
+- theta estimation error is too huge: 6.210042277547847
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 118 [0m 1679410126.1231253
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 52 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 52
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 13278
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.089510141247384
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 119 [0m 1679410146.7604396
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 53 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 53
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 13390
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.239268672743545
+- linear velocity (2.0422971837855806) exceeded max (0.22)
+- linear velocity (2.012338395900238) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 120 [0m 1679410167.2663069
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 54 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 54
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 13503
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.158617388956562
+- linear velocity (2.034315433380431) exceeded max (0.22)
+- linear velocity (1.9097278826160808) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 121 [0m 1679410187.5759583
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 55 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 55
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 13618
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 42
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.017526863177344
+- linear velocity (1.947103393060663) exceeded max (0.22)
+- linear velocity (2.029597348239037) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 122 [0m 1679410207.9619381
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 56 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 56
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 13733
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- scan.range inf is out of range
+- linear velocity (2.0100525995412855) exceeded max (0.22)
+- linear velocity (2.0397224690785096) exceeded max (0.22)
+- theta estimation error is too huge: 6.117218640630848
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 123 [0m 1679410228.5816
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 57 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 57
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 13847
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- scan.range inf is out of range
+- linear velocity (2.0133472053554993) exceeded max (0.22)
+- theta estimation error is too huge: 6.195428294933968
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 124 [0m 1679410248.8278925
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 58 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 58
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 13961
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- theta estimation error is too huge: 6.189724576691049
+- linear velocity (1.9487522835630782) exceeded max (0.22)
+- scan.range inf is out of range
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 125 [0m 1679410269.4752238
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 59 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 59
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 14068
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 42
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.129163676124747
+- linear velocity (2.0095778040299246) exceeded max (0.22)
+- linear velocity (2.0386915023194923) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 126 [0m 1679410290.240817
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 60 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 60
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 14183
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- theta estimation error is too huge: 6.22085172200036
+- linear velocity (2.0797687963109777) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0391366719803985) exceeded max (0.22)
+- linear velocity (2.01328666998484) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 127 [0m 1679410310.496963
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 61 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 61
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 14300
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.1316892620874
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 128 [0m 1679410330.9197123
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 62 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 62
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 14412
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 42
+- linear velocity (1.9984671178452988) exceeded max (0.22)
+- linear velocity (2.04219681997434) exceeded max (0.22)
+- theta estimation error is too huge: 6.0105909857002064
+- scan.range inf is out of range
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 129 [0m 1679410351.3787975
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 63 ( 64 )
+[*] mutate flip 2/1 on float64 -1.4946290807555987e+196 at 63
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 14527
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- linear velocity (2.012639820593959) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0794728108152607) exceeded max (0.22)
+- linear velocity (2.0390149541503604) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 130 [0m 1679410372.2243738
+Current field: angular (z)
+STAGE: DETERM flip 2/1
+data before determ mutation: -1.4946290807555987e+196
+end of one determ stage of an operation
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 131 [0m 1679410372.224958
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 0 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 0
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 14637
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 37
+- scan.range inf is out of range
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 132 [0m 1679410392.6434722
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 1 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 1
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 14750
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 37
+- scan.range inf is out of range
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 133 [0m 1679410412.8680637
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 2 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 2
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 14864
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.25291256580735
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 134 [0m 1679410433.564966
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 3 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 3
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 14975
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- scan.range inf is out of range
+- linear velocity (1.9487522835630782) exceeded max (0.22)
+- linear velocity (2.035105878125608) exceeded max (0.22)
+- theta estimation error is too huge: 6.220875611683111
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 135 [0m 1679410454.4172668
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 4 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 4
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 15086
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 42
+- theta estimation error is too huge: 6.129161606450423
+- linear velocity (2.077817121872353) exceeded max (0.22)
+- linear velocity (2.007970154747209) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.036993771357322) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 136 [0m 1679410474.6089203
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 5 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 5
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 15200
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[-] watch failed
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.224654549891364
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 137 [0m 1679410495.622243
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 6 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 6
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 15314
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- linear velocity (2.0765206184267044) exceeded max (0.22)
+- linear velocity (2.0364133559475626) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.195440122568199
+- linear velocity (1.9408085454136337) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 138 [0m 1679410516.3074465
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 7 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 7
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 15421
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 45
+- linear velocity (2.0399671310103904) exceeded max (0.22)
+- theta estimation error is too huge: 6.195434221957507
+- scan.range inf is out of range
+- linear velocity (2.0147472806223448) exceeded max (0.22)
+- linear velocity (2.0808073458314915) exceeded max (0.22)
+- linear velocity (2.120854050235927) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 139 [0m 1679410536.8149168
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 8 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 8
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 15530
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.211709210390759
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 140 [0m 1679410557.4278615
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 9 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 9
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 15633
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 34
+- scan.range inf is out of range
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 141 [0m 1679410578.0239484
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 10 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 10
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 15746
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 36
+- linear velocity (2.01328666998484) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.25285757706419
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 142 [0m 1679410598.1537411
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 11 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 11
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 15861
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.252847794843628
+- linear velocity (2.009826555596123) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 143 [0m 1679410618.6595802
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 12 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 12
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 15970
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 42
+- linear velocity (2.0815693184450743) exceeded max (0.22)
+- theta estimation error is too huge: 6.224655664075049
+- linear velocity (2.04099362257132) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.011196261372952) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 144 [0m 1679410639.2221947
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 13 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 13
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 16083
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 43
+- scan.range inf is out of range
+- linear velocity (2.0702897532346283) exceeded max (0.22)
+- linear velocity (2.111216333036457) exceeded max (0.22)
+- linear velocity (2.029597348239037) exceeded max (0.22)
+- theta estimation error is too huge: 6.108586621400246
+- linear velocity (1.947103393060663) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 145 [0m 1679410659.488736
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 14 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 14
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 16196
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- scan.range inf is out of range
+- linear velocity (1.9914330582203128) exceeded max (0.22)
+- linear velocity (2.0340821332049357) exceeded max (0.22)
+- theta estimation error is too huge: 6.052073658699043
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 146 [0m 1679410680.3422725
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 15 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 15
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 16307
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- theta estimation error is too huge: 6.239270260771669
+- scan.range inf is out of range
+- linear velocity (2.0399671310103904) exceeded max (0.22)
+- linear velocity (2.0147472806223448) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 147 [0m 1679410700.4901829
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 16 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 16
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 16411
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 42
+- linear velocity (2.0397224690785096) exceeded max (0.22)
+- theta estimation error is too huge: 6.144874069291485
+- scan.range inf is out of range
+- linear velocity (2.0100525995412855) exceeded max (0.22)
+- linear velocity (2.08033875495655) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 148 [0m 1679410721.1886415
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 17 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 17
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 16517
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- linear velocity (2.012338395900238) exceeded max (0.22)
+- theta estimation error is too huge: 6.158494573107053
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 149 [0m 1679410742.000629
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 18 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 18
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 16624
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 43
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.180836116038622
+- linear velocity (2.111216333036457) exceeded max (0.22)
+- linear velocity (2.029597348239037) exceeded max (0.22)
+- linear velocity (2.0702897532346283) exceeded max (0.22)
+- linear velocity (1.947103393060663) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 150 [0m 1679410762.326047
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 19 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 19
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 16733
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- linear velocity (1.9166359514625904) exceeded max (0.22)
+- theta estimation error is too huge: 6.128612832904405
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 151 [0m 1679410783.070507
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 20 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 20
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 16839
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.052064238992228
+- linear velocity (2.009826555596123) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 152 [0m 1679410803.6220036
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 21 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 21
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 16944
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- linear velocity (2.0422971837855806) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.165463302966499) exceeded max (0.22)
+- theta estimation error is too huge: 6.195430936132174
+- linear velocity (2.0827614924597952) exceeded max (0.22)
+- linear velocity (2.1228272442151654) exceeded max (0.22)
+- linear velocity (2.012338395900238) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 153 [0m 1679410824.4667945
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 22 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 22
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 17064
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- linear velocity (2.0328072171679312) exceeded max (0.22)
+- theta estimation error is too huge: 6.210047660696455
+- linear velocity (1.890877370282727) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 154 [0m 1679410844.7535665
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 23 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 23
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 17178
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 43
+- scan.range inf is out of range
+- linear velocity (2.0390785080234224) exceeded max (0.22)
+- theta estimation error is too huge: 6.195694663793763
+- linear velocity (2.0092296219842387) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 155 [0m 1679410865.538955
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 24 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 24
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 17293
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 42
+- scan.range inf is out of range
+- linear velocity (2.026892886597502) exceeded max (0.22)
+- linear velocity (1.9985863231689875) exceeded max (0.22)
+- theta estimation error is too huge: 6.175926055136756
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 156 [0m 1679410886.275665
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 25 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 25
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 17403
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- linear velocity (2.0399671310103904) exceeded max (0.22)
+- theta estimation error is too huge: 6.180833331992874
+- scan.range inf is out of range
+- linear velocity (2.0147472806223448) exceeded max (0.22)
+- linear velocity (2.0808073458314915) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 157 [0m 1679410906.5426404
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 26 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 26
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 17518
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- theta estimation error is too huge: 6.180839845083179
+- scan.range inf is out of range
+- linear velocity (1.9985863231689875) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 158 [0m 1679410927.3209727
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 27 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 27
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 17631
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.1286117654055685
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 159 [0m 1679410947.7410932
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 28 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 28
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 17742
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.151649412923234
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 160 [0m 1679410968.1343472
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 29 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 29
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 17849
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.224656097199393
+- linear velocity (2.0384685167247283) exceeded max (0.22)
+- linear velocity (2.00893213710916) exceeded max (0.22)
+- linear velocity (2.079107585705944) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 161 [0m 1679410988.4653108
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 30 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 30
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 17967
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- linear velocity (2.0103161634754168) exceeded max (0.22)
+- linear velocity (2.0403083568363423) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.080773820320477) exceeded max (0.22)
+- theta estimation error is too huge: 6.158496144501288
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 162 [0m 1679411008.6625135
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 31 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 31
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 18078
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.117171906245578
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 163 [0m 1679411029.413422
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 32 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 32
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 18187
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 38
+- linear velocity (1.9984671178452988) exceeded max (0.22)
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.04085836350181
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 164 [0m 1679411050.1871462
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 33 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 33
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 18303
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- theta estimation error is too huge: 6.117287643303035
+- linear velocity (2.011196261372952) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.04099362257132) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 165 [0m 1679411070.7682111
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 34 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 34
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 18416
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 37
+- scan.range inf is out of range
+- linear velocity (1.8263682533614043) exceeded max (0.22)
+- linear velocity (2.033709264053408) exceeded max (0.22)
+- theta estimation error is too huge: 6.210041205253853
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 166 [0m 1679411090.920531
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 35 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 35
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 18516
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- linear velocity (2.0093340578011567) exceeded max (0.22)
+- linear velocity (2.0388631644416093) exceeded max (0.22)
+- theta estimation error is too huge: 6.239272255286857
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 167 [0m 1679411111.1828187
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 36 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 36
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 18627
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- theta estimation error is too huge: 6.239271748740569
+- linear velocity (1.9168520854309001) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0717188265333477) exceeded max (0.22)
+- linear velocity (2.0314858650074807) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 168 [0m 1679411131.6996355
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 37 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 37
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 18740
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- linear velocity (2.039098805970495) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0133472053554993) exceeded max (0.22)
+- theta estimation error is too huge: 6.195428294933968
+- linear velocity (2.1198131946596876) exceeded max (0.22)
+- linear velocity (2.0798671497620687) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 169 [0m 1679411151.8677561
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 38 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 38
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 18854
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 37
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.158632322904923
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 170 [0m 1679411172.4355032
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 39 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 39
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 18968
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- scan.range inf is out of range
+- linear velocity (1.9888928470937002) exceeded max (0.22)
+- theta estimation error is too huge: 6.195440120583088
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 171 [0m 1679411192.73528
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 40 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 40
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 19076
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 41
+- scan.range inf is out of range
+- linear velocity (1.9399570876750087) exceeded max (0.22)
+- linear velocity (2.033221001453206) exceeded max (0.22)
+- theta estimation error is too huge: 6.2209483101776675
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 172 [0m 1679411213.2351282
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 41 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 41
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 19188
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 37
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.2246522332038925
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 173 [0m 1679411233.2420638
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 42 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 42
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 19301
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 35
+- scan.range inf is out of range
+- theta estimation error is too huge: 6.231669731060723
+- linear velocity (1.890877370282727) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 174 [0m 1679411253.312292
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 43 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 43
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 19411
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 39
+- linear velocity (2.073373736914491) exceeded max (0.22)
+- linear velocity (1.936447962006878) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0328198969172124) exceeded max (0.22)
+- theta estimation error is too huge: 6.195437383766247
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 175 [0m 1679411273.5068579
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 44 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 44
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 19525
+[executor] started ros2 bag recording
+[executor] start watching
+[executor] stop watching
+[executor] killing ros2 bag
+[31mERROR DETECTED: 40
+- linear velocity (2.039098805970495) exceeded max (0.22)
+- scan.range inf is out of range
+- linear velocity (2.0133472053554993) exceeded max (0.22)
+- theta estimation error is too huge: 6.210034580780771
+- linear velocity (2.0798671497620687) exceeded max (0.22)
+- ...
+[0m
+check is_interesting - theta_diff False (None)
+
+[92mCYCLE: 0 ROUND: 1 EXEC: 176 [0m 1679411293.6064467
+Current field: angular (z)
+STAGE: DETERM flip 4/1
+data before determ mutation: -1.4946290807555987e+196
+bit_pos 45 ( 64 )
+[*] mutate flip 4/1 on float64 -1.4946290807555987e+196 at 45
+[executor] len(msg_list): 1
+repeating 0-th sequence
+[*] Starting TurtleBot3 SITL stack & Gazebo simulator
+[tb3] started tb3 sitl stack 19638
+[executor] started ros2 bag recording
+[executor] start watching
+
+real	60m0.027s
+user	46m5.718s
+sys	54m2.718s

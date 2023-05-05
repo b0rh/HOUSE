@@ -1,0 +1,5 @@
+## ## Starting step exec_script-ROS2-robofuzz with the script BENCHMARK/singularity-robofuzz_MI2.sh and argument(s) 2h at Thu Mar 23 01:46:41 CET 2023 epoch 1679532401212 ## ##
+INFO: Init Singularity SCRIPT BENCHMARK/singularity-robofuzz_MI2.sh in image ROS2_foxy-robofuzz.sif .
++ [1798778] Benchmarking Move It 2 + PANDA manipulator for 2h +
+INFO: TIMEOUT value 2h .
+## ## Completed step exec_script-ROS2-robofuzz with the script BENCHMARK/singularity-robofuzz_MI2.sh and the argument(s) 2h at Thu Mar 23 03:47:43 CET 2023 epoch 1679539663114 ## ##
