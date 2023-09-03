@@ -90,9 +90,14 @@ find HOUSE -name "*.sh" -exec chmod +x {} \;
 ## 2. Build/Dowload ROS2-foxy + robofuzz singularity container
 
 ### Download
-[Download Singulary container](https://ss3.scayle.es:443/HOUSE/ROS2_foxy-robofuzz.sif)
+[Download Singulary container Mirror 1](https://ss3.scayle.es:443/HOUSE/ROS2_foxy-robofuzz.sif)
+
+[Download Singulary container Mirror 2](https://drive.google.com/file/d/1fg2InRNrwcbU3XKqwiTxA40YGrIYiRLD/view?usp=sharing)
 
 `wget -O ROS2_foxy-robofuzz.sif  https://ss3.scayle.es:443/HOUSE/ROS2_foxy-robofuzz.sif`
+or
+`wget -O ROS2_foxy-robofuzz.sif  https://drive.google.com/file/d/1fg2InRNrwcbU3XKqwiTxA40YGrIYiRLD/view?usp=sharing`
+
 
 ### Build
 ```bash
