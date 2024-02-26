@@ -1,9 +1,7 @@
 
 # Related papers:
-
-[HOUSE: Marco de trabajo modular de arquitectura escalable y desacoplada para el uso de técnicas de fuzzing en HPC](https://github.com/b0rh/Latex/blob/main/paper_JNIC_2021/HOUSE%20Marco%20de%20trabajo%20modular%20de%20arquitectura%20escalable%20y%20desacoplada%20para%20el%20uso%20de%20t%C3%A9cnicas%20de%20fuzzing%20en%20HPC.pdf) .
-
-[Fuzzing Robotic Software using HPC](https://github.com/b0rh/Latex/blob/main/paper_CISIS_2023/Fuzzing%20Robotic%20Software%20using%20HPC.pdf) .
+- [HOUSE: Marco de trabajo modular de arquitectura escalable y desacoplada para el uso de técnicas de fuzzing en HPC](https://github.com/b0rh/Latex/blob/main/paper_JNIC_2021/HOUSE%20Marco%20de%20trabajo%20modular%20de%20arquitectura%20escalable%20y%20desacoplada%20para%20el%20uso%20de%20t%C3%A9cnicas%20de%20fuzzing%20en%20HPC.pdf) .
+- [Fuzzing Robotic Software using HPC](https://github.com/b0rh/Latex/blob/main/paper_CISIS_2023/Fuzzing%20Robotic%20Software%20using%20HPC.pdf) .
 
 
 # HOUSE framework guide - RoboFuzz
