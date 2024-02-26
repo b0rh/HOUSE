@@ -1,4 +1,7 @@
-HOUSE framework guide - AFL++ 
+# Related paper 
+- [HOUSE: Marco de trabajo modular de arquitectura escalable y desacoplada para el uso de técnicas de fuzzing en HPC](https://github.com/b0rh/Latex/blob/main/paper_JNIC_2021/HOUSE%20Marco%20de%20trabajo%20modular%20de%20arquitectura%20escalable%20y%20desacoplada%20para%20el%20uso%20de%20t%C3%A9cnicas%20de%20fuzzing%20en%20HPC.pdf) presentation [JNIC 2021](https://github.com/b0rh/Latex/blob/main/presentation_JNIC_2021/PresentacionJNIC2021.pdf) .
+
+# HOUSE framework guide - AFL++ 
 ===============================
 
 The following steps are an essential guide to deploy HOUSE framework on HPC cluster with slurm queuing system and use it.
